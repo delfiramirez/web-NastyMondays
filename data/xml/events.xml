@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<events>
+	<item date="9 Marzo 2010">
+		<title>NASTY MONDAYS PRIMAVERA PARTY</title>
+		<date>09 Marzo 2010</date>
+		<category>RESERVA TU ENTRADA</category>
+		<thumb>images/thumbs/thumb_0.jpg</thumb>
+		<text>SALA 1:Lorem ipsum dolor sit amet, donec cras, ante elit pede iaculis quam natoque nulla. Ante etiam aliquam.</text>
+		<url>"http://codetiquets.com"</url>
+	</item>
+	<item date="9 Marzo 2010">
+		<title>SOREN & MAD MAX PRESENTAN:</title>
+		<date>09 Marzo 2010</date>
+		<category>RESERVA TU ENTRADA</category>
+		<thumb>images/thumbs/thumb_1.jpg</thumb>
+		<text>SALA 1:Elementum nec maecenas suscipit est, turpis ut, pellentesque fusce suspendisse ad sollicitudin eleifend pharetra.</text>
+		<url>"http://codetiquets.com"</url>
+	</item>
+	<item date="16 Marzo 2010">
+		<title>KOSMOS DJ</title>
+		<date>16 Marzo 2010</date>
+		<category>RESERVA TU ENTRADA</category>
+		<thumb>images/thumbs/thumb_2.jpg</thumb>
+		<text>SALA 1:Eget vel laoreet tempor, nunc in ut vel odio sed class, sed libero.</text>
+		<url>"http://codetiquets.com"</url>
+	</item>
+	<item date="16 Marzo 2010">
+		<title>Event 4</title>
+		<date>16 Marzo 2010</date>
+		<category>PARTY LOVELY PEOPLE</category>
+		<thumb>images/thumbs/thumb_3.jpg</thumb>
+		<text>SALA 1:Tincidunt libero duis eget est lectus. Faucibus feugiat arcu varius, mauris arcu vel dolor. </text>
+		<url>"http://codetiquets.com"</url>
+	</item>
+	<item date="23 Marzo 2010">
+		<title>SCREAMING TREES LIVE CONCERT</title>
+		<date>23 Marzo 2010</date>
+		<category>RESERVA TU ENTRADA</category>
+		<thumb>images/thumbs/thumb_4.jpg</thumb>
+		<text>SALA 1:Malesuada donec dui commodo massa tortor, ut ut non, vitae arcu officia dignissim eu metus mi, auctor ultrices ante sed justo orci.</text>
+		<url>"http://codetiquets.com"</url>
+	</item>
+	<item date="23 Marzo 2010">
+		<title>DJ MICHAEL WALKER</title>
+		<date>23 Marzo 2010</date>
+		<category>RESERVA TU ENTRADA</category>
+		<thumb>images/thumbs/thumb_5.jpg</thumb>
+		<text>SALA 1:Tellus amet nulla nec, sit dolor mauris enim, vehicula lobortis, vitae eget suscipit, donec non euismod donec fusce et excepturi.</text>
+		<url>"http://codetiquets.com"</url>
+	</item>
+	<item date="30 Marzo 2010">
+		<title>JOHNNY JOHNNY LIVE</title>
+		<date>23 Marzo 2010</date>
+		<category>RESERVA TU ENTRADA</category>
+		<thumb>images/thumbs/thumb_6.jpg</thumb>
+		<text>SALA 1:Lorem ipsum dolor sit amet, donec cras, ante elit pede iaculis quam natoque nulla. Ante etiam aliquam.</text>
+		<url>"http://codetiquets.com"</url>
+	</item>
+	<item date="30 Marzo 2010">
+		<title>SOREN AND MAD MAX DJ</title>
+		<date>30 Marzo 2010</date>
+		<category>RESERVA TU ENTRADA</category>
+		<thumb>images/thumbs/thumb_7.jpg</thumb>
+		<text>SALA 1:Et etiam. Pellentesque tristique commodo lectus nibh placerat porttitor, in mauris ut vestibulum.</text>
+		<url>"http://codetiquets.com"</url>
+	</item>
+	<item date="30 Marzo 2010">
+		<title>SPECIAL NASTY PARTY</title>
+		<date>30 Marzo 2010</date>
+		<category>RESERVA TU ENTRADA</category>
+		<thumb>images/thumbs/thumb_8.jpg</thumb>
+		<text>SALA 1:Nisl a tempus velit, proin commodo neque nunc ut magna, leo donec, gravida vel habitant nostra, sit augue.</text>
+		<url>"http://codetiquets.com"</url>
+	</item>
+	<item date="30 Marzo 2010">
+		<title>KRAKATOA DJ</title>
+		<date>30 Marzo 2010</date>
+		<category>RESERVA TU ENTRADA</category>
+		<thumb>images/thumbs/thumb_9.jpg</thumb>
+		<text>SALA 1:Phasellus molestie in diam sed et diam, luctus lectus orci, sit metus nam ligula metus vestibulum elit.</text>
+		<url>"http://codetiquets.com"</url>
+	</item>
+</events>
+</root>

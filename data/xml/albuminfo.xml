@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<artworkinfo>
+	<albuminfo>
+		<artLocation>img/album1.png</artLocation>
+		<artist>NASTY MONDAYS</artist>
+	</albuminfo>
+		<albuminfo>
+		<artLocation>src/img/album0.png</artLocation>
+		<artist>NASTY MONDAYS</artist>
+	</albuminfo>
+	<albuminfo>
+	<albuminfo>
+		<artLocation>src/img/album4.png</artLocation>
+		<artist>Crappy Tuesdays</artist>
+		<albumName>For Zombies like You</albumName>
+	</albuminfo>
+		<albuminfo>
+		<artLocation>src/img/album5.png</artLocation>
+		<artist>Crappy Tuesdays</artist>
+		<albumName>For Zombies like You</albumName>
+	<albuminfo>
+		<artLocation>img/album2.png</artLocation>
+		<artist>Nasty Mondays</artist>
+		<albumName>Barcelona</albumName>
+	</albuminfo>
+	<albuminfo>
+		<artLocation>img/album4.png</artLocation>
+		<artist>Crappy Tuesdays</artist>
+		<albumName>For Zombies like You</albumName>
+	</albuminfo>
+		<albuminfo>
+		<artLocation>img/album5.png</artLocation>
+		<artist>Crappy Tuesdays</artist>
+		<albumName>For Zombies like You</albumName>
+	</albuminfo>
+	<albuminfo>
+		<artLocation>img/album1.png</artLocation>
+		<artist>NASTY MONDAYS</artist>
+	</albuminfo>
+</root>
