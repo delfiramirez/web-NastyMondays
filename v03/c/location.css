@@ -2,203 +2,203 @@
 
 @media screen
 {
-	
-	
+
+
     /* Main Block
 
     *****************************/
-	
-	
-		div.left 
-		{
-			position:relative;
-			float: left;
-			display: inline;
-			width: 441px;
-			background: transparent;
-			padding: 5px 5px 5px 15px;
-			color: #ffffee;
-			min-height: 441px;
-			height: auto !important;
-			height: 451px;
-			text-align: center;
-			font-family: "nevisBold",Helvetica,Arial, sans-serif;
-		}
-
-		div.left h1 a, 
-		div.left h1 a:visited,
-		div.left h1 a:hover 
-		{
-
-			font-size: 78px;
-			text-shadow: #ffffee  0px 1px -3px;
-			color: #2fc2c1;
-			font-family: "nevisBold",Helvetica,Arial, sans-serif;
-		}
-
-		div.left h1, 
-		div.left h2
-		{
-			font-weight: bold;
-			text-transform: uppercase;
-			line-height: 70px;
-			text-align: left;
-			font-family: "nevisBold",Helvetica,Arial, sans-serif;
-		}
-
-		div.left h2
-		{
-			margin: 0 0 1.6em;
-			display: block;
-			font-size: 47px;
-			line-height: 1.05em;
-			width: 400px;
-			text-shadow:  #040404 0px 1px -3px;
-			color: #2fc2c1;
-			font-weight: normal;
-			font-family: "nevisBold", Helvetica, Arial, sans-serif;
-
-		}
-
-		div.left h6 
-		{
-			font-size: 18px;
-			width: 430px;
-			color: #CBE2EE;
-			text-align: left;
-			text-shadow: 0px 1px -3px #ffffee;
-		}
-				
-		div#pasador2 div#map_canvas 
-		{
-			position:relative;
-			float: right;
-			display: inline;
-			width: 389px;
-			height: 425px;
-			background-image: url("../../img/web/75p_honey.png");
-			border: 0.5em #2fc2c1 solid;
-			padding: 5px;
-			margin-right: 10px;
-		}
-
-		div.left address 
-		{
-			position:relative;
-			width: 100%;
-			padding-left: 5px;
-			text-align: left;
-			color: #ffffee;
-			text-shadow: #222 0px 1px -3px;
-			-webkit-border-radius: 8px;
-			-moz-border-radius: 8px;
-			border-radius: 8px;
-			font-size: 14px;
-			word-spacing: 2px;
-			font-family: "nevisBold", "Arial Black", Helvetica, sans-serif;
-		}
 
 
-   /*Elements
+    div.left
+    {
+        position:relative;
+        float: left;
+        display: inline;
+        width: 441px;
+        background: transparent;
+        padding: 5px 5px 5px 15px;
+        color: #ffffee;
+        min-height: 441px;
+        height: auto !important;
+        height: 451px;
+        text-align: center;
+        font-family: "nevisBold",Helvetica,Arial, sans-serif;
+    }
 
-    ************************/
-		address 
-		{
-			background-image: url("../../img/web/75p_honey.png");
-		}
+    div.left h1 a,
+    div.left h1 a:visited,
+    div.left h1 a:hover
+    {
 
-		div.left p 
-		{
-			background-color: #040404;
-			color: #2fc2c1;
-			text-shadow:  #013c67 0px 1px -3px;
-			font-size: 13px;
-			font-weight: normal;
-		}
+        font-size: 78px;
+        text-shadow: #ffffee  0px 1px -3px;
+        color: #2fc2c1;
+        font-family: "nevisBold",Helvetica,Arial, sans-serif;
+    }
 
-		img.floatLeft 
-		{
-			float: left;
-			margin: 3px;
-			border: 1px #ffffff solid;
-		}
+    div.left h1,
+    div.left h2
+    {
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 70px;
+        text-align: left;
+        font-family: "nevisBold",Helvetica,Arial, sans-serif;
+    }
+
+    div.left h2
+    {
+        margin: 0 0 1.6em;
+        display: block;
+        font-size: 47px;
+        line-height: 1.05em;
+        width: 400px;
+        text-shadow:  #040404 0px 1px -3px;
+        color: #2fc2c1;
+        font-weight: normal;
+        font-family: "nevisBold", Helvetica, Arial, sans-serif;
+
+    }
+
+    div.left h6
+    {
+        font-size: 18px;
+        width: 430px;
+        color: #CBE2EE;
+        text-align: left;
+        text-shadow: 0px 1px -3px #ffffee;
+    }
+
+    div#pasador2 div#map_canvas
+    {
+        position:relative;
+        float: right;
+        display: inline;
+        width: 389px;
+        height: 425px;
+        background-image: url("../../img/web/75p_honey.png");
+        border: 0.5em #2fc2c1 solid;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    div.left address
+    {
+        position:relative;
+        width: 100%;
+        padding-left: 5px;
+        text-align: left;
+        color: #ffffee;
+        text-shadow: #222 0px 1px -3px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        font-size: 14px;
+        word-spacing: 2px;
+        font-family: "nevisBold", "Arial Black", Helvetica, sans-serif;
+    }
 
 
-		
-	/* Tables
+    /*Elements
 
-    ***********************************/
+     ************************/
+    address
+    {
+        background-image: url("../../img/web/75p_honey.png");
+    }
 
-		table 
-		{
-			width: 100%;
-			padding: 0;
-			margin: 0;
-			float: left;
-		}
+    div.left p
+    {
+        background-color: #040404;
+        color: #2fc2c1;
+        text-shadow:  #013c67 0px 1px -3px;
+        font-size: 13px;
+        font-weight: normal;
+    }
 
-		caption {
-			padding: 0 0 5px 0;
-			width: 380px;
-			font: italic 11px "nevisBold", "Arial Black", Helvetica, sans-serif;
-			text-align: right;
-		}
+    img.floatLeft
+    {
+        float: left;
+        margin: 3px;
+        border: 1px #ffffff solid;
+    }
 
-		th {
-			font: bold 11px "nevisBold", "Arial Black", Helvetica, sans-serif;
-			color: #4f6b72;
-			border-right: 1px solid #C1DAD7;
-			border-bottom: 1px solid #C1DAD7;
-			border-top: 1px solid #C1DAD7;
-			letter-spacing: 2px;
-			text-transform: uppercase;
-			text-align: left;
-			padding: 6px 6px 6px 6px;
-			background: #203c4d;
-		}
 
-		th.nobg 
-		{
-			border-top: 0;
-			border-left: 0;
-			border-right: 1px solid #C1DAD7;
-			background: none;
-		}
 
-		td 
-		{
-			border-right: 1px solid #C1DAD7;
-			border-bottom: 1px solid #C1DAD7;
-			background: #203c4d;
-			padding: 6px 6px 6px 6px;
-			color: #4477BB;
-			font: bold 12px "nevisBold", "Arial Black", Helvetica, sans-serif;
-			text-align: left;
-		}
+    /* Tables
 
-		td.alt, table td.alt 
-		{
-			background: #F5FAFA;
-			color: #797268;
-		}
+    **********************************/
 
-		th.spec 
-		{
-			border-left: 1px solid #C1DAD7;
-			border-top: 0;
-			background: #f0f0f0 url(../images/base/bullet1.gif) no-repeat;
-			font: bold 12px "nevisBold", "Arial Black", Helvetica, sans-serif;
-			letter-spacing: .03em;
-		}
+    table
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        float: left;
+    }
 
-		th.specalt
-		{
-			border-left: 1px solid #C1DAD7;
-			border-top: 0;
-			background: #f5fafa url(../images/base/bullet1.gif) no-repeat;
-			font: bold 10px "nevisBold", "Arial Black", Helvetica, sans-serif;
-			color: #797268;
-		}
+    caption {
+        padding: 0 0 5px 0;
+        width: 380px;
+        font: italic 11px "nevisBold", "Arial Black", Helvetica, sans-serif;
+        text-align: right;
+    }
+
+    th {
+        font: bold 11px "nevisBold", "Arial Black", Helvetica, sans-serif;
+        color: #4f6b72;
+        border-right: 1px solid #C1DAD7;
+        border-bottom: 1px solid #C1DAD7;
+        border-top: 1px solid #C1DAD7;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 6px 6px 6px 6px;
+        background: #203c4d;
+    }
+
+    th.nobg
+    {
+        border-top: 0;
+        border-left: 0;
+        border-right: 1px solid #C1DAD7;
+        background: none;
+    }
+
+    td
+    {
+        border-right: 1px solid #C1DAD7;
+        border-bottom: 1px solid #C1DAD7;
+        background: #203c4d;
+        padding: 6px 6px 6px 6px;
+        color: #4477BB;
+        font: bold 12px "nevisBold", "Arial Black", Helvetica, sans-serif;
+        text-align: left;
+    }
+
+    td.alt, table td.alt
+    {
+        background: #F5FAFA;
+        color: #797268;
+    }
+
+    th.spec
+    {
+        border-left: 1px solid #C1DAD7;
+        border-top: 0;
+        background: #f0f0f0 url(../images/base/bullet1.gif) no-repeat;
+        font: bold 12px "nevisBold", "Arial Black", Helvetica, sans-serif;
+        letter-spacing: .03em;
+    }
+
+    th.specalt
+    {
+        border-left: 1px solid #C1DAD7;
+        border-top: 0;
+        background: #f5fafa url(../images/base/bullet1.gif) no-repeat;
+        font: bold 10px "nevisBold", "Arial Black", Helvetica, sans-serif;
+        color: #797268;
+    }
 }
 
 
@@ -207,18 +207,18 @@
 /*  Copyright v 0.1 2010 Delfi Ramirez <delfin@segonquart.net> for Nasty Mondays Inc.
 
 
-	Nasty Mondays CSS Theme is distributed under the GNU General Public License, Version 2,
-	June 1991. Copyright (C) 1989, 1991 Free Software Foundation, Inc., 51 Franklin
-	St, Fifth Floor, Boston, MA 02110, USA
+        Nasty Mondays CSS Theme is distributed under the GNU General Public License, Version 2,
+        June 1991. Copyright (C) 1989, 1991 Free Software Foundation, Inc., 51 Franklin
+        St, Fifth Floor, Boston, MA 02110, USA
 
-	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-	DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
-	ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
-	ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+        ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+        LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+        ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */

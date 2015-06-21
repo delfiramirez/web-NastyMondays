@@ -1,14 +1,14 @@
 /**
 
  * Images Custom  Grid, for changes purposals
- 
+
  */
- 
- 
+
+
 #grid
 {
     position: absolute;
-	width: 980px;
+    width: 980px;
     top: 0;
     left: 50%;
     margin-left: -490px;
