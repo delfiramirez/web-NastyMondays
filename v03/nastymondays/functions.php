@@ -578,23 +578,6 @@ function new_excerpt_length($length) {
 }
 add_filter('excerpt_length', 'new_excerpt_length');
 
-/**
-* Archive que elimina enlaces de COMMENT
-*
-*/ 
-
-
-
-?>
-
-<?php
-
-/**
-* Archive evitar HTML paste en COMMENTS ( Evitamos hacks y enlaces no deseados)
-*
-*/ 
-
-
 function nm_comment_post( $incoming_comment ) {
 
 	$incoming_comment['comment_content'] = htmlspecialchars($incoming_comment['comment_content']);
@@ -604,11 +587,10 @@ function nm_comment_post( $incoming_comment ) {
 	return( $incoming_comment );
 }
 
-
-function nm_comment_display( $comment_to_display ) {
+function nm_comment_display( $comment_to_display ) 
+{
 
 	$comment_to_display = str_replace( '&apos;', "'", $comment_to_display );
-
 	return $comment_to_display;
 }
 
@@ -617,11 +599,13 @@ add_filter( 'comment_text', 'nm_comment_display', '', 1);
 add_filter( 'comment_text_rss', 'nm_comment_display', '', 1);
 add_filter( 'comment_excerpt', 'nm_comment_display', '', 1);
 
-function nm_comment_post_like($string, $array) {
+function nm_comment_post_like($string, $array) 
+{
 	foreach($array as $ref) { if(strstr($string, $ref)) { return true; } }
 	return false;
 }
-function nm_drop_bad_comments() {
+function nm_drop_bad_comments() 
+{
 	if (!empty($_POST['comment'])) {
 		$post_comment_content = $_POST['comment'];
 		$lower_case_comment = strtolower($_POST['comment']);
