@@ -13,3 +13,4 @@ bin-release/
 *.gif
 *.tiff
 *.DS_Store
+/RIA-WEB---nastyMondays/nbproject/private/
