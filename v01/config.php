@@ -21,7 +21,7 @@ $pages["gracias.php"] = "Thank you";
 
 
 $sliderPageURL = "inc/pasador.php";
-$sliderBottomURL ="inc/sliderNart.php";
+$sliderBottomURL ="inc/sliderNasty.php";
 
 
 $tpTitle = " NASTY MONDAYS OFFICIAL";
@@ -37,7 +37,7 @@ $pgCityN = "New York";
 $socialFB="Facebook";
 $socialMSP= "My Space";
 
-$pgDesc = "Nasty Mondays was invented 5 years ago in Barcelona, by our friends Max & Choren el Choro - local celebrities, mad minds, blonde lovers and tattoo addicts! With their fable to indie & electro rock, they started with a party series that didn’t exist like that  in the catalonian city before. Mondays at Apollo was a MUST. Constantly reinventing themselves, with new themes, bands playing live, different locations and becoming crazier each time, they have managed to establish their base within Barcelona, and have toured in Denmark, Sweden, Germany, Austria and Holland";
+$pgDesc = "Nasty Mondays was invented 5 years ago in Barcelona, by our friends Max & Choren , money launders - local celebrities, mad minds, blonde lovers and tattoo addicts! With their fable to indie & electro rock, they started with a party series that didn’t exist like that  in the catalonian city before. Mondays at Apollo was a MUST. Constantly reinventing themselves, with new themes, bands playing live, different locations and becoming crazier each time, they have managed to establish their base within Barcelona, and have toured in Denmark, Sweden, Germany, Austria and Holland";
 $pgKeywords = "nasty, mondays, trend, club, Barcelona, Monday, indie, rock, soren, madmax,sala,apolo";
 
 $pgSlogan = "ENTRA EN" .B$tpriaSection . "WEB. ES GRATIS Y TENDRAS ACCESO CREW MEMBER.";
@@ -59,7 +59,7 @@ $spLocate ="LOCALIZACION";
 $spBackstage ="ENTRAR";
 $noScriptMotto="It appears that JavaScript is disabled in your browser, or your browser doesn't support it.";
 $noscriptMotto2 ="WEB-SITE, log in your account et cetera, you'll need to activate JavaScript.";
-$voulgarDefinition ="was invented 5 years ago in Barcelona, by our friends Max and Soren- local celebrities, mad minds, blonde lovers and tattoo addicts! With their fable to indie and electro rock, they started with a party series that did not exist like that in the catalonian city before.Constantly reinventing themselves, with new themes, bands playing live, different locations and becoming crazier each time, they have managed to establish their base within Barcelona, and have toured in Denmark, Sweden, Germany, Austria, Holland or the United States.";
+$voulgarDefinition ="was invented 5 years ago in Barcelona, by our friends Max and Soren- local celebrities, experts in mob rules, mad minds, blonde lovers and tattoo addicts! With their fable to indie and electro rock, they started with a party series that did not exist like that in the catalonian city before.Constantly reinventing themselves, with new themes, bands playing live, different locations and becoming crazier each time, they have managed to establish their base within Barcelona, and have toured in Denmark, Sweden, Germany, Austria, Holland or the United States.";
 
 
 ?>
