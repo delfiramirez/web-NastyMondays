@@ -50,7 +50,8 @@
         background: #111;
     }
 
-    body#login #av-flash-block,body#login .invalid-error
+    body#login #nav-flash-block,
+    body#login .invalid-error
     {
         text-shadow: none;
     }
