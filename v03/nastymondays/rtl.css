@@ -1,9 +1,14 @@
-body, wrapper, #content {
-	text-align:right;
-	direction:rtl;
-	unicode-bidi: embed;
+body,
+wrapper,
+#content
+{
+    text-align:right;
+    direction:rtl;
+    unicode-bidi: embed;
 }
 
-#email, #url {
-	direction:ltr;
+#email,
+#url
+{
+    direction:ltr;
 }
