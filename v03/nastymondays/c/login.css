@@ -1,0 +1,410 @@
+@media screen
+{
+body#login #outer-content,
+body#login #footer,
+body#login #header #logotype,
+body#login #header #login-mascot,
+body#login #header,
+form#login-form fieldset 
+{
+	background: transparent;
+	border: 0;
+}
+
+body#login 
+{
+	background: #23334b;
+	text-shadow: #333 1px 1px 1px;
+}
+
+#login-box
+{
+	z-index: 1;
+	position: relative;
+	width: 738px;
+	height: 407px;
+	margin: 105px auto;
+	border: 0;
+}
+
+#login-image 
+{
+	position: relative;
+	float: left;
+	width: 372px;
+	height: 407px;
+}
+
+#image-info
+{
+	position: absolute;
+	left: 0;
+	bottom: 25px;
+	width: 302px;
+	background: #111;
+	opacity: .7;
+	color: #fff;
+	padding: 1em;
+}
+
+body#login #av-flash-block,body#login .invalid-error 
+{
+	text-shadow: none;
+}
+
+#login-form-wrap 
+{
+	position: relative;
+	width: 336px;
+	float: left;
+	height: 407px;
+
+}
+
+#login-form-wrap h1
+ {
+	position: relative;
+	background: url(images/login/logo.png);
+	width: 269px;
+	height: 87px;
+	text-indent: -999em;
+	left: 50%;
+	margin-left: -134px;
+	margin-top: 40px;
+}
+
+#login-form 
+{
+	margin-top: -40px;
+}
+
+#login h2
+{
+	background: none;
+	border: 0;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	position: absolute;
+	top: 110px;
+	left: 135px;
+}
+
+#login legend
+{
+	color: #fff;
+	border: 0;
+	background: 0;
+	margin: 0;
+	padding: 0;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+#login p
+{
+	color: #ccc;
+}
+
+#login-form legend 
+{
+	display: none;
+	text-align: center;
+}
+
+#login .form-link 
+{
+	font-size: 1.1em;
+	margin: 33px 0 0 28px !important;
+	padding: 0;
+	color: #84a9c7;
+	font-weight: normal;
+}
+
+#login fieldset
+{
+	background: none !important;
+	border: 0 !important;
+	padding-top: 20px;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#login p#signup
+{
+	position: relative;
+	text-align: center;
+	margin: -15px 0 10px 0;
+	color: #eee;
+	left: 8px;
+}
+
+#login p#signup a
+{
+	font-weight: normal;
+}
+
+#login label {
+	font-size: 12px;
+	color: #ccc;
+	margin-bottom: 5px;
+	text-transform: capitalize;
+}
+
+#login-form label {
+	color: #fff;
+	margin-top: 15px;
+	font-size: 13px;
+}
+
+#login input 
+{
+	position: relative;
+	z-index: 3;
+}
+
+#login label a 
+{
+	float: right;
+	font-size: 11px;
+	text-transform: capitalize;
+}
+
+#login input.btn,
+#login input[type="submit"] 
+{
+	position: relative;
+	width: 173px !important;
+	height: 55px;
+	text-transform: capitalize;
+	font-weight: 100;
+	border: 0;
+	background: url(images/login/btn.png);
+	display: block;
+	float: right !important;
+	font-size: 16px !important;
+	padding-bottom: 10px !important;
+	margin-top: 30px;
+	left: 7px;
+	color: #fff;
+	text-shadow: #666 2px 1px 1px;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#login fieldset#forgot-username,
+#login fieldset#forgot-password
+{
+	padding-top: 0;
+}
+
+#login #remember-me-group 
+{
+	float: left;
+	margin-top: 43px;
+	margin-left: 7px;
+}
+
+#login #remember-me-group .dijitCheckBoxInput,
+#login #show-password-group .dijitCheckBoxInput 
+{
+	opacity: 1;
+}
+
+#login #remember-me-group *,#login #show-password-group *
+{
+	width: auto;
+}
+
+#login #remember-me-group .inline-label,
+#login #show-password-group .inline-label 
+{
+	margin-left: 3px;
+	line-height: 14px;
+	color: #eee;
+	font-size: 90%;
+	text-transform: capitalize;
+	font-weight: normal;
+}
+
+#login #password-group 
+{
+	position: relative;
+}
+
+#login #show-password-group 
+{
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: #222222 none repeat scroll 0 0;
+	bottom: -21px;
+	color: #333333;
+	font-size: 10px;
+	opacity: 0.7;
+	padding: 10px 3px 3px 10px;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+
+#login #show-password-group label 
+{
+	color: #fff !important;
+}
+
+#login #av-flash-errors,
+#login #av-flash-success 
+{
+	margin: 0;
+}
+
+#login .invalid-error 
+{
+	font-size: 11px;
+	z-index: 2;
+	position: relative;
+	padding: 2px 5px;
+}
+
+#login #footer 
+{
+	display: none;
+}
+
+#login #av-flash-block p 
+{
+	color: #777;
+	padding: 0;
+}
+
+#login a
+{
+	color: #84a9c7;
+	text-decoration: underline;
+}
+
+#login input.caps
+{
+	background: #fff url(images/login/caps-indicator.jpg) 98% 50% no-repeat;
+}
+
+#login #footer_links
+{
+	clear: both;
+	text-align: center;
+	margin-top: -15px;
+}
+
+#login #footer_links li 
+{
+	display: inline;
+	margin-right: 10px;
+	text-shadow: none;
+}
+
+#login #footer_links li a
+{
+	text-decoration: none;
+	padding-left: 20px !important;
+}
+
+#reset-password-form
+{
+	padding-top: 0;
+}
+
+#reset-password-form fieldset 
+{
+	padding-top: 0;
+}
+
+#reset-password-form .btn 
+{
+	margin: -18px 15px 0 0;
+}
+
+#security-question .btn 
+{
+	margin-top: 20px;
+}
+
+#signup-confirm
+{
+	width: 318px;
+	margin: 0 0 0 10px;
+}
+
+#signup-confirm h2 
+{
+	background: #26344c;
+	padding: 10px 0;
+	text-align: center;
+	top: 98px;
+	left: 100px;
+	width: 140px;
+}
+
+#signup-confirm p 
+{
+	padding: 0 30px 15px 50px;
+	margin: -10px 0 0 0;
+}
+
+#signup-confirm input.btn 
+{
+	margin-top: 10px;
+}
+
+body#login #login-image {
+	
+}
+
+body#login #login-form-wrap
+{
+	background: url(images/login/default_right.png);
+}
+
+body#login.default,body#login.default_light 
+{
+	background: #040404 url(images/bg/bg_prensa.jpg) 0px 0px no-repeat;
+}
+
+body#login.default #login-image {
+	
+}
+
+body#login.default #login-form-wrap 
+{
+	background: url(images/login/default_right.png);
+}
+
+body#login.default #footer_links li a 
+{
+	color: #50638F;
+}
+}
+
+
+/*************************************************************/
+
+/*  Copyright v 0.1 2010 Delfi Ramirez <delfin@segonquart.net> for Nasty Mondays Inc.
+
+
+	Nasty Mondays CSS Theme is distributed under the GNU General Public License, Version 2,
+	June 1991. Copyright (C) 1989, 1991 Free Software Foundation, Inc., 51 Franklin
+	St, Fifth Floor, Boston, MA 02110, USA
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+	DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+	ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+	ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
