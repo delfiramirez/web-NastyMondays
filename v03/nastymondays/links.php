@@ -5,14 +5,14 @@
  * @package WordPress
  * @subpackage nastymondays
  */
-get_header();
+get_header ();
 ?>
 
-<h2>Sponsorship:</h2>
+<h2><?php print'Sponsorship:' ?></h2>
 
 <ul class="promotores">
-    <?php wp_get_archives(); ?>
+    <?php wp_get_archives (); ?>
 </ul>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer (); ?>

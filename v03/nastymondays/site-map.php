@@ -9,7 +9,7 @@ get_header ();
 ?>
 
 <h2 class="nasty2">
-    <?php echo $blogName; ?> Site Map
+    <?php bloginfo ('name'); ?> Site Map
 </h2>
 
 <div class="events">
