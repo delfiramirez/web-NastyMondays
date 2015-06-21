@@ -1,0 +1,60 @@
+/**
+
+ * Images Custom  Grid, for changes purposals
+ 
+ */
+ 
+ 
+#grid
+{
+    position: absolute;
+	width: 980px;
+    top: 0;
+    left: 50%;
+    margin-left: -490px;
+
+}
+
+#grid div.vert
+{
+    width: 139px;
+    border: solid darkturquoise;
+    border-width: 0 1px;
+    margin-right: 19px;
+
+}
+
+#grid div.vert.first-line
+{
+    margin-left: 19px;
+
+}
+
+#grid div.horiz
+{
+    height: 19px;
+    border-bottom: 1px dotted darkgray;
+    margin: 0;
+    padding: 0;
+
+}
+
+#grid.grid-1 div.vert
+{
+
+    border-color: darkturquoise;
+
+}
+
+#grid.grid-2
+{
+    padding: 0 160px;
+    width: 660px;
+
+}
+
+#grid.grid-2 div.vert
+{
+    border-color: crimson;
+
+}
