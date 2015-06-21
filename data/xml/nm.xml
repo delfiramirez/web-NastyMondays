@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <cross-domain-policy>
-    	<allow-access-from domain="*.segonquart.net" />
-	<allow-access-from domain="http://www.segonquart.net/webnasty/" />
-    	<allow-access-from domain="www.codetickets.com" />
+    <allow-access-from domain="*.segonquart.net" />
+    <allow-access-from domain="http://www.segonquart.net/webnasty/" />
+    <allow-access-from domain="www.codetickets.com" />
 </cross-domain-policy>
