@@ -18,7 +18,13 @@ get_header ();
                     <?php the_title (); ?>
                 </h1>
 
-                <div class="premetadata">Posted on <?php the_time (get_option ('date_format')) ?>, <?php the_time (get_option ('time_format')) ?>, by <?php the_author () ?>, under <?php the_category (', ') ?>.</div>
+                <div class="premetadata">
+                    Posted on 
+                    <?php the_time (get_option ('date_format')) ?>, 
+                    <?php the_time (get_option ('time_format')) ?>, 
+                    by <?php the_author () ?>, 
+                    under <?php the_category (', ') ?>.
+                </div>
 
                 <div class="entry">
                     <?php the_excerpt_reloaded (200, '<img>', TRUE, 'excerpt', 'Read Entire Article &raquo;'); ?>
