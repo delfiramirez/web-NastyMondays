@@ -1,0 +1,45 @@
+# www.robotstxt.org/
+# https://developers.google.com/webmasters/control-crawl-index/
+
+Sitemap : http.nastymondays.com/sitemap.xml
+
+User-agent: *
+Disallow: /*?*
+Disallow: /*?
+ 
+User-agent: Mediapartners-Google*
+Disallow: /*?*
+Allow: /*.php$
+Allow: /*.js$
+Allow: /*.inc$
+Allow: /*.css$
+Allow: /*.gz$
+Allow: /*.cgi$
+Allow: /*.wmv$
+Allow: /*.cgi$
+Allow: /*.xhtml$
+Allow: /*.php*
+Allow: /*.gif$
+Allow: /*.jpg$
+Allow: /*.png$
+ 
+# disallow archiving site
+User-agent: ia_archiver
+Disallow: /
+ 
+User-agent: duggmirror
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow:
+Allow: /*
+
+User-agent: Googlebot
+Disallow: /*.php$
+Disallow: /*.js$
+Disallow: /*.inc$
+Disallow: /*.css$
+Disallow: /*.gz$
+Disallow: /*.wmv$
+Disallow: /*.cgi$
+Disallow: /*.xhtml$
