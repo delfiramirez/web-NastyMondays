@@ -5,15 +5,15 @@ bin-release/
 
 # Other files and folders
 .settings/
+build.xml
+nbproject/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+
+
+# Project files, i.e. `.project`, 
 # should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# information for NetBeans
 *.png
 *.gif
 *.tiff
 *.DS_Store
-/RIA-WEB---nastyMondays/nbproject/private/
-/Nasty Mondays/nbproject/private/
-/NMondays/nbproject/private/
-/web-NastyMondays/nbproject/private/
