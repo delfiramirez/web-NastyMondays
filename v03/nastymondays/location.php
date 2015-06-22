@@ -60,20 +60,24 @@
                     <div id="wrapper">
 
                         <h1 class="inicio">
-                            <?php print 'Nasty Mondays Barcelona- Address &middot; Location'; ?>
+                            <?php print _e ('Nasty Mondays Barcelona- Address &middot; Location'); ?>
                         </h1>
                         <?php wp_nav_menu ('menu=Top'); ?>
 
                         <div id ="pasador2">
                             <div class="left">
+
                                 <h1 class="inicio">
+
                                     <a href="<?php echo get_option ('home'); ?>">
                                         <?php bloginfo ('name'); ?>
                                     </a>
                                 </h1>
+
                                 <h2 class="inicio">
                                     <?php bloginfo ('description'); ?>
                                 </h2>
+
                                 <address>
                                     <span class="nasty2">
                                         <?php bloginfo ('name'); ?> Barcelona</span>
@@ -89,25 +93,17 @@
                                     Nou de la Rambla 111<br />
                                 </address>
                             </div>
+
                             <div id="map_canvas"></div>
                         </div>
-
-
-
                         <hr />
-
-
                         <?php wp_nav_menu ('menu=NastyMondays'); ?>
 
                         <?php get_sidebar (); ?>
 
-                        <?php get_template_part ('segonquart'); ?>
+                        <?php get_template_part ('modules/segonquart'); ?>
+                        <?php get_template_part ('modules/bckstage'); ?>
 
-                        <h4 class="backstage">
-                            <a href="http://nastymondays.com/backstage/">
-                                <?php print " &spades;  &spades;  &spades;  Visit Nasty Mondays Backstage. It's free and you'll meet Soren and Max &spades;  &spades;  &spades; " ?>
-                            </a>
-                        </h4>
                         <?php get_footer (); ?>
                     </div>
                     </div>

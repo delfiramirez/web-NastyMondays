@@ -38,12 +38,8 @@ get_header ();
 <hr />
 </div>
 
-<?php get_template_part ('segonquart'); ?>
-<h4 class="backstage">
-    <a href="http://nastymondays.com/backstage/">
-        <?php print " &spades;  &spades;  &spades;  Visit Nasty Mondays Backstage. It's free and you'll meet Soren and Max &spades;  &spades;  &spades; " ?>
-    </a>
-</h4>
+<?php get_template_part ('modules/segonquart'); ?>
+<?php get_template_part ('modules/bckstage'); ?>
 
 <?php get_footer (); ?>
 

@@ -18,7 +18,7 @@ get_header ();
                 <a href="/">
 
                     <img src="src/images/err/404.jpg"
-                         alt="<?php print 'Error 404. Nasty Mondays unsuccessful try. We cabbot seem to find what you are looking for. Let us take you back home.'; ?>"
+                         alt="<?php print _e ('Error 404. Nasty Mondays unsuccessful try. We cabbot seem to find what you are looking for. Let us take you back home.'); ?>"
                 </a>
             </h1>
 

@@ -12,23 +12,23 @@ get_header ();
         <?php wp_nav_menu ('menu=Prensa_en'); ?>
         <div class="left_prensa">
             <h2>
-                <?php print ' Press Registration Professional'; ?>
+                <?php echo _e (' Press Registration Professional'); ?>
             </h2>
             <p>
-                <?php echo "As a bunch of night dealers with subtle connections with local broadcasting and press services, we would like you to be in touch with us. Hands Off,  when you're facing a loaded gun, what's the difference?<br />Please, fill the form, and we will CONTACT YOU."; ?>
+                <?php echo _e ("As a bunch of night dealers with subtle connections with local broadcasting and press services, we would like you to be in touch with us. Hands Off,  when you're facing a loaded gun, what's the difference?<br />Please, fill the form, and we will CONTACT YOU."); ?>
             </p>
         </div>
     </div>
 
     <div id="contact-form" class="myform">
         <h4>
-            <?php print 'Professional Registration'; ?>
+            <?php print _e ('Professional Registration'); ?>
         </h4>
 
         <div class="spacer"></div>
 
         <p class="small">
-            <?php print 'All fields are mandatory'; ?>
+            <?php print _e ('All fields are mandatory'); ?>
         </p>
 
         <?php insert_cform ('4'); ?>
