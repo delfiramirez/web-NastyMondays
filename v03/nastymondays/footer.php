@@ -24,8 +24,8 @@
 <a href="http://www.nastymondays.com">
     <?php bloginfo ('name'); ?>
 </a>
-<?php echo _e ("</strong> was invented 5 years ago in Barcelona, by our friends <strong>Max</strong> and <strong>Soren</strong> - local celebrities, mad minds, blonde lovers and tattoo addicts! With their fable to indie and electro rock, they started with a party series that did not exist like that in <strong>Barcelona</strong> before. Constantly reinventing themselves, with new themes, bands playing live, different locations and becoming crazier each time, they have managed to establish their base within Barcelona, and have toured in Denmark, Sweden, Germany, Austria, Holland or the United States.</p>"); ?>
-<?php print _e ('It appears that JavaScript is disabled in your browser, or your browser does not support it. To enjoy NASTY MONDAYS OFFICIAL WEB-SITE, log in your account and hava a full browsing experience, you will need to activate JavaScript.'); ?>
+<?php echo  ("</strong> was invented 5 years ago in Barcelona, by our friends <strong>Max</strong> and <strong>Soren</strong> - local celebrities, mad minds, blonde lovers and tattoo addicts! With their fable to indie and electro rock, they started with a party series that did not exist like that in <strong>Barcelona</strong> before. Constantly reinventing themselves, with new themes, bands playing live, different locations and becoming crazier each time, they have managed to establish their base within Barcelona, and have toured in Denmark, Sweden, Germany, Austria, Holland or the United States.</p>"); ?>
+<?php print  ('It appears that JavaScript is disabled in your browser, or your browser does not support it. To enjoy NASTY MONDAYS OFFICIAL WEB-SITE, log in your account and hava a full browsing experience, you will need to activate JavaScript.'); ?>
 </noscript>
 
 <p class="inicio">
