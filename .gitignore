@@ -13,7 +13,7 @@ nbproject/
 # Project files, i.e. `.project`, 
 # should NOT be excluded as they contain compiler settings and other important
 # information for NetBeans
-*.png
+
 *.gif
 *.tiff
 *.DS_Store
