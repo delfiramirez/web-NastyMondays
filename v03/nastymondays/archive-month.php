@@ -7,9 +7,9 @@
  */
 
 $wp_calendar = wp_calendar (get_the_time ('F Y'));
-?>
 
-<?php get_header (); ?>
+get_header ();
+?>
 
 <div id="wp_calendar">
     <h3><?= $wp_calendar[ 'active_month' ] ?></h3>
@@ -26,21 +26,21 @@ $wp_calendar = wp_calendar (get_the_time ('F Y'));
         <?php foreach ( $wp_calendar[ 'calendar' ] as $item ): ?>
             <?php if ( $item[ 'is_day' ] == "no" ): ?>
                 <li class="noday"></li>
-            <?php else: ?>
+    <?php else: ?>
                 <li class="<?= (isset ($item[ 'is_today' ]) ? ' today' : '') ?><?= (isset ($item[ 'posts' ]) ? '' : ' empty') ?>">
                     <div class="head"><?= $item[ 'day' ] ?><?= (isset ($item[ 'is_today' ]) ? ' *' : '') ?></div>
                     <div class="day">
-                        <?php if ( isset ($item[ 'posts' ]) ): ?>
+                            <?php if ( isset ($item[ 'posts' ]) ): ?>
                             <ul>
                                 <?php foreach ( $item[ 'posts' ] as $post ): ?>
                                     <li><a title="<?= $post[ 'post_title' ] ?>" href="<?= get_permalink ($post[ 'id' ]) ?>"><?= truncate ($post[ 'post_title' ], 150) ?></a></li>
-                                <?php endforeach; ?>
+                            <?php endforeach; ?>
                             </ul>
-                        <?php endif; ?>
+        <?php endif; ?>
                     </div>
                 </li>
             <?php endif; ?>
-        <?php endforeach; ?>
+<?php endforeach; ?>
     </ol>
 </div>
 <?php get_footer (); ?>

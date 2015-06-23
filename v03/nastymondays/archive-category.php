@@ -19,10 +19,10 @@ get_header ();
                 </h1>
 
                 <div class="premetadata">
-                    Posted on 
-                    <?php the_time (get_option ('date_format')) ?>, 
-                    <?php the_time (get_option ('time_format')) ?>, 
-                    by <?php the_author () ?>, 
+                    Posted on
+                    <?php the_time (get_option ('date_format')) ?>,
+                    <?php the_time (get_option ('time_format')) ?>,
+                    by <?php the_author () ?>,
                     under <?php the_category (', ') ?>.
                 </div>
 
@@ -44,7 +44,7 @@ get_header ();
             </div>
         </div>
     <?php else: ?>
-        "<?php echo "<p>Sorry, no posts matched your criteria.</p>"; ?>
+        "<?php echo _e ("<p>Sorry, no posts matched your criteria.</p>"); ?>
     <?php endif; ?>
 
 </div>
