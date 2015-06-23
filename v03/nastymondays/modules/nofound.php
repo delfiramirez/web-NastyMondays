@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Custom Module NoFound
+ * Template NoFound
  *
  * @package WordPress
  * @subpackage nastymondays
