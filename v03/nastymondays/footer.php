@@ -12,7 +12,7 @@
     <?php wp_nav_menu ('menu=General'); ?>
     <hr />
     <h6>
-        <?php bloginfo ('name'); ?>. <? php print 'Every Monday from 00:00 till 05:00h. Nou De La Rambla, 111-113. Barcelona.' ?>
+        <?php bloginfo ('name'); ?>. <?php print 'Every Monday from 00:00 till 05:00h. Nou De La Rambla, 111-113. Barcelona.' ?>
     </h6>
     <div id="footer_b">
         <?php wp_nav_menu ('menu=Footer'); ?>

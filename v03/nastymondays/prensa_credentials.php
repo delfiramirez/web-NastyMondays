@@ -30,16 +30,15 @@ get_header ();
 <div id="tabla_prensa">
 
     <div id="calendar">
+
         <?php get_calendar (true); ?>
+
     </div>
 
 </div>
-
 <hr />
 
 <?php wp_nav_menu ('menu=NastyMondays'); ?>
-
-<hr />
 
 <?php get_template_part ('modules/segonquart'); ?>
 <?php get_footer (); ?>
