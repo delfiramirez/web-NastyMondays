@@ -5,17 +5,16 @@
 		<artLocation>img/album1.png</artLocation>
 		<artist>NASTY MONDAYS</artist>
 	</albuminfo>
-		<albuminfo>
+	<albuminfo>
 		<artLocation>src/img/album0.png</artLocation>
 		<artist>NASTY MONDAYS</artist>
 	</albuminfo>
-	<albuminfo>
 	<albuminfo>
 		<artLocation>src/img/album4.png</artLocation>
 		<artist>Crappy Tuesdays</artist>
 		<albumName>For Zombies like You</albumName>
 	</albuminfo>
-		<albuminfo>
+	<albuminfo>
 		<artLocation>src/img/album5.png</artLocation>
 		<artist>Crappy Tuesdays</artist>
 		<albumName>For Zombies like You</albumName>
