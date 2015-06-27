@@ -9,14 +9,13 @@ License: GPL2
 */
 
 
-@media screen {
+@media screen
+{
 
     @import "events.css"
 
     /* 00 DOM
     ------------------------------------------------*/
-
-
 
     *
     {
