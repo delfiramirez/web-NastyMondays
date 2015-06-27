@@ -198,8 +198,6 @@ License: GPL2
         -ms-interpolation-mode: bicubic;
     }
 
-
-
     li
     {
         font-family: Helvetica, Arial, Geneva, sans-serif;
@@ -625,10 +623,10 @@ License: GPL2
         margin: 0;padding: 0;
     }
 
-    .error404 #wrapper #searchform {
+    .error404 #wrapper #searchform
+    {
         background: #060606;
         border-color: #222;
-
 
     }
 
@@ -638,7 +636,8 @@ License: GPL2
         margin-bottom: 8px;
     }
 
-    /******************** CONTENIDO Y ESTRUCTURA: CONTENEDORES DIV ***************************/
+    /* 06 Content Elements
+    ------------------------------------------------*/
 
     * html #wrapper
     {
@@ -683,15 +682,6 @@ License: GPL2
     #content
     {
         padding-top: 20px;
-    }
-
-    #refuerzo
-    {
-        float: right;
-        background-color: #040404;
-        color: #fff;
-        width: 470px;
-        height: 450px;
     }
 
     #sidebar
@@ -745,6 +735,15 @@ License: GPL2
         list-style: none;
     }
 
+    #refuerzo
+    {
+        float: right;
+        background-color: #040404;
+        color: #fff;
+        width: 470px;
+        height: 450px;
+    }
+
 
     .nastymondays
     {
@@ -764,9 +763,9 @@ License: GPL2
         border-top:  5px solid #040404;
     }
 
-    /*-----------------CONTENIDO CABECERA: PASADOR HOME PAGE ------------------------------***/
 
-
+    /* 07 Header Elements
+    ------------------------------------------------*/
 
     .header
     {
@@ -860,8 +859,6 @@ License: GPL2
         z-index: 220;
     }
 
-
-
     .left address
     {
         float: left;
@@ -878,7 +875,7 @@ License: GPL2
         font: 18px bold Geneva, sans-serif;
     }
 
-    /* Navigation
+    /* 08 Navigation
     ----------------------------------------------------------------*/
     .menu-top-container
     {
@@ -982,7 +979,6 @@ License: GPL2
         margin: 0;
         padding: 0;
     }
-
 
     .submenu,
     ul ul
@@ -1133,7 +1129,6 @@ License: GPL2
         color: #040404;
         text-shadow: #fff7c9 -1px 2px 2px;
     }
-
 
     .menu-division-container
     {
@@ -1305,8 +1300,9 @@ License: GPL2
         text-transform: uppercase;
     }
 
-    /*---------------------------------CONTENIDO CABECERA:   HOMEPAGE ------------------------*/
 
+    /* 10 Banner Container
+    ------------------------------------------------*/
     .pasador
     {
         width: 990px;
@@ -1373,7 +1369,7 @@ License: GPL2
     }
 
 
-    /* SideBar
+    /* 11 Sidebar
     -----------------------------------------------------*/
 
     #sidebar h5,
@@ -1399,7 +1395,8 @@ License: GPL2
     #sidebar .left3 h5,
     #sidebar .left3 h5 a,
     #sidebar .left2b h5,
-    #sidebar .left2b h5 a {
+    #sidebar .left2b h5 a
+    {
         font-family: 'DeftoneStylusRegular',Geneva, sans-serif;
         font-size: 30px;
         font-weight: normal;
@@ -1533,7 +1530,6 @@ License: GPL2
     }
 
 
-
     /* Footer
     -----------------------------------------------------*/
 
@@ -1573,7 +1569,6 @@ License: GPL2
         color: #000;
         text-align: center;
     }
-
 
     #footer ul.menu
     {
@@ -1703,9 +1698,8 @@ License: GPL2
         font-size: 11px;
     }
 
-    /* Custom Headers
+    /*12 Custom Header Elements
     -----------------------------------------------------*/
-
 
     .prensa
     {
@@ -1865,7 +1859,6 @@ License: GPL2
         text-shadow: #005764 -1px 1px 2px;
     }
 
-
     .tv,
     h4.tv a,
     h4.tv a:hover,
@@ -1915,7 +1908,7 @@ License: GPL2
         font-size: 50px;
     }
 
-    /* Posts
+    /* 13 Posts && Articles
     -----------------------------------------------------*/
 
     .post {
@@ -2127,7 +2120,7 @@ License: GPL2
         padding: 0;
     }
 
-    /* SiteMap
+    /* 14 Sitemap
     -----------------------------------------------------*/
 
 
@@ -2205,7 +2198,7 @@ License: GPL2
         text-decoration: underline;
     }
 
-    /* Objects
+    /* 15 Objects
     -----------------------------------------------------*/
 
     .entry object
@@ -2501,8 +2494,7 @@ License: GPL2
     .attachment .entry-content .nav-next a:after {
         content: '\00a0\2192';
     }
-    /* Custom Add-Ons
-    -----------------------------------------------------*/
+
 
     .alignleft {
         display: inline;
@@ -2533,7 +2525,6 @@ License: GPL2
         text-indent: -999.999em;
     }
 
-
     #wpstats,
     #wpstats img
     {
@@ -2554,6 +2545,9 @@ License: GPL2
 
 }
 
+
+/*  19 Media Queries
+-----------------------------------------------------*/
 
 
 @media screen and (max-device-width: 480px) {
