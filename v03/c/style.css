@@ -646,7 +646,6 @@ License: GPL2
         overflow: hidden;
         width: 990px;
         min-height: 100%;
-
         margin: -0.8em auto;
         padding: 0;
         text-align: center;
@@ -818,7 +817,7 @@ License: GPL2
         font-size: 16px;
     }
 
-    .titulo ,
+    .titulo,
     .titulo a,
     .titulo a:active
     {
@@ -841,7 +840,7 @@ License: GPL2
         text-shadow: 1px 1px #0A2D43, 2px 2px #0A2D43, 3px 3px #0A2D43, 4px 4px #0A2D43, 5px 5px #0A2D43, 6px 6px #0A2D43, 7px 7px #0A2D43, 8px 8px #040404;
     }
 
-    .titulo  a:hover
+    .titulo a:hover
     {
         color: #2fc2c1;
         -webkit-text-stroke-color: #fff7c9;
@@ -1181,7 +1180,6 @@ License: GPL2
         list-style: none;
         text-align: left;
         zoom: 1;
-
     }
 
     .menu-division-container  ul.menu li
@@ -1196,7 +1194,6 @@ License: GPL2
         text-align: center;
         background: transparent none;
         border: none;
-
     }
 
     .menu-division-container  ul.menu li.diNM a
@@ -1224,7 +1221,6 @@ License: GPL2
         background-position: 75% 0;
         background-repeat: no-repeat;
         border: none;
-
         text-align: left;
         font-size: 13px;
         text-shadow: #040404 -1px 2px 2px;
@@ -1241,7 +1237,6 @@ License: GPL2
         background-position: 70% 0px;
         background-repeat: no-repeat;
         border: none;
-
         text-align: left;
         font-size: 13px;
         text-shadow: #040404 -1px 2px 2px;
@@ -1261,7 +1256,6 @@ License: GPL2
         background-position: 70% 0;
         background-repeat: no-repeat;
         border: none;
-
         font-size: 13px;
         text-shadow: #040404 -1px 2px 2px;
         font-weight: normal;
@@ -1330,7 +1324,6 @@ License: GPL2
         text-align: left;
         word-spacing: 0.5px;
         background-color: #040404;
-
     }
 
     .pasador iframe
@@ -1364,7 +1357,6 @@ License: GPL2
         box-shadow: 0 0 5px rgba(0,0,0,.6);
     }
 
-
     #pasador_prensa
     {
         position:relative;
@@ -1377,7 +1369,6 @@ License: GPL2
         word-spacing: 0.5px;
         text-shadow: -1px  1px 1px #040404;
     }
-
 
     #pasador_login
     {
@@ -1941,7 +1932,8 @@ License: GPL2
     /* 13 Posts && Articles
     -----------------------------------------------------*/
 
-    .post {
+    .post
+    {
         display: block;
         clear: both;
         padding-top: 10px;
@@ -1993,7 +1985,6 @@ License: GPL2
     .post-title h2 a:hover,
     .post .post-title h2 a:hover
     {
-
         min-height: 34px;
         font-weight: normal;
         color: #2fc2c1;
@@ -2107,7 +2098,6 @@ License: GPL2
         padding: 0;
         font-size: 11px/60%;
         font-weight: normal;
-
         border-top: 1px dotted #2fc2c1;
 
     }
@@ -2174,7 +2164,6 @@ License: GPL2
         padding: 1px 0px 0px 10px;
         line-height: 1.5em;
         border: 1px #41443e solid;
-
     }
 
     .sitemap h3,
@@ -2249,7 +2238,6 @@ License: GPL2
         border: 1px dotted #999;
     }
 
-
     div.flashmovie
     {
         position:relative;
@@ -2258,9 +2246,7 @@ License: GPL2
         padding: 0;
         background: #040404;
         border: none;
-
     }
-
 
     .image
     {
@@ -2277,7 +2263,6 @@ License: GPL2
         margin: 0 auto;
         padding: 5px 0;
         border: none;
-
     }
 
     .wp-caption
@@ -2317,6 +2302,7 @@ License: GPL2
         background: #2c2c2c;
         border-color: #444;
     }
+
     .wp-caption a:focus img,
     .wp-caption a:active img,
     .wp-caption a:hover img
@@ -2325,7 +2311,8 @@ License: GPL2
         border-color: #2c2c2c;
     }
 
-    .wp-post-image {
+    .wp-post-image
+    {
         display: block;
         margin-left: 10px;
         padding: 5px;
@@ -2505,7 +2492,6 @@ License: GPL2
         overflow:hidden;
         margin: 0;
         padding: 0;
-
     }
 
     .qtrans_language_chooser
@@ -2530,7 +2516,6 @@ License: GPL2
         padding-top: 5px;
         font-size: 14px;
         background-color: #040404;
-
     }
 
     .attachment .entry-content .entry-caption
@@ -2573,7 +2558,6 @@ License: GPL2
 
     h1.cuatro0cuatro a
     {
-
         float: left;
         display: block;
         width: 832px;
@@ -2634,7 +2618,8 @@ License: GPL2
 
 }
 
-@font-face {
+@font-face
+{
     font-family: 'DeftoneStylusRegular';
     src: url('http://nastymondays.com/src/fonts/deftone_stylus-webfont.eot?#iefix') format('embedded-opentype'),
         url('http://nastymondays.com/src/fonts/deftone_stylus-webfont.woff') format('woff'),
