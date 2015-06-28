@@ -1,7 +1,9 @@
+
+Options All -Indexes
+
 <Files .htaccess>
 deny from all
 </Files>
-
 <FilesMatch "\.(ttf|ttc|otf|eot|woff)$">
     <IfModule mod_headers.c>
         Header set Access-Control-Allow-Origin "*"
@@ -11,7 +13,9 @@ deny from all
 # BEGIN WordPress
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{QUERY_STRING} GLOBALS(=|[|\%[0-9A-Z]{0,2}) [OR]
 RewriteRule . /index.php [L]
+RewriteRule ^(.*)$ index.php [F,L]
 # END WordPress
 
 
