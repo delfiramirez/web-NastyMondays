@@ -1,0 +1,13 @@
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+sitemap.xml
+*.log
+wp-content/cache/
+wp-content/backups/
+sitemap.xml
+sitemap.xml.gz
+.DS_Store
+
+build.xml
+netbeans/*

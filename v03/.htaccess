@@ -1,3 +1,6 @@
+<Files .htaccess>
+deny from all
+</Files>
 
 <FilesMatch "\.(ttf|ttc|otf|eot|woff)$">
     <IfModule mod_headers.c>

@@ -85,7 +85,6 @@ License: GPL2
         min-height: 34px;
         color: #fff7c9;
 
-
     }
 
     h2 a:link,
@@ -119,7 +118,6 @@ License: GPL2
         line-height: 1.05em;
         color: #6c9a76;
         text-shadow: #fafafa -1px 1px -2px;
-
     }
 
     h5,
@@ -193,7 +191,8 @@ License: GPL2
     }
 
 
-    img {
+    img
+    {
         -ms-interpolation-mode: bicubic;
     }
 
@@ -214,10 +213,11 @@ License: GPL2
 
     address
     {
-        line-height: 1.6em;
-        background-image: url("/src/images/75p_honey.png");
         width: 100%;
         min-height: 150px;
+        line-height: 1.6em;
+        background-image: url("/src/images/75p_honey.png");
+
     }
 
     iframe
@@ -233,9 +233,10 @@ License: GPL2
 
     table
     {
+        float: left;
         width: 960px;
         padding: 0;
-        float: left;
+
         background: url("/src/images/divider.png") no-repeat 50% 0;
         margin: 20px 10px 10px 10px;
         -webkit-box-shadow: 0 1px 3px #040404;
@@ -2514,7 +2515,7 @@ License: GPL2
 
     h1.cuatro0cuatro a
     {
-        background: url("../images/err/not-found.jpg") top left no-repeat;
+
         float: left;
         display: block;
         width: 832px;
@@ -2522,6 +2523,7 @@ License: GPL2
         border: none;
         margin: 0px;
         text-indent: -999.999em;
+        background: url("/data/images/err/not-found.jpg") top left no-repeat;
     }
 
     #wpstats,
