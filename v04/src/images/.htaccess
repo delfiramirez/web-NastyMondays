@@ -1,0 +1,9 @@
+
+<Files .htaccess>
+deny from all
+</Files>
+
+<Files ~ "\.(jpq|jpeg|png|gif)$">
+   order deny,allow
+   allow from all
+</Files>
