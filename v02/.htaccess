@@ -1,0 +1,42 @@
+
+Options All -Indexes
+
+
+
+<Files .htaccess>
+deny from all
+</Files>
+<FilesMatch "\.(ttf|ttc|otf|eot|woff)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>
+
+
+RewriteCond %{REQUEST_URI} !/maintenance\.html$
+RewriteRule .* /index.html [R=302,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{QUERY_STRING} GLOBALS(=|[|\%[0-9A-Z]{0,2}) [OR]
+RewriteRule ^(.*)$ index.php [F,L]
+
+
+ErrorDocument 404 /404.php
+
+ExpiresActive On
+ExpiresDefault "access plus 1 week"
+ExpiresByType image/gif "access plus 1 week"
+ExpiresByType image/png "access plus 1 week"
+ExpiresByType image/jpeg "access plus 1 week"
+ExpiresByType image/pjpeg "access plus 1 week"
+ExpiresByType text/javascript "modification plus 1 week"
+ExpiresByType application/javascript "modification plus 1 week"
+ExpiresByType text/css "modification plus 1 week"
+
+
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType font/woff .woff
+
