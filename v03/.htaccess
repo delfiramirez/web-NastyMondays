@@ -18,6 +18,7 @@ RewriteRule . /index.php [L]
 RewriteRule ^(.*)$ index.php [F,L]
 # END WordPress
 
+ErrorDocument 404 /404.php
 
 ExpiresActive On
 ExpiresDefault "access plus 1 week"
