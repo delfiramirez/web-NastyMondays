@@ -48,7 +48,8 @@ License: GPL2
 
     *:first-child+html body,
     body,
-    body.home {
+    body.home
+    {
         position: relative;
         margin: 0;
         padding: 0;
@@ -84,7 +85,6 @@ License: GPL2
         letter-spacing: -1px;
         min-height: 34px;
         color: #fff7c9;
-
     }
 
     h2 a:link,
@@ -572,12 +572,13 @@ License: GPL2
     #searchsubmit input[type="submit"],
     input[type="submit"]
     {
-        background: #262C32;
+        font-family: Georgia, serif;
         width: 390px;
         padding: 9px;
         letter-spacing: 1px;
         border: none;
         color: #EFDDA8;
+        background: #262C32;
         border-radius: 3px;
         -moz-border-radius: 3px;
         -webkit-border-radius: 3px;
@@ -585,7 +586,7 @@ License: GPL2
         -moz-box-shadow: 0 0 6px rgba(0,0,0,.2);
         -webkit-box-shadow: 0 0 6px rgba(0,0,0,.2);
         box-shadow: 0 0 6px rgba(0,0,0,.2);
-        font-family: Georgia, serif;
+
     }
 
     button::-moz-focus-inner
@@ -603,9 +604,10 @@ License: GPL2
 
     .wpcf7 p
     {
-        font-size: 15px;
+
         margin: 0;
         padding: 0;
+        font-size: 15px;
     }
 
     .wpcf7-form-control-wrap
@@ -620,7 +622,8 @@ License: GPL2
 
     .wpcf7-form-control-wrap
     {
-        margin: 0;padding: 0;
+        margin: 0;
+        padding: 0;
     }
 
     .error404 #wrapper #searchform
@@ -647,23 +650,27 @@ License: GPL2
     #wrapper
     {
         position: relative;
+        overflow: hidden;
+        width: 990px;
         min-height: 100%;
-        background-color: #040404;
+
         margin: -0.8em auto;
         padding: 0;
-        width: 990px;
+
         text-align: center;
+        background-color: #040404;
         border-right: 1em #040404 solid;
         border-left: 1em #040404 solid;
-        overflow: hidden;
+
         -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.8);
         -moz-box-shadow: 0 5px 5px rgba(0,0,0,.8);
     }
 
     #segonquart
     {
-        color: #000;
+
         z-index: -20;
+        color: #000;
         background: transparent;
         text-indent: -9999.999em;
         height: 0 !important;
@@ -671,43 +678,49 @@ License: GPL2
 
     #header
     {
-        padding: 0;
-        margin: 1em 0 0 0;
+        position:relative;
         width: 100%;
         height: 455px;
+        padding: 0;
+        margin: 1em 0 0 0;
         color: #fff7c9;
         text-align: center;
     }
 
     #content
     {
+        position:relative;
         padding-top: 20px;
     }
 
     #sidebar
     {
-        margin-top: 10px;
-        padding: 0;
+        position:relative;
         width: 990px;
         height: 300px;
+        margin-top: 10px;
+        padding: 0;
         text-align: center;
     }
 
     #social
     {
-        background: url("/src/images/divider.png") no-repeat 50% 0;
+        position:relative;
         float: left;
         width: 960px;
         height: 30px;
         margin: 1em auto;
         text-align: center;
+        background: url("/src/images/divider.png") no-repeat 50% 0;
     }
+
     #social ul
     {
-        list-style:none;
         display:inline;
         width: 960px;
         height: 30px;
+        list-style:none;
+
     }
     #social li
     {
@@ -721,13 +734,13 @@ License: GPL2
 
     #social li a
     {
+        display: inline-block;
+        *display: inline;
         width: 100px;
         height: 30px;
         text-align: left;
         margin: 8px;
         font-size: 13px;
-        display: inline-block;
-        *display: inline;
         text-align: center;
         zoom: 1;
         color: #fff7c9;
@@ -737,20 +750,21 @@ License: GPL2
 
     #refuerzo
     {
+        position:relative;
         float: right;
-        background-color: #040404;
-        color: #fff;
         width: 470px;
         height: 450px;
-    }
+        background-color: #040404;
+        color: #fff;
 
+    }
 
     .nastymondays
     {
-        min-height: 50px;
         clear: both;
         display: inline;
         width: 50px;
+        min-height: 50px;
     }
 
     .izquierda
@@ -769,13 +783,13 @@ License: GPL2
 
     .header
     {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 985px;
         color: #fff7c9;
         background: transparent;
         z-index: 200;
-        position: absolute;
-        top: 0;
-        left: 0;
         padding: 0;
         margin: 0;
     }
@@ -802,6 +816,9 @@ License: GPL2
 
     .header .date
     {
+        z-index: 200;
+        float: right;
+        width: 980px;
         margin: 0;
         padding: 2px;
         color: #999;
@@ -810,9 +827,7 @@ License: GPL2
         font-family: Helvetica, Arial, Geneva, sans-serif;
         font-weight: bold;
         font-size: 16px;
-        z-index: 200;
-        float: right;
-        width: 980px;
+
     }
 
     .titulo ,
@@ -823,7 +838,10 @@ License: GPL2
         width: 985px;
         min-height: 80px;
         color: #fff7c9;
+        background: transparent none;
         text-align: left;
+        font-family: 'Francois One',Helvetica, Arial, Geneva, sans-serif;
+        font-weight:400;
         font-size: 33px;
         font-weight: normal;
         text-transform: capitalize;
@@ -833,30 +851,30 @@ License: GPL2
         -o-transition: all .3s;
         transition: all .3s;
         text-shadow: 1px 1px #0A2D43, 2px 2px #0A2D43, 3px 3px #0A2D43, 4px 4px #0A2D43, 5px 5px #0A2D43, 6px 6px #0A2D43, 7px 7px #0A2D43, 8px 8px #040404;
-        background: transparent none;
-        font-family: 'Francois One',Helvetica, Arial, Geneva, sans-serif;
-        font-weight:400;
+
     }
 
     .titulo  a:hover
     {
+        color: #2fc2c1;
         -webkit-text-stroke-color: #fff7c9;
         -webkit-text-stroke-width: 0.5px;
-        color: #2fc2c1;
+
     }
 
     .featured_text
     {
         float: right;
-        margin-top: 3px;
-        font-family: Helvetica, Arial, Geneva, sans-serif;
-        background-image: url("../images/75p_honey.png");
         width: 380px;
         height: auto;
-        color: #0D0D0D;
-        text-shadow: -1px 0 1px  #202020;
+        margin-top: 3px;
         padding: 5px;
         z-index: 220;
+        font-family: Helvetica, Arial, Geneva, sans-serif;
+        color: #0D0D0D;
+        background-image: url("../images/75p_honey.png");
+        text-shadow: -1px 0 1px  #202020;
+
     }
 
     .left address
@@ -879,13 +897,14 @@ License: GPL2
     ----------------------------------------------------------------*/
     .menu-top-container
     {
-        padding: 5px 0;
-        margin: -0.1em 0 0 0;
+
+        clear: both;
         width: 990px;
         height: 65px;
-        background: #801322;
-        clear: both;
+        padding: 5px 0;
+        margin: -0.1em 0 0 0;
         color: #801322;
+        background: #801322;
         border-bottom: 0.5em solid #fff7c9;
         text-align: center;
         letter-spacing: 1pt;
@@ -914,45 +933,45 @@ License: GPL2
 
     .menu-top-container ul#menu-top li
     {
-        list-style-type: none;
-        margin: 8px;
-        font-size: 13px;
         display: inline-block;
         *display: inline;
+        float: left;
         text-align: center;
         zoom: 1;
+        list-style-type: none;
+        margin: 8px;
+        padding-left: 2px;
+        font-size: 13px;
         color: #fff7c9;
         text-shadow: #000 1px 2px 2px;
-        float: left;
-        padding-left: 2px;
         text-transform: capitalize;
     }
 
     .menu-top-container ul#menu-top li a
     {
-        list-style-type: none;
-        -webkit-text-stroke-color: #040404;
-        -webkit-text-stroke-width: 0.2px;
-        font-size: 27px;
         display: inline-block;
         *display: inline;
         zoom: 1;
-        text-align: center;
-        text-decoration: none;
+        list-style-type: none;
         padding: 1px 0;
         margin: 0.3em 6px 0 0;
+        font-size: 27px;
+        text-align: center;
+        text-decoration: none;
         color: #fff7c9;
         text-shadow: black 1px 2px 2px;
         text-transform: capitalize;
+        -webkit-text-stroke-color: #040404;
+        -webkit-text-stroke-width: 0.2px;
     }
 
     .menu-top-container ul#menu-top li a:hover
     {
-        list-style-type: none;
-        font-size: 27px;
         display: inline-block;
         *display: inline;
         zoom: 1;
+        list-style-type: none;
+        font-size: 27px;
         text-align: center;
         text-decoration: none;
         padding: 1px 0;
@@ -969,29 +988,32 @@ License: GPL2
         width: 200px;
         height: 42px;
         display: block;
-        text-align: left;
         float: left;
-        background-position: -10px 0 0 0;
-        background-repeat: no-repeat;
-        background-image: url('../images/logo-nm.png');
+        text-align: left;
+
         border: none;
         text-indent: -999.999em;
         margin: 0;
         padding: 0;
+        background-position: -10px 0 0 0;
+        background-repeat: no-repeat;
+        background-image: url('../images/logo-nm.png');
     }
 
     .submenu,
     ul ul
     {
         display: none;
+        height :0px !important;
     }
 
     .menu-nastymondays-container
     {
-        padding: 2px 0;
-        margin: 0.5em 0 0;
+
         width: 990px;
         height: 150px;
+        padding: 2px 0;
+        margin: 0.5em 0 0;
         text-align: center;
         opacity: 0.8;
         background-color: #040404;
@@ -999,27 +1021,29 @@ License: GPL2
 
     .menu-nastymondays-container ul
     {
+        display: inline;
         width: 990px;
         height: 150px;
-        text-align: center;
-        background: #040404;
         padding: 0;
         margin-left: 1em 0 0;
+        text-align: center;
+        background: #040404;
         list-style: none;
-        display: inline;
+
     }
 
     .menu-nastymondays-container ul#menu-nastymondays li
     {
+        display: inline;
+        float: left;
         width: 150px;
         height: 150px;
         margin-left: 10px;
-        background-position: 0 0;
-        float: left;
         text-align: center;
         background: transparent none;
+        background-position: 0 0;
         border: none;
-        display: inline;
+
     }
 
     .menu-nastymondays-container ul#menu-nastymondays li.fb a
@@ -1028,13 +1052,14 @@ License: GPL2
         height: 150px;
         display: block;
         float: left;
+        margin: 0;
+        padding: 0;
         text-align: center;
         background-position: 0 0;
         background-image: url('/src/images/nasty_mondays_03.png');
         border: none;
         text-indent: -999.999em;
-        margin: 0;
-        padding: 0;
+
     }
 
     .menu-nastymondays-container ul#menu-nastymondays li.msp a
@@ -1043,13 +1068,13 @@ License: GPL2
         height: 150px;
         display: block;
         float: left;
-        text-align: center;
-        background-position: 0 0;
-        background-image: url('../images/nasty_mondays_02.png');
-        border: none;
-        text-indent: -999.999em;
         margin: 0;
         padding: 0;
+        text-align: center;
+        background-position: 0 0;
+        background-image: url('/src/images/nasty_mondays_02.png');
+        border: none;
+        text-indent: -999.999em;
     }
 
     .menu-nastymondays-container ul#menu-nastymondays li.sr a
@@ -1060,25 +1085,26 @@ License: GPL2
         float: left;
         text-align: center;
         background-position: 0 0;
-        background-image: url('../images/nasty_mondays_06.png');
+        background-image: url('/src/images/nasty_mondays_06.png');
         border: none;
         text-indent: -999.999em;
         margin: 0;
         padding: 0;
     }
 
-    .menu-nastymondays-container ul#menu-nastymondays  li.bg a {
+    .menu-nastymondays-container ul#menu-nastymondays  li.bg a
+    {
         width: 150px;
         height: 150px;
         display: block;
         float: left;
+        margin: 0;
+        padding: 0;
         text-align: center;
         background-position: 0 0;
         background-image: url('../images/nasty_mondays_01.png');
         border: none;
         text-indent: -999.999em;
-        margin: 0;
-        padding: 0;
     }
 
     .menu-nastymondays-container ul#menu-nastymondays  li.ny a
@@ -1087,13 +1113,13 @@ License: GPL2
         height: 150px;
         display: block;
         float: left;
+        margin: 0;
+        padding: 0;
         text-align: center;
         background-position: 0 0;
         background-image: url('../images/nasty_mondays_05.png');
         border: none;
         text-indent: -999.999em;
-        margin: 0;
-        padding: 0;
     }
 
     .menu-nastymondays-container ul#menu-nastymondays  li.cp a,
@@ -1103,13 +1129,13 @@ License: GPL2
         height: 150px;
         display: block;
         float: left;
+        margin: 0;
+        padding: 0;
         text-align: center;
         background-position: 0 0;
         background-image: url('../images/nasty_mondays_04.png');
         border: none;
         text-indent: -999.999em;
-        margin: 0;
-        padding: 0;
     }
 
     .menu-nastymondays-container ul#menu-nastymondays li.fb a:hover,
@@ -1159,6 +1185,7 @@ License: GPL2
 
     .menu-division-container ul
     {
+        *display: inline;
         height: 130px;
         width: 980px;
         display: inline;
@@ -1168,11 +1195,12 @@ License: GPL2
         list-style: none;
         text-align: left;
         zoom: 1;
-        *display: inline;
+
     }
 
     .menu-division-container  ul.menu li
     {
+        display: inline;
         width: 200px;
         height: 130px;
         margin-left: 30px;
@@ -1182,18 +1210,18 @@ License: GPL2
         text-align: center;
         background: transparent none;
         border: none;
-        display: inline;
+
     }
 
     .menu-division-container  ul.menu li.diNM a
     {
+        display: block;
         width: 200px;
         height: 120px;
         background-image: url("../images/nasty.png");
         background-position: 70% 0;
         background-repeat: no-repeat;
         border: none;
-        display: block;
         text-align: left;
         font-size: 13px;
         text-shadow: #040404 -1px 2px 2px;
@@ -1203,13 +1231,14 @@ License: GPL2
 
     .menu-division-container  ul.menu li.diCake a
     {
+        display: block;
         width: 200px;
         height: 120px;
         background-image: url("../images/cupcake.png");
         background-position: 75% 0;
         background-repeat: no-repeat;
         border: none;
-        display: block;
+
         text-align: left;
         font-size: 13px;
         text-shadow: #040404 -1px 2px 2px;
@@ -1219,13 +1248,14 @@ License: GPL2
 
     .menu-division-container ul.menu li.diNY a
     {
+        display: block;
         width: 200px;
         height: 120px;
         background-image: url("../images/n-y.png");
         background-position: 70% 0px;
         background-repeat: no-repeat;
         border: none;
-        display: block;
+
         text-align: left;
         font-size: 13px;
         text-shadow: #040404 -1px 2px 2px;
@@ -1235,6 +1265,8 @@ License: GPL2
 
     .menu-division-container  ul.menu li.diCT a
     {
+        display: block;
+        text-align: left;
         width: 200px;
         height: 120px;
         margin-left: 10px;
@@ -1243,8 +1275,7 @@ License: GPL2
         background-position: 70% 0;
         background-repeat: no-repeat;
         border: none;
-        display: block;
-        text-align: left;
+
         font-size: 13px;
         text-shadow: #040404 -1px 2px 2px;
         font-weight: normal;
@@ -1263,6 +1294,8 @@ License: GPL2
 
     .menu-prensa_en-container ul#menu-prensa_en li
     {
+        float: left;
+        padding-left: 3px;
         list-style-type: none;
         font-family: 'RalewayThin',Helvetica, Arial, Geneva, sans-serif;
         font-size: 15px;
@@ -1270,18 +1303,16 @@ License: GPL2
         zoom: 1;
         color: #d87600;
         text-shadow: #000 1px 2px 2px;
-        float: left;
-        padding-left: 3px;
     }
 
     .menu-prensa_en-container ul#menu-prensa_en li a
     {
+        padding: 3px 0;
+        margin: 0.5em 0 0;
         list-style-type: none;
         font-family: 'RalewayThin',Helvetica, Arial, Geneva, sans-serif;
         font-size: 14px;
         text-decoration: none;
-        padding: 3px 0;
-        margin: 0.5em 0 0;
         color: #fff7c9;
         text-shadow: black 1px 2px 2px;
         text-transform: uppercase;
@@ -1289,12 +1320,12 @@ License: GPL2
 
     .menu-prensa_en-container ul#menu-prensa_en li a:hover
     {
-        list-style-type: none;
-        font-family: Geneva, sans-serif;
-        font-size: 14px;
-        text-decoration: none;
         padding: 3px 0;
         margin: 0.5em 0 0;
+        list-style-type: none;
+        font-family: 'RalewayThin',Helvetica, Arial, Geneva, sans-serif;
+        font-size: 14px;
+        text-decoration: none;
         color: #fff7c9;
         text-shadow: #040404 -1px 2px 2px;
         text-transform: uppercase;
@@ -1305,13 +1336,15 @@ License: GPL2
     ------------------------------------------------*/
     .pasador
     {
+        position:relative;
+        float: left;
+        overflow: hidden;
         width: 990px;
         height: 450px;
-        float: left;
         text-align: left;
         word-spacing: 0.5px;
         background-color: #040404;
-        overflow: hidden;
+
     }
 
     .pasador iframe
@@ -1321,6 +1354,7 @@ License: GPL2
 
     #pasador2
     {
+        position:relative;
         padding: 0;
         margin: 0;
         width: 100%;
@@ -1332,6 +1366,7 @@ License: GPL2
 
     #pasador2 #map_canvas
     {
+        position:relative;
         float: right;
         width: 389px;
         height: 390px;
@@ -1346,6 +1381,7 @@ License: GPL2
 
     #pasador_prensa
     {
+        position:relative;
         height: auto !important;
         min-height: 780px;
         float: left;
@@ -1359,6 +1395,7 @@ License: GPL2
 
     #pasador_login
     {
+        position:relative;
         padding: 0;
         margin: 1.4em 0 0 0;
         width: 990px;
@@ -1535,6 +1572,7 @@ License: GPL2
 
     #footer
     {
+        position:relative;
         clear: both;
         display: inline;
         float: left;
@@ -1703,6 +1741,7 @@ License: GPL2
 
     .prensa
     {
+        position:relative;
         text-align: center;
         margin-bottom: 15px;
         border-bottom: 5px solid #7D1120;
@@ -1718,11 +1757,12 @@ License: GPL2
 
     .crappy
     {
+        position:relative;
         text-align: center;
         margin-bottom: 15px;
         display: block;
         border-bottom: 5px solid #7D1120;
-        background-image: url("../../nm_images/MySpaceCrappy.jpg");
+        background-image: url("http://nastymondays.com/nm_images/MySpaceCrappy.jpg");
         background-position: top left;
         background-repeat: no-repeat;
         padding:0;
@@ -1732,6 +1772,7 @@ License: GPL2
 
     .cupcake
     {
+        position:relative;
         text-align: center;
         margin-bottom: 15px;
         border-bottom: 5px solid #7D1120;
@@ -1745,10 +1786,11 @@ License: GPL2
 
     .n-y
     {
+        position:relative;
         text-align: center;
         margin-bottom: 15px;
         border-bottom: 5px solid #7D1120;
-        background-image: url("../images/n-y.png");
+        background-image: url("src/images/n-y.png");
         background-position: top left;
         background-repeat: no-repeat;
         padding: 10px 0 0 0;
@@ -1758,6 +1800,7 @@ License: GPL2
 
     h2.nastym
     {
+        position:relative;
         text-align: center;
         margin-bottom: 15px;
         border-bottom: 5px solid #7D1120;
@@ -1853,7 +1896,8 @@ License: GPL2
     }
 
     h4.backstage a:hover,
-    h6.backstage a:hover {
+    h6.backstage a:hover
+    {
         color: #fff;
         text-decoration: underline;
         text-shadow: #005764 -1px 1px 2px;
@@ -1866,9 +1910,6 @@ License: GPL2
     .events_pre h4.tv
     {
         display: block;
-        background-image: url("../images/youtube.png");
-        background-repeat: no-repeat;
-        background-position: left top;
         width: 180px;
         min-height: 103px;
         height: auto !important;
@@ -1876,15 +1917,15 @@ License: GPL2
         margin-top: 10px;
         padding: 0;
         text-indent: -999.999px;
+        background-image: url("../images/youtube.png");
+        background-repeat: no-repeat;
+        background-position: left top;
     }
 
     h4.vim a,
     h4.vim a:hover
     {
         display: block;
-        background-image: url("../images/vimeo.png");
-        background-repeat: no-repeat;
-        background-position: left top;
         width: 180px;
         min-height: 123px;
         height: auto !important;
@@ -1892,20 +1933,23 @@ License: GPL2
         margin: 0;
         padding: 0;
         text-indent: -999.999px;
+        background-image: url("/src/images/vimeo.png");
+        background-repeat: no-repeat;
+        background-position: left top;
     }
 
     .vids
     {
         text-align: center;
         margin-bottom: 15px;
-        border-bottom: 5px solid #7D1120;
-        background-image: url("../images/h5_video.png");
-        background-position: top left;
-        background-repeat: no-repeat;
         padding: 6px 0 6px 0;
         font-family: 'DeftoneStylusRegular',Geneva, sans-serif;
         font-weight: normal;
         font-size: 50px;
+        border-bottom: 5px solid #7D1120;
+        background-image: url("/src/images/h5_video.png");
+        background-position: top left;
+        background-repeat: no-repeat;
     }
 
     /* 13 Posts && Articles
@@ -1919,7 +1963,7 @@ License: GPL2
         margin: 1.5em 0 0 0;
         min-height: 150px;
         height: auto !important;
-        background: #040404 url("images/bg/bg_entry.png") repeat-y;
+        background: #040404 url("/src/images/bg/bg_entry.png") repeat-y;
     }
 
     .post-title
@@ -1963,11 +2007,12 @@ License: GPL2
     .post-title h2 a:hover,
     .post .post-title h2 a:hover
     {
-        -webkit-text-stroke-color: #fff7c9;
-        -webkit-text-stroke-width: 0.5px;
+
         min-height: 34px;
         font-weight: normal;
         color: #2fc2c1;
+        -webkit-text-stroke-color: #fff7c9;
+        -webkit-text-stroke-width: 0.5px;
     }
 
     .post img,
@@ -2014,12 +2059,13 @@ License: GPL2
     .postMetaData
     {
         padding: 10px;
-        background: #141414;
+
         margin: 10px 0;
         width: 480px;
         display: block;
         clear: both;
         color: #b50031;
+        background: #141414;
     }
 
     .postMetaData a
@@ -2029,9 +2075,10 @@ License: GPL2
 
     .post-cat
     {
+        float: right;
         margin: 0.3em 0 0;
         padding-right: 4px;
-        float: right;
+
         text-align: left;
         font-size: 85%;
         letter-spacing: 1px;
@@ -2068,25 +2115,27 @@ License: GPL2
     .single-post .navigation
     {
         clear: both;
+        z-index: 1000;
+        width: 680px;
         margin: 0 auto;
         padding: 0;
         font-size: 11px/60%;
         font-weight: normal;
-        z-index: 1000;
+
         border-top: 1px dotted #2fc2c1;
-        width: 680px;
+
     }
 
     .single-post-image
     {
         display: block;
         clear: both;
-        padding-top: 10px;
-        margin: 1.5em 0 0 0;
         width: 1030px;
         min-height: 667px;
         height: auto !important;
-        background: #040404 url("images/bg/bg_entry.png") repeat-y;
+        padding-top: 10px;
+        margin: 1.5em 0 0 0;
+        background: #040404 url("/src/images/bg/bg_entry.png") repeat-y;
     }
 
     .single-post-image img,
@@ -2126,6 +2175,8 @@ License: GPL2
 
     .sitemap
     {
+        position:relative;
+        overflow: hidden;
         float: right;
         text-align: left;
         width: 680px;
@@ -2137,7 +2188,7 @@ License: GPL2
         padding: 1px 0px 0px 10px;
         line-height: 1.5em;
         border: 1px #41443e solid;
-        overflow: hidden;
+
     }
 
     .sitemap h3,
@@ -2203,6 +2254,7 @@ License: GPL2
 
     .entry object
     {
+        position:relative;
         clear: left;
         display: block;
         margin: 0 auto;
@@ -2214,29 +2266,32 @@ License: GPL2
 
     div.flashmovie
     {
+        position:relative;
+        display: block;
         margin: 1em auto;
+        padding: 0;
         background: #040404;
         border: none;
-        display: block;
-        padding: 0;
+
     }
 
 
     .image
     {
-        padding: 0;
-        margin: 0 auto;
         z-index: -1;
         width: 980px;
+        padding: 0;
+        margin: 0 auto;
         background-color: #040404;
     }
 
     .image a img
     {
+        z-index: 0;
         margin: 0 auto;
         padding: 5px 0;
         border: none;
-        z-index: 0;
+
     }
 
     .wp-caption
@@ -2278,7 +2333,8 @@ License: GPL2
     }
     .wp-caption a:focus img,
     .wp-caption a:active img,
-    .wp-caption a:hover img {
+    .wp-caption a:hover img
+    {
         background: #0f0f0f;
         border-color: #2c2c2c;
     }
@@ -2308,29 +2364,40 @@ License: GPL2
         border: 1px #FFF7C9 solid;
     }
 
-    img.alignright {
+    img.alignright
+    {
 
         float:right;
         margin:0 0 1em 1em
     }
-    img.alignleft {
+
+    img.alignleft
+    {
         float:left;
         margin:0 1em 1em 0
     }
-    img.aligncenter {
+
+    img.aligncenter
+    {
         display: block;
         margin-left: auto;
         margin-right: auto
     }
-    a img.alignright {
+
+    a img.alignright
+    {
         float:right;
         margin:0 0 1em 1em
     }
-    a img.alignleft {
+
+    a img.alignleft
+    {
         float:left;
         margin:0 1em 1em 0
     }
-    a img.aligncenter {
+
+    a img.aligncenter
+    {
         display: block;
         margin-left: auto;
         margin-right: auto
@@ -2352,7 +2419,6 @@ License: GPL2
 
     /* WP Plugins
     -----------------------------------------------------*/
-
 
     .navigation,
     .pagination
@@ -2420,7 +2486,6 @@ License: GPL2
         font-size: 15px;
     }
 
-
     ul.wp-tag-cloud li.wp-tag-cloud
     {
         list-style-type: none;
@@ -2444,17 +2509,17 @@ License: GPL2
         text-decoration: underline;
     }
 
-
     .langi
     {
-        margin: 0;
-        padding: 0;
         position: absolute;
         z-index:100;
         top: 0;
         left: 380;
         width: 200px;
         overflow:hidden;
+        margin: 0;
+        padding: 0;
+
     }
 
     .qtrans_language_chooser
@@ -2472,41 +2537,48 @@ License: GPL2
 
     .lang-es
     {
-        margin: 0;
-        font-size: 14px;
-        background-color: #040404;
         width: 30px;
         height: 20px;
         diplay:block;
+        margin: 0;
         padding-top: 5px;
+        font-size: 14px;
+        background-color: #040404;
+
     }
 
-
-    .attachment .entry-content .entry-caption {
+    .attachment .entry-content .entry-caption
+    {
         font-size: 140%;
         margin-top: 24px;
     }
 
-    .attachment .entry-content .nav-previous a:before {
+    .attachment .entry-content .nav-previous a:before
+    {
         content: '\2190\00a0';
     }
 
-    .attachment .entry-content .nav-next a:after {
+    .attachment .entry-content .nav-next a:after
+    {
         content: '\00a0\2192';
     }
 
-
-    .alignleft {
+    .alignleft
+    {
         display: inline;
         float: left;
         margin-right: 1.625em;
     }
-    .alignright {
+
+    .alignright
+    {
         display: inline;
         float: right;
         margin-left: 1.625em;
     }
-    .aligncenter {
+
+    .aligncenter
+    {
         clear: both;
         display: block;
         margin-left: auto;
@@ -2551,9 +2623,11 @@ License: GPL2
 -----------------------------------------------------*/
 
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 480px)
+{
 
-    img {
+    img
+    {
         max-width: 100%;
         height: auto !important;
     }
@@ -2561,7 +2635,8 @@ License: GPL2
 }
 
 
-@font-face {
+@font-face
+{
     font-family: 'RalewayThin';
     src: url('http://nastymondays.com/src/fonts/raleway_thin-webfont.eot');
     src: url('http://nastymondays.com/src/fonts/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
@@ -2585,7 +2660,7 @@ License: GPL2
 
 
 
-/*  Copyright v 0.1 2010 Delfi Ramirez <delfin@segonquart.net> for Nasty Garage SL
+/*  Copyright v 0.1 2011 Delfi Ramirez <delfin@segonquart.net> for Nasty Garage SL
 
 
         Nasty Mondays CSS Theme is distributed under the GNU General Public License, Version 2,
