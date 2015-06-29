@@ -982,7 +982,7 @@ License: GPL2
         padding: 0;
         background-position: -10px 0 0 0;
         background-repeat: no-repeat;
-        background-image: url('../images/logo-nm.png');
+        background-image: url('/src/images/logo-nm.png');
     }
 
     .submenu,
@@ -1087,7 +1087,7 @@ License: GPL2
         padding: 0;
         text-align: center;
         background-position: 0 0;
-        background-image: url('../images/nasty_mondays_01.png');
+        background-image: url('/src/images/nasty_mondays_01.png');
         border: none;
         text-indent: -999.999em;
     }
@@ -1102,12 +1102,12 @@ License: GPL2
         padding: 0;
         text-align: center;
         background-position: 0 0;
-        background-image: url('../images/nasty_mondays_05.png');
+        background-image: url('/src/images/nasty_mondays_05.png');
         border: none;
         text-indent: -999.999em;
     }
 
-    .menu-nastymondays-container ul#menu-nastymondays  li.cp a,
+    .menu-nastymondays-container ul#menu-nastymondays li.cp a,
     .menu-nastymondays-container ul#menu-nastymondays li.cp a:active
     {
         width: 150px;
@@ -1124,11 +1124,11 @@ License: GPL2
     }
 
     .menu-nastymondays-container ul#menu-nastymondays li.fb a:hover,
-    .menu-nastymondays-container ul#menu-nastymondays  li.msp a:hover,
+    .menu-nastymondays-container ul#menu-nastymondays li.msp a:hover,
     .menu-nastymondays-container ul#menu-nastymondays li.sr a:hover,
-    .menu-nastymondays-container ul#menu-nastymondays  li.bg a:hover,
-    .menu-nastymondays-container ul#menu-nastymondays  li.ny a:hover,
-    .menu-nastymondays-container ul#menu-nastymondays  li.cp a:hover
+    .menu-nastymondays-container ul#menu-nastymondays li.bg a:hover,
+    .menu-nastymondays-container ul#menu-nastymondays li.ny a:hover,
+    .menu-nastymondays-container ul#menu-nastymondays li.cp a:hover
     {
         opacity: 0.8;
     }
@@ -1196,7 +1196,7 @@ License: GPL2
         border: none;
     }
 
-    .menu-division-container  ul.menu li.diNM a
+    .menu-division-container ul.menu li.diNM a
     {
         display: block;
         width: 200px;
@@ -1212,7 +1212,7 @@ License: GPL2
         color: #b50031;
     }
 
-    .menu-division-container  ul.menu li.diCake a
+    .menu-division-container ul.menu li.diCake a
     {
         display: block;
         width: 200px;
@@ -1244,7 +1244,7 @@ License: GPL2
         color: #b50031;
     }
 
-    .menu-division-container  ul.menu li.diCT a
+    .menu-division-container ul.menu li.diCT a
     {
         display: block;
         text-align: left;
@@ -1262,10 +1262,10 @@ License: GPL2
         color: #b50031;
     }
 
-    .menu-division-container  ul.menu li.diNM a:hover,
-    .menu-division-container  ul.menu li.diCT a:hover,
+    .menu-division-container ul.menu li.diNM a:hover,
+    .menu-division-container ul.menu li.diCT a:hover,
     .menu-division-container ul.menu li.diNY a:hover,
-    .menu-division-container  ul.menu li.diCake a:hover
+    .menu-division-container ul.menu li.diCake a:hover
     {
         opacity: 0.5;
         color: #fee;
@@ -1803,7 +1803,6 @@ License: GPL2
         background: transparent;
         text-transform: capitalize;
         width: auto;
-
     }
 
     .nasty4,
@@ -1818,7 +1817,6 @@ License: GPL2
         color: #2fc2c1;
         background: transparent;
         text-transform: capitalize;
-
     }
 
     .nasty4 a:hover
@@ -2122,7 +2120,6 @@ License: GPL2
         border: none;
     }
 
-
     #archives-list li
     {
         width: 150px;
@@ -2339,7 +2336,6 @@ License: GPL2
 
     img.alignright
     {
-
         float:right;
         margin:0 0 1em 1em
     }
