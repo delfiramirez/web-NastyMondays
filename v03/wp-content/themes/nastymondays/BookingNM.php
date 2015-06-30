@@ -28,7 +28,7 @@ get_header ();
 
         </h2>
 
-        <?php echo _e ("<p> &spades;  Nasty Mondays Barcelona has positioned itself as a benchmark in the music and cultural scene of the Catalan capital. Couple of local mobs and launderers of money tried to imitate us, without a result. An artistic movement that has settled the foundations for a new concept in leisure, music, design, photography, film, extreme sports, creativity, fashion and trends.</p>"); ?>
+        <?php echo "<p> &spades; " . "" . bloginfo ('name'), "" . bloginfo ('description') . "" . "has positioned itself as a benchmark in the music and cultural scene of the Catalan capital. Couple of local mobs and launderers of money tried to imitate us, without a result. An artistic movement that has settled the foundations for a new concept in leisure, music, design, photography, film, extreme sports, creativity, fashion and trends.</p>"; ?>
 
         <p> &spades; Book the mob <?php bloginfo ('name'); ?> for your room, in your city, at your unique and special event. From barcelona to Andorra and Switzerland with love. Panama rulez. Mob rulez. Laundry rulez <br />
             <?php print _e ('&spades; Please, fill the form with your quest and ask us for:'); ?></br />
