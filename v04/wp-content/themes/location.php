@@ -115,7 +115,7 @@ get_header ();
 
                         <h1 class="inicio">
 
-                            <?php bloginfo ('name'); ?> Barcelona- <?php _e ("<!--:en-->Address &middot; Location<!--:--><!--:es-->Localiaci&oacute;n - Como llegar<!--:--><!--:ca-->Com Arribar-hi<!--:-->"); ?>
+                            <?php bloginfo ('name'); ?> <?php bloginfo ('description'); ?>- <?php _e ("<!--:en-->Address &middot; Location<!--:--><!--:es-->Localiaci&oacute;n - Como llegar<!--:--><!--:ca-->Com Arribar-hi<!--:-->"); ?>
 
                         </h1>
 

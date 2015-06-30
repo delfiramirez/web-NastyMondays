@@ -23,6 +23,6 @@ get_header ();
             <a href="<?php bloginfo ('url'); ?>">
                 <?php bloginfo ('name'); ?>
             </a>
-        </strong> started in the year 2005 in Barcelona, by <strong>Max</strong> and <strong>Soren</strong> - local celebrities, mad minds, blonde lovers and tattoo addicts! With their fable to indie and electro rock, they started with a party series that did not exist like that in <strong>Barcelona</strong> before. Constantly reinventing themselves, with new themes, bands playing live, different locations and becoming crazier each time, they have managed to establish their base within Barcelona, and have toured in Denmark, Sweden, Germany, Austria, Holland or the United States.</p>
+        </strong> started in the year 2005 in <?php bloginfo ('description'); ?>, by <strong>Max</strong> and <strong>Soren</strong> - local celebrities, mad minds, blonde lovers and tattoo addicts! With their fable to indie and electro rock, they started with a party series that did not exist like that in <strong>Barcelona</strong> before. Constantly reinventing themselves, with new themes, bands playing live, different locations and becoming crazier each time, they have managed to establish their base within Barcelona, and have toured in Denmark, Sweden, Germany, Austria, Holland or the United States.</p>
     <p><?php blogInfo ('name'); ?> <?php blogInfo ('description'); ?></p>
 </div>
