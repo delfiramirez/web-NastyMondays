@@ -10,25 +10,6 @@ if ( is_page_template () || is_attachment () || !is_active_sidebar ('') )
 if ( !defined ('WP_POST_REVISIONS') )
     define ('WP_POST_REVISIONS', 1);
 
-add_theme_support ('post-formats', array ( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio' ));
-
-
-add_custom_background ();
-add_editor_style ();
-
-add_theme_support ('wp_paginate');
-add_theme_support ('post-thumbnails');
-set_post_thumbnail_size (150, 150, true);
-add_image_size ('featured-thumbnail', 150, 150);
-add_image_size ('seccion-thumbnail', 250, 250);
-
-
-
-add_post_type_support ('page', 'excerpt');
-
-add_filter ('the_content', 'make_clickable');
-
-
 if ( function_exists ('add_theme_support') )
     {
     add_theme_support ('custom-background');
@@ -37,7 +18,13 @@ if ( function_exists ('add_theme_support') )
     add_theme_support ('menus');
     add_theme_support ('nav-menus');
     add_theme_support ('custom-header');
+    add_theme_support ('wp_paginate');
+    add_theme_support ('post-thumbnails');
+    add_theme_support ('post-formats', array ( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio' ));
     }
+
+
+add_post_type_support ('page', 'excerpt');
 
 nm_remove_action ('wp_head', 'rsd_link');
 nm_remove_action ('wp_head', 'wp_generator');
@@ -48,6 +35,15 @@ nm_remove_action ('wp_head', 'wlwmanifest_link');
 nm_remove_action ('wp_head', 'start_post_rel_link', 10, 0);
 nm_remove_action ('wp_head', 'parent_post_rel_link', 10, 0);
 nm_remove_action ('wp_head', 'adjacent_posts_rel_link', 10, 0);
+
+set_post_thumbnail_size (150, 150, true);
+add_image_size ('featured-thumbnail', 150, 150);
+add_image_size ('seccion-thumbnail', 250, 250);
+
+add_filter ('the_content', 'make_clickable');
+
+add_custom_background ();
+add_editor_style ();
 
 $nmExcerpt = get_the_excerpt ();
 $tags      = array ( '<p>', '</p>' );
@@ -111,68 +107,6 @@ function nm_secure_mail ($atts)
 
 if ( function_exists ('add_shortcode') )
     add_shortcode ('sm', 'nm_secure_mail');
-
-function nm_clean_bad_content ($bPrint = false)
-    {
-    global $post;
-    $szPostContent  = $post->post_content;
-    $szRemoveFilter = array ( "~<p[^>]*>\s?</p>~", "~<a[^>]*>\s?</a>~", "~<font[^>]*>~", "~<\/font>~", "~style\=\"[^\"]*\"~", "~<span[^>]*>\s?</span>~" );
-    $szPostContent  = preg_replace ($szRemoveFilter, '', $szPostContent);
-    $szPostContent  = apply_filters ('the_content', $szPostContent);
-    if ( $bPrint == false )
-        return $szPostContent;
-    else
-        echo $szPostContent;
-    }
-
-function bm_displayArchives ()
-    {
-    global $month, $wpdb, $wp_version;
-    $sql = 'SELECT
-            DISTINCT YEAR(post_date) AS year,
-            MONTH(post_date) AS month,
-            count(ID) as posts
-            FROM ' . $wpdb->posts . '
-            WHERE post_status="publish"
-            AND post_type="post"
-            AND post_password=""
-            GROUP BY YEAR(post_date),
-            MONTH(post_date)
-            ORDER BY post_date DESC';
-
-
-    $archiveSummary = $wpdb->get_results ($sql);
-
-    if ( $archiveSummary )
-        {
-
-        foreach ( $archiveSummary as $date )
-            {
-
-            unset ($bmWp);
-
-            $bmWp = new WP_Query ('year=' . $date->year . '&monthnum=' . zeroise ($date->month, 2) . '&posts_per_page=-1' . '&cat=-126,-127' . '&paged=' . $paged);
-
-
-            if ( $bmWp->have_posts () )
-                {
-
-                $url  = get_month_link ($date->year, $date->month);
-                $text = $month[ zeroise ($date->month, 2) ] . ' ' . $date->year;
-
-                echo get_archives_link ($url, $text, '', '<div class="sitemap"><h5>', '</h5>');
-                echo '<ul>';
-                while ( $bmWp->have_posts () )
-                    {
-                    $bmWp->the_post ();
-                    echo '<li>&spades; <a href=" ' . get_permalink ($bmWp->post) . '" title="' . wp_specialchars ($text, 1) . '">' . wptexturize ($bmWp->post->post_title) . '</a></li>';
-                    }
-
-                echo '</ul></div>';
-                }
-            }
-        }
-    }
 
 function nm_remove_nofollow ($string)
     {
@@ -251,57 +185,6 @@ function nm_comment_post_like ($string, $array)
     return false;
     }
 
-function nm_drop_bad_comments ()
-    {
-    if ( !empty ($_POST[ 'comment' ]) )
-        {
-        $post_comment_content = $_POST[ 'comment' ];
-        $lower_case_comment   = strtolower ($_POST[ 'comment' ]);
-        $bad_comment_content  = array (
-            'viagra',
-            'hydrocodone',
-            'hair loss',
-            '[url=http',
-            '[link=http',
-            'xanax',
-            'tramadol',
-            'konfuxi',
-            'russian girls',
-            'russian brides',
-            'lorazepam',
-            'adderall',
-            'dexadrine',
-            'no prescription',
-            'oxycontin',
-            'without a prescription',
-            'sex pics',
-            'family incest',
-            'online casinos',
-            'online dating',
-            'cialis',
-            'best forex',
-            'amoxicillin'
-        );
-        if ( nm_comment_post_like ($lower_case_comment, $bad_comment_content) )
-            {
-            $comment_box_text = wordwrap (trim ($post_comment_content), 80, "\n  ", true);
-            $txtdrop          = fopen ('/var/log/httpd/wp_post-logger/nullamatix.com-text-area_dropped.txt', 'a');
-            fwrite ($txtdrop, "  --------------\n  [COMMENT] = " . $post_comment_content . "\n  --------------\n");
-            fwrite ($txtdrop, "  [SOURCE_IP] = " . $_SERVER[ 'REMOTE_ADDR' ] . " @ " . date ("F j, Y, g:i a") . "\n");
-            fwrite ($txtdrop, "  [USERAGENT] = " . $_SERVER[ 'HTTP_USER_AGENT' ] . "\n");
-            fwrite ($txtdrop, "  [REFERER  ] = " . $_SERVER[ 'HTTP_REFERER' ] . "\n");
-            fwrite ($txtdrop, "  [FILE_NAME] = " . $_SERVER[ 'SCRIPT_NAME' ] . " - [REQ_URI] = " . $_SERVER[ 'REQUEST_URI' ] . "\n");
-            fwrite ($txtdrop, '--------------**********------------------' . "\n");
-            header ("HTTP/1.1 406 Not Acceptable");
-            header ("Status: 406 Not Acceptable");
-            header ("Connection: Close");
-            wp_die (__ ('bang bang.'));
-            }
-        }
-    }
-
-add_action ('init', 'nm_drop_bad_comments');
-
 function nm_prensa_title ()
     {
     global $post;
@@ -357,6 +240,119 @@ function nm_get_fbimage ()
         $fbimage = "http://nastymondays.com/src/images/logo.gif";
         }
     return $fbimage;
+    }
+
+function nm_clean_bad_content ($bPrint = false)
+    {
+    global $post;
+    $szPostContent  = $post->post_content;
+    $szRemoveFilter = array ( "~<p[^>]*>\s?</p>~", "~<a[^>]*>\s?</a>~", "~<font[^>]*>~", "~<\/font>~", "~style\=\"[^\"]*\"~", "~<span[^>]*>\s?</span>~" );
+    $szPostContent  = preg_replace ($szRemoveFilter, '', $szPostContent);
+    $szPostContent  = apply_filters ('the_content', $szPostContent);
+    if ( $bPrint == false )
+        return $szPostContent;
+    else
+        echo $szPostContent;
+    }
+
+function nm_drop_bad_comments ()
+    {
+    if ( !empty ($_POST[ 'comment' ]) )
+        {
+        $post_comment_content = $_POST[ 'comment' ];
+        $lower_case_comment   = strtolower ($_POST[ 'comment' ]);
+        $bad_comment_content  = array (
+            'viagra',
+            'hydrocodone',
+            'hair loss',
+            '[url=http',
+            '[link=http',
+            'xanax',
+            'tramadol',
+            'konfuxi',
+            'russian girls',
+            'russian brides',
+            'lorazepam',
+            'adderall',
+            'dexadrine',
+            'no prescription',
+            'oxycontin',
+            'without a prescription',
+            'sex pics',
+            'family incest',
+            'online casinos',
+            'online dating',
+            'cialis',
+            'best forex',
+            'amoxicillin'
+        );
+        if ( nm_comment_post_like ($lower_case_comment, $bad_comment_content) )
+            {
+            $comment_box_text = wordwrap (trim ($post_comment_content), 80, "\n  ", true);
+            $txtdrop          = fopen ('/var/log/httpd/wp_post-logger/nullamatix.com-text-area_dropped.txt', 'a');
+            fwrite ($txtdrop, "  --------------\n  [COMMENT] = " . $post_comment_content . "\n  --------------\n");
+            fwrite ($txtdrop, "  [SOURCE_IP] = " . $_SERVER[ 'REMOTE_ADDR' ] . " @ " . date ("F j, Y, g:i a") . "\n");
+            fwrite ($txtdrop, "  [USERAGENT] = " . $_SERVER[ 'HTTP_USER_AGENT' ] . "\n");
+            fwrite ($txtdrop, "  [REFERER  ] = " . $_SERVER[ 'HTTP_REFERER' ] . "\n");
+            fwrite ($txtdrop, "  [FILE_NAME] = " . $_SERVER[ 'SCRIPT_NAME' ] . " - [REQ_URI] = " . $_SERVER[ 'REQUEST_URI' ] . "\n");
+            fwrite ($txtdrop, '--------------**********------------------' . "\n");
+            header ("HTTP/1.1 406 Not Acceptable");
+            header ("Status: 406 Not Acceptable");
+            header ("Connection: Close");
+            wp_die (__ ('bang bang.'));
+            }
+        }
+    }
+
+add_action ('init', 'nm_drop_bad_comments');
+
+function bm_displayArchives ()
+    {
+    global $month, $wpdb, $wp_version;
+    $sql = 'SELECT
+            DISTINCT YEAR(post_date) AS year,
+            MONTH(post_date) AS month,
+            count(ID) as posts
+            FROM ' . $wpdb->posts . '
+            WHERE post_status="publish"
+            AND post_type="post"
+            AND post_password=""
+            GROUP BY YEAR(post_date),
+            MONTH(post_date)
+            ORDER BY post_date DESC';
+
+
+    $archiveSummary = $wpdb->get_results ($sql);
+
+    if ( $archiveSummary )
+        {
+
+        foreach ( $archiveSummary as $date )
+            {
+
+            unset ($bmWp);
+
+            $bmWp = new WP_Query ('year=' . $date->year . '&monthnum=' . zeroise ($date->month, 2) . '&posts_per_page=-1' . '&cat=-126,-127' . '&paged=' . $paged);
+
+
+            if ( $bmWp->have_posts () )
+                {
+
+                $url  = get_month_link ($date->year, $date->month);
+                $text = $month[ zeroise ($date->month, 2) ] . ' ' . $date->year;
+
+                echo get_archives_link ($url, $text, '', '<div class="sitemap"><h5>', '</h5>');
+                echo '<ul>';
+                while ( $bmWp->have_posts () )
+                    {
+                    $bmWp->the_post ();
+                    echo '<li>&spades; <a href=" ' . get_permalink ($bmWp->post) . '" title="' . wp_specialchars ($text, 1) . '">' . wptexturize ($bmWp->post->post_title) . '</a></li>';
+                    }
+
+                echo '</ul></div>';
+                }
+            }
+        }
     }
 
 ?>
