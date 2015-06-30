@@ -50,7 +50,7 @@ get_header ();
                 </a>
             </li>
             <li>
-                <a href="<?php bloginfo ('template_url'); ?>cuppcake/">
+                <a href="<?php bloginfo ('template_url'); ?>/cupcake/">
                     BoomBox
                 </a>
             </li>
