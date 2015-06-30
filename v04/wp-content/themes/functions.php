@@ -54,7 +54,7 @@ echo $nmExcerpt;
 
 function nm_admin_footer ()
     {
-    echo '<a href="http://segonquart.net">' . blogInfo ('name') . 'Website designed and developed by Delfi Ramirez for Nasty Garage SL.</a>';
+    echo '<a href="http://segonquart.net">' . bloginfo ('name') . 'Website designed and developed by Delfi Ramirez for Nasty Garage SL.</a>';
     }
 
 add_filter ('admin_footer_text', 'nm_admin_footer');

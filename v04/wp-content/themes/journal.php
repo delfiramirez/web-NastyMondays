@@ -45,7 +45,7 @@ get_header ();
                     {
                     echo the_title ();
                     wp_title ('|');
-                    echo blogInfo ('description');
+                    echo bloginfo ('description');
                     }
                 ?>
             </title>
