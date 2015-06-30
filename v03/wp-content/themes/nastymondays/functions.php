@@ -1,6 +1,6 @@
 <?php
 
-// Nasty Mondays BCN Kustom Kar Kommando Wordpress 2.9 Theme .
+// Nasty Mondays BCN Kustom Kar Kommando Wordpress 2.9 Theme.
 // Developed at Segonquart Studio HQ in the year 2010
 // WP 2.9
 
@@ -8,7 +8,7 @@ define ('THEMENAME', 'nastymondays');
 if ( is_page_template () || is_attachment () || !is_active_sidebar ('') )
     {
     global $content_width;
-    $content_width = 850;
+    $content_width = 970;
     }
 
 if ( !defined ('WP_POST_REVISIONS') )
@@ -22,24 +22,26 @@ if ( function_exists ('add_theme_support') )
     add_theme_support ('menus');
     add_theme_support ('nav-menus');
     add_theme_support ('custom-header');
+    add_theme_support ('wp_paginate');
+    add_theme_support ('post-thumbnails');
     }
 
 wp_enqueue_style ('nastymondays', get_stylesheet_uri ());
 
 add_custom_background ();
 add_editor_style ();
-add_theme_support ('wp_paginate');
-add_theme_support ('post-thumbnails');
+add_post_type_support ('page', 'excerpt');
 
 set_post_thumbnail_size (150, 150, true);
+
 add_image_size ('featured-thumbnail', 150, 150);
 
 add_filter ('the_content', 'make_clickable');
-add_post_type_support ('page', 'excerpt');
+remove_filter ('comment_text', 'make_clickable', 9);
+
+
 
 add_filter ('login_errors', create_function ('$a', "return null;"));
-
-remove_filter ('comment_text', 'make_clickable', 9);
 
 function nm_mis_menus ()
     {
@@ -461,9 +463,6 @@ function nm_prensa_title ()
     print '<h2 class="enlaceprensa"><a href="' . $link . '" rel="bookmark" title="' . $title . '">' . $title . '</a></h2>';
     }
 
-//Activamos con funcion php print_post_title()
-
-
 function nm_breadcrumb ()
     {
     if ( !is_home () )
@@ -489,6 +488,10 @@ function nm_breadcrumb ()
         }
     }
 
+/**
+ *  . @456bereastreet.com
+ *
+ */
 function bm_displayArchives ()
     {
     global $month, $wpdb, $wp_version;
@@ -558,10 +561,10 @@ function nm_seo_slugs_stop_words ()
 add_filter ('name_save_pre', 'nm_seo_slugs', 0);
 
 /**
- * Archive jerarquico . @456bereastreet
+ *  . @456bereastreet
  *
  */
-function hierarchical_submenu ($post)
+function nm_hierarchical_submenu ($post)
     {
     if ( $post->post_parent && $post->ancestors )
         {
@@ -573,10 +576,10 @@ function hierarchical_submenu ($post)
         $top_post = $post;
         }
 
-    return hierarchical_submenu_get_children ($top_post, $post);
+    return nm_hierarchical_submenu_get_children ($top_post, $post);
     }
 
-function hierarchical_submenu_get_children ($post, $current_page)
+function nm_hierarchical_submenu_get_children ($post, $current_page)
     {
 
     $children = get_pages ("child_of=" . $post->ID . '&parent=' . $post->ID . '&sort_column=menu_order&sort_order=ASC');
@@ -597,7 +600,7 @@ function hierarchical_submenu_get_children ($post, $current_page)
 
             if ( get_children ($child->ID) && (in_array ($child->ID, get_post_ancestors ($current_page)) || ($child->ID == $current_page->ID)) )
                 {
-                $menu .= hierarchical_submenu_get_children ($child, $current_page);
+                $menu .= nm_hierarchical_submenu_get_children ($child, $current_page);
                 }
             $menu .= "</li>\n";
             }
@@ -609,13 +612,7 @@ function hierarchical_submenu_get_children ($post, $current_page)
 
 <?php
 
-/**
- * Archive que nos permite recibir una serie de portafolio items
- *
- */
-function get_work (
-$exclude = null, $limit = -1, $parent = 3, $args = array ( 'orderby' => 'menu_order', 'order' => 'ASC', 'post_type' => 'page' )
-)
+function get_work ($exclude = null, $limit = -1, $parent = 3, $args = array ( 'orderby' => 'menu_order', 'order' => 'ASC', 'post_type' => 'page' ))
     {
 
     $args[ 'numberposts' ] = $limit;
@@ -632,16 +629,13 @@ $exclude = null, $limit = -1, $parent = 3, $args = array ( 'orderby' => 'menu_or
     return get_posts ($args);
     }
 
-/**
- * Archive que nos permite controlar los caracteres de excerpt
- *
- */
-function new_excerpt_length ($length)
+function nm_excerpt_length ($length)
     {
+
     return 30;
     }
 
-add_filter ('excerpt_length', 'new_excerpt_length');
+add_filter ('excerpt_length', 'nm_excerpt_length');
 
 function nm_comment_post ($incoming_comment)
     {

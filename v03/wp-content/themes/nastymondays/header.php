@@ -9,7 +9,7 @@
             if (
                     is_single () )
                 {
-                print 'NASTY MONDAYS presents  &spades; ';
+                print bloginfo ('name') . ' presents  &spades; ';
                 single_post_title ();
                 }
             elseif (
@@ -39,7 +39,7 @@
                 {
                 bloginfo ('name');
                 wp_title ('|');
-                print ' &spades; NM Official Website';
+                print ' &spades;' . bloginfo ('name');
                 }
             ?></title>
 
