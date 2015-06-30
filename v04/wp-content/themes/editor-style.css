@@ -8,8 +8,8 @@ Author URI: http://www.segonquart.net
 License: GPL2
 */
 
-/******************** ESTRUCTURA: RESET ******************************/
-
+/* 0 Reset
+------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -68,8 +68,8 @@ blockquote, q {
     quotes: "" "";
 }
 
-/******************** ESTRUCTURA: DOCUMENTO ***************************/
-
+/* 0 DOM
+------------------------------------------------*/ *
 * {
     margin: 0;
     padding: 0;
@@ -98,10 +98,11 @@ html, body, div#nastymondays, div#container, body.home {
     font-family: Geneva, sans-serif;
 }
 
-/******************** ESTRUCTURA: TITULARES ***************************/
+/*2 Heading Elements
+------------------------------------------------*/
 
 h1 {
-    font-family: 'nevisBold',Geneva, sans-serif;
+    font-family: 'nevisBold', Geneva, sans-serif;
     text-transform: uppercase;
 }
 
@@ -117,7 +118,7 @@ h2 , h2 a {
     min-height: 34px;
     color: #fff7c9;
     text-align: left;
-    font-family: "nevisBold",Geneva, sans-serif;
+    font-family: "nevisBold", Geneva, sans-serif;
 }
 
 h3, h3 a {
@@ -127,7 +128,7 @@ h3, h3 a {
     padding: 40px 0 0 10px;
     margin: 12px;
     border-bottom: 1px dotted #b2c9ce;
-    font-family: 'nevisBold',Geneva, sans-serif;
+    font-family: 'nevisBold', Geneva, sans-serif;
     font-size: 24px;
     letter-spacing: -1px;
     text-shadow: #020202 1px 1px 2px;
@@ -143,7 +144,7 @@ h4, h4 a, h5, h5 a {
     line-height: 1.05em;
     color: rgb(52, 103, 153);
     text-shadow: #040404 -1px 1px -2px;
-    font-family: 'nevisBold',Geneva, sans-serif;
+    font-family: 'nevisBold', Geneva, sans-serif;
 }
 
 h5 {
@@ -160,8 +161,8 @@ h6 {
     font-family: Geneva, sans-serif;
 }
 
-/******************** ESTRUCTURA: TEXTO ***************************/
-
+/* HyperText Elements
+------------------------------------------------*/
 p {
     text-align: left;
     margin: 10px;
@@ -170,18 +171,24 @@ p {
     line-height: 1.6em;
 }
 
-a.book a:hover.book {
+a.book a:hover.book
+{
     color: #040404;
 }
 
-a:link, a:visited {
+a:link,
+a:visited
+{
     color: #2fc2c1;
     font-family: Geneva, sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
 
-a:hover,a:focus, a:active {
+a:hover,
+a:focus,
+a:active
+{
     color: #fff7c9;
     font-family: Geneva, sans-serif;
     font-weight: bold;
@@ -193,17 +200,27 @@ a:active {
     top: 1px;
 }
 
-img, img a {
+img,
+img a
+{
     border: none;
 }
 
-li {
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+
+li
+{
     font-family: Geneva, sans-serif;
     font-weight: bold;
     font-size: 0.97em;
 }
 
-hr {
+hr
+{
     clear: both;
     height: 0em;
     border: none;
@@ -217,82 +234,18 @@ address
     min-height: 150px;
 }
 
-
-/******************** ESTRUCTURA: TABLAS ***************************/
-
-table {
-    width: 960px;
+iframe
+{
+    clear: left;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #999;
     padding: 0;
-    float: left;
-    background: url("images/divider.png") no-repeat 50% 0;
-    margin: 20px 10px 10px 10px;
-    -webkit-box-shadow: 0px 1px 3px #040404;
-    -moz-box-shadow: 0px 1px 3px #040404;
-    box-shadow: 0px 1px 3px #040404;
-    text-align: center;
-}
-
-caption {
-    padding: 3px 0 5px 0;
-    width: 960px;
-    font: normal 30px 'Lobster', 'Lobster1.3Regular',Geneva, sans-serif;
-    text-align: right;
-    border-top: 1px #41443e solid;
-}
-
-tfoot {
-    border-bottom: 1px #41443e solid;
-}
-
-td#prev a {
-    font: normal 20px 'Lobster','Lobster1.3Regular',Geneva, sans-serif;
-    text-align: right;
-    background: transparent none;
-}
-
-th {
-    font: bold 14px  Geneva, sans-serif;
-    color: #4f6b72;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 6px 6px 6px 6px;
-    background: #040404;
-    -moz-box-shadow: inset 0 0 10em #203c4d;
-    -webkit-box-shadow: inset 0 0 10em #203c4d;
-    box-shadow: inset 0 0 10em #203c4d;
-}
-
-td {
-    color: #606772;
-    background: transparent none;
-    padding: 16px 16px 16px 16px;
-    font: 14px bold  Geneva, sans-serif;
-    text-align: left;
-    -webkit-box-shadow: 0px 1px 3px #040404;
-    -moz-box-shadow: 0px 1px 3px #040404;
-    box-shadow: 0px 1px 3px #040404;
-}
-
-td a {
-    font: 24px bold Geneva, sans-serif;
-}
-
-td a:hover {
-    font: bold 24px  Geneva, sans-serif;
-    box-shadow: 10px 10px 7px rgba(125,0,0,.6);
-    -moz-box-shadow: 10px 10px 7px rgba(125,0,0,.6);
-    -webkit-box-shadow: 10px 10px 7px rgba(125,0,0,.6);
-    -webkit-transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    -o-transform: scale(1.25);
-    position: relative;
-    z-index: 5;
 }
 
 
-/******************** ESTRUCTURA:  FORMULARIOS *************************/
-
+/* 5 Form Elements
+------------------------------------------------*/
 
 form {
     border: 0;
@@ -302,7 +255,8 @@ form {
 }
 
 
-form legend {
+form legend
+{
     display: inline-block;
     *display: inline;
     text-align: center;
@@ -313,7 +267,8 @@ form legend {
     text-indent: -9999.999px;
 }
 
-form label {
+form label
+{
     float: left;
     padding-bottom: 20px;
     color: #ffffee;
@@ -325,11 +280,12 @@ form label {
     cursor: pointer;
     text-shadow: #222 0px 1px -3px;
     text-transform: uppercase;
-    font-family: 'Molengo', 'MolengoRegular',Geneva, sans-serif;
+    font-family: 'Molengo', 'MolengoRegular', Geneva, sans-serif;
     font-size: 90%;
 }
 
-form select {
+form select
+{
     float: left;
     display: block;
     font-weight: bold;
@@ -338,7 +294,8 @@ form select {
     font-size: 90%;
 }
 
-form optgroup {
+form optgroup
+{
     float: left;
     display: block;
     font-weight: bold;
@@ -347,7 +304,8 @@ form optgroup {
     font-size: 90%;
 }
 
-form input {
+form input
+{
     float: left;
     display: block;
     font-size: 12px;
@@ -362,7 +320,8 @@ form input {
     box-shadow: 0px 1px 3px #040404;
 }
 
-form textarea {
+form textarea
+{
     width: 150px;
     color: #040404;
     background-color: #f1fedb;
@@ -416,9 +375,43 @@ input.sendbutton
     box-shadow: 0 0 6px rgba(0,0,0,.2);
 }
 
-/* -----------
-Classes especiales Form
--------------------- */
+button::-moz-focus-inner {
+    border: 0;
+}
+
+btn:hover,
+.btn:focus
+{
+    color: #c8defd;
+    border-color: #a1bde6 !important;
+}
+
+button.cancel,
+input.cancel,
+.revert
+{
+    margin-left: 14px;
+    background: #040404;
+    color: #ba371b !important;
+    border-color: #fff !important;
+    font-size: 14px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.cancel:hover
+{
+    background: #26344c;
+    border-color: #fedebe !important;
+}
+
+.done-btn button {
+    background: #26344c!important;
+}
 
 .myform
 {
@@ -451,10 +444,6 @@ Classes especiales Form
     margin: 0;
     padding: 0;
 }
-
-
-
-/* -----------  DISEÑO: CAMPOS OCULTOS FORMULARIO  -------------------- */
 
 .small,
 .cf_info,
@@ -498,11 +487,664 @@ input.hidden
     z-index: -1;
 }
 
+/* Contact Form Elements
+------------------------------------------------*/
+
+#contact-form-login form,
+#contact-form form,
+#contact-form button,
+#booking form,
+#booking button
+{
+    border: 0;
+    font-size: 85%;
+}
+
+#contact-form label,
+#contactar label,#booking label
+{
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    width: 145px;
+    float: left;
+    padding-bottom: 18px;
+    text-shadow: black 1px 1px 2px;
+}
+
+#contact-form h4,
+#contact-form-login h4
+{
+    margin: 0;
+    font-family: 'Lobster', 'Lobster1.3Regular', Geneva, sans-serif;
+    text-transform: capitalize;
+    font-size: 23px;
+    zoom: 1;
+    *display: block;
+    display: inline-block;
+    color: #b50031;
+    text-shadow: #040404 0px 1px 2px;
+    background-color: transparent none;
+    text-align: center;
+}
+
+#contact-form p,
+.entry #contact-form p
+{
+    padding: 0.75em 0 0 0.75em;
+    font-size: 0.675em;
+    color: #040404;
+}
+
+#contact-form-login label
+{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    width: 75px;
+    float: left;
+    padding-bottom: 15px;
+    text-shadow: black 1px 1px 2px;
+}
+
+#contact-form-login .small,
+#contact-form .small,
+#booking .small
+{
+    color: #fff7c9;
+    display: block;
+    float: left;
+    font-size: 0.6em;
+    font-weight: normal;
+    text-align: right;
+    width: 400px;
+}
+
+#contact-form input,
+#booking input
+{
+    float: left;
+    font-size: 12px;
+    padding: 4px 2px;
+    border: solid 1px #aacfe4;
+    width: 250px;
+    margin: 2px 0 20px 10px;
+    -webkit-box-shadow: 0px 1px 3px #040404;
+    -moz-box-shadow: 0px 1px 3px #040404;
+    box-shadow: 0px 1px 3px #040404;
+}
+
+#contact-form-login input
+{
+    float: left;
+    display: block;
+    font-size: 12px;
+    padding: 4px 2px;
+    border: solid 1px #aacfe4;
+    width: 170px;
+    margin: 2px 0 10px 10px;
+    -webkit-box-shadow: 0px 1px 3px #040404;
+    -moz-box-shadow: 0px 1px 3px #040404;
+    box-shadow: 0px 1px 3px #040404;
+}
+
+#contact-form textarea,
+#contact-form-login textarea,
+#booking textarea
+{
+    float: left;
+    border: solid 1px #aacfe4;
+    width: 250px;
+    height: 8.025em;
+    padding: 4px 2px;
+    margin: 2px 0 20px 10px;
+    -webkit-box-shadow: 0px 1px 3px #040404;
+    -moz-box-shadow: 0px 1px 3px #040404;
+}
+
+#contact-form form textarea:focus,
+#contact-form form input:focus,
+#contact-form-login form textarea:focus,
+#contact-form-login form input:focus
+{
+    border: 2px solid #900;
+    background-color: #fffffe;
+    -webkit-box-shadow: 0px 1px 3px #040404;
+    -moz-box-shadow: 0px 1px 3px #040404;
+}
+
+button,
+#contact-form button,
+#contact-form input.sendbutton,
+#contact-form .sendbutton,
+#contact-form input[type="submit"]
+{
+    clear: both;
+    margin-left: 150px;
+    width: 125px;
+    height: 31px;
+    background-color: #040404;
+    background-image: url("images/button.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 0.9em;
+    color: #fff7c9;
+    font-size: 11px;
+    font-weight: bold;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+
+#contact-form-login
+{
+    float: right;
+    display: block;
+    width: 195px;
+    height: auto;
+    min-height: 140px;
+    background-color: #b50031;
+    border: 0.5em #fff7c9 solid;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#132d40', EndColorStr='#000000');
+    background: #000 -moz-radial-gradient( center, circle farthest-side, #132d40 0%, #000 100%) no-repeat;
+    background: #000 -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 600, from(#132d40), to(#000)) no-repeat;
+}
+
+#contact-form-login button,
+#contact-form-login input[type="submit"]
+{
+    clear: both;
+    margin-left: 30px;
+    width: 125px;
+    height: 31px;
+    background-color: #040404;
+    background-image: url("images/button.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 0.9em;
+    color: #fff7c9;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* 5 Table Elements
+------------------------------------------------*/
+
+table
+{
+    width: 960px;
+    padding: 0;
+    float: left;
+    background: url("images/divider.png") no-repeat 50% 0;
+    margin: 20px 10px 10px 10px;
+    -webkit-box-shadow: 0px 1px 3px #040404;
+    -moz-box-shadow: 0px 1px 3px #040404;
+    box-shadow: 0px 1px 3px #040404;
+    text-align: center;
+}
+
+caption
+{
+    padding: 3px 0 5px 0;
+    width: 960px;
+    font: normal 30px 'Lobster', 'Lobster1.3Regular', Geneva, sans-serif;
+    text-align: right;
+    border-top: 1px #41443e solid;
+}
+
+tfoot {
+    border-bottom: 1px #41443e solid;
+}
+
+td#prev a {
+    font: normal 20px 'Lobster','Lobster1.3Regular', Geneva, sans-serif;
+    text-align: right;
+    background: transparent none;
+}
+
+th {
+    font: bold 14px  Geneva, sans-serif;
+    color: #4f6b72;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 6px 6px 6px 6px;
+    background: #040404;
+    -moz-box-shadow: inset 0 0 10em #203c4d;
+    -webkit-box-shadow: inset 0 0 10em #203c4d;
+    box-shadow: inset 0 0 10em #203c4d;
+}
+
+td
+{
+    color: #606772;
+    background: transparent none;
+    padding: 16px 16px 16px 16px;
+    font: 14px bold  Geneva, sans-serif;
+    text-align: left;
+    -webkit-box-shadow: 0px 1px 3px #040404;
+    -moz-box-shadow: 0px 1px 3px #040404;
+    box-shadow: 0px 1px 3px #040404;
+}
+
+td a
+{
+    font: 24px bold Geneva, sans-serif;
+}
+
+td a:hover
+{
+    font: bold 24px  Geneva, sans-serif;
+    box-shadow: 10px 10px 7px rgba(125,0,0,.6);
+    -moz-box-shadow: 10px 10px 7px rgba(125,0,0,.6);
+    -webkit-box-shadow: 10px 10px 7px rgba(125,0,0,.6);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    position: relative;
+    z-index: 5;
+}
 
 
+#tabla_prensa
+{
+    clear: both;
+    background: #23334b;
+    text-shadow: #333 1px 1px 1px;
+    margin: 1em 0 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: auto;
+    background: transparent url("images/bg/bg_prensa.jpg") top center no-repeat;
+}
 
-/******************** CONTENIDO Y ESTRUCTURA: CONTENEDORES DIV ***************************/
+#tabla_prensa .login-box
+{
+    z-index: 1;
+    position: relative;
+    width: 438px;
+    height: 407px;
+    border: 2px;
+    -webkit-box-shadow: 0px 1px 3px #040404;
+    -moz-box-shadow: 0px 1px 3px #040404;
+    box-shadow: 0px 1px 3px #040404
+}
 
+#tabla_prensa #login-image
+{
+    width: 372px;
+    float: left;
+    height: 407px;
+    position: relative;
+}
+
+#tabla_prensa #image-info
+{
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 302px;
+    background: #111;
+    opacity: .7;
+    color: #ba371b;
+    padding: 1em;
+}
+
+#tabla_prensa #login-form-wrap
+{
+    width: 336px;
+    float: left;
+    height: 407px;
+    position: relative;
+}
+
+#tabla_prensa #login-form
+{
+    margin-top: 40px;
+}
+
+#tabla_prensa #login h2
+{
+    background: none;
+    border: 0;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    top: 110px;
+    left: 135px;
+}
+
+#tabla_prensa #login legend
+{
+    color: #fff;
+    border: 0;
+    background: 0;
+    margin: 0;
+    padding: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    float: left;
+}
+
+#tabla_prensa #login p
+{
+    color: #ccc;
+}
+
+#tabla_prensa #login-form legend
+{
+    display: none;
+    text-align: center;
+}
+
+#tabla_prensa #login .form-link
+{
+    font-size: 1.1em;
+    margin: 33px 0 0 28px !important;
+    padding: 0;
+    color: #b50031;
+    font-weight: normal;
+}
+
+#tabla_prensa #login fieldset
+{
+    background: none !important;
+    border: 0 !important;
+    padding-top: 20px;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#tabla_prensa #login p#signup
+{
+    text-align: center;
+    margin: -15px 0 10px 0;
+    color: #eee;
+    position: relative;
+    left: 8px;
+}
+
+#tabla_prensa #login p#signup a
+{
+    font-weight: normal;
+}
+
+#tabla_prensa #login label
+{
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    float: left;
+}
+
+#tabla_prensa #login-form label
+{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+#tabla_prensa #login input
+{
+    position: relative;
+    z-index: 3;
+    float: right;
+}
+
+#tabla_prensa #login label a
+{
+    float: left;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+#tabla_prensa #login input.btn,
+#login input[type="submit"]
+{
+    width: 80px;
+    height: 55px;
+    text-transform: capitalize;
+    font-weight: 100;
+    border: 0;
+    background: url("images/button.png");
+    display: block;
+    float: right !important;
+    font-size: 16px !important;
+    padding-bottom: 10px !important;
+    margin-top: 30px;
+    position: relative;
+    left: 7px;
+    color: #fff;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+
+#tabla_prensa #login fieldset#forgot-username,
+#tabla_prensa #login fieldset#forgot-password
+{
+    padding-top: 0;
+    font-size: 9pt;
+}
+
+#tabla_prensa #login #remember-me-group
+{
+    float: right;
+    margin-top: 43px;
+    margin-left: 7px;
+}
+
+#tabla_prensa #login #remember-me-group,
+#login #show-password-group
+{
+    opacity: 1;
+}
+
+#tabla_prensa #login #remember-me-group *,
+#tabla_prensa #login #show-password-group *
+{
+    width: auto;
+}
+
+#tabla_prensa #login #remember-me-group .inline-label,
+#tabla_prensa #login #show-password-group .inline-label
+{
+    margin-left: 3px;
+    line-height: 14px;
+    color: #eee;
+    font-size: 90%;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+#tabla_prensa #login #password-group
+{
+    position: relative;
+}
+
+#tabla_prensa #login #show-password-group
+{
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #222222 none repeat scroll 0 0;
+    bottom: -21px;
+    color: #333333;
+    font-size: 10px;
+    opacity: 0.7;
+    padding: 10px 3px 3px 10px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+#tabla_prensa #login #show-password-group label
+{
+    color: #fff !important;
+}
+
+#tabla_prensa #login .invalid-error
+{
+    font-size: 11px;
+    z-index: 2;
+    position: relative;
+    padding: 2px 5px;
+}
+
+#login #av-flash-block p
+{
+    color: #777;
+    padding: 0;
+}
+
+#login a
+{
+    color: #b50031;
+    text-decoration: underline;
+}
+
+#tabla_prensa #reset-password-form
+{
+    padding-top: 0;
+}
+
+#tabla_prensa #reset-password-form fieldset
+{
+    padding-top: 0;
+}
+
+#tabla_prensa #reset-password-form .btn
+{
+    margin: -18px 15px 0 0;
+}
+
+#tabla_prensa #security-question .btn
+{
+    margin-top: 20px;
+}
+
+#tabla_prensa #signup-confirm
+{
+    width: 318px;
+    margin: 0 0 0 10px;
+}
+
+#tabla_prensa #signup-confirm h2
+{
+    background: #26344c;
+    padding: 10px 0;
+    text-align: center;
+    top: 98px;
+    left: 100px;
+    width: 140px;
+}
+
+#tabla_prensa #signup-confirm p
+{
+    padding: 0 30px 15px 50px;
+    margin: -10px 0 0 0;
+}
+
+#tabla_prensa av-content
+{
+    float: right;
+    display: inline;
+    width: 389px;
+    height: 390px;
+    background-image: url("images/75p_honey.png");
+    border: 0.5em #2fc2c1 solid;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+tabla_prensa #signup-confirm input.btn
+{
+    margin-top: 10px;
+}
+
+#tabla_prensa
+{
+    background-image: url("images/bg/bg_prensa.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#tabla_prensa .av-checkbox
+{
+    width: 15px;
+    float: right;
+    display: block;
+}
+
+#tabla_prensa .av-radio
+{
+    width: 13px;
+}
+
+#tabla_prensa .form-link
+{
+    float: left;
+    margin: 12px 0 0 24px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#tabla_prensa .checkbox-group-label
+{
+    margin: 0 0 5px 5px;
+    padding: 0;
+    color: #333;
+    border: none;
+}
+
+#tabla_prensa .checkbox-group
+{
+    width: auto;
+    clear: none;
+    line-height: 15px;
+}
+
+#tabla_prensa .linear-list .checkbox-group
+{
+    border: none;
+    display: inline;
+}
+
+#tabla_prensa .checkbox-group input
+{
+    float: left;
+    margin: 0;
+}
+
+#tabla_prensa .checkbox-group label
+{
+    display: inline;
+    padding-right: 15px;
+}
+
+#wp-calendar table
+{
+    border: none;
+    width: 100%;
+    -webkit-box-shadow: 0px 1px 3px #040404;
+    -moz-box-shadow: 0px 1px 3px #040404;
+    box-shadow: 0px 1px 3px #040404;
+}
+
+/* 8 Sectioning Elements
+------------------------------------------------*/
 #wrapper
 {
     position: relative;
@@ -527,7 +1169,8 @@ input.hidden
     height: 0px;
 }
 
-#header {
+#header
+{
     position:relative;
     height: 495px;
     padding: 0;
@@ -538,12 +1181,14 @@ input.hidden
     text-align: center;
 }
 
-#content {
+#content
+{
     position:relative;
     padding-top: 20px;
 }
 
-#refuerzo {
+#refuerzo
+{
     position:relative;
     float: right;
     background-color: #040404;
@@ -552,8 +1197,8 @@ input.hidden
     height: 450px;
 }
 
-
-#info {
+#info
+{
     position:relative;
     margin: 1em 0 0 0;
     background: transparent url("images/bg/bg2.gif") top left repeat-x;
@@ -562,15 +1207,8 @@ input.hidden
     text-align: center;
 }
 
-
-
-/************************************ESTRUCTURA: CONTENIDO ****************************************************/
-
-
-/*---------------------------------CONTENIDO CABECERA:   HOMEPAGE ------------------------*/
-
-
-.pasador {
+.pasador
+{
     position:relative;
     width: 990px;
     height: 450px;
@@ -581,13 +1219,11 @@ input.hidden
     overflow: hidden;
 }
 
-.pasador iframe {
+.pasador iframe
+{
 
     border: none;
 }
-
-/*--------------------------- CONTENIDO CABECERA: Seccion LOCALIZACION MAPA ------------------------*/
-
 
 #pasador2
 {
@@ -607,9 +1243,6 @@ input.hidden
     padding: 5px;
     margin: 1em 0 0;
 }
-
-
-/*--------------------------- CONTENIDO CABECERA:    Secciones CONTACT, BOOKING, REGISTER----------------------------------*/
 
 #pasador3
 {
@@ -643,7 +1276,6 @@ input.hidden
 #pasador6
 {
 
-
 }
 
 #pasador8
@@ -654,7 +1286,6 @@ input.hidden
     height: 150px;
     min-height: 150px;
 }
-
 
 #pasador2,
 #pasador6
@@ -667,9 +1298,6 @@ input.hidden
     color: #fff7c9;
     text-align: center;
 }
-
-/*--------------------------- CONTENIDO CABECERA:  Formularios laterales  ----------------------------------*/
-
 
 #pasador3 #contact-form
 {
@@ -712,10 +1340,6 @@ input.hidden
     margin: 0.5em 0 0;
 }
 
-/*--------------------------- CONTENIDO:  Seccion PRESS PRENSA  ----------------------------------*/
-
-
-
 #pasador_prensa
 {
     position:relative;
@@ -728,7 +1352,6 @@ input.hidden
     word-spacing: 0.5px;
     text-shadow: -1px  1px 1px #040404;
 }
-
 
 #pasador_prensa #contact-form
 {
@@ -744,7 +1367,6 @@ input.hidden
     margin: 0;
 }
 
-
 #pasador_login
 {
     position:relative;
@@ -758,9 +1380,8 @@ input.hidden
     background: transparent url("images/bg/bg_prensa.jpg") bottom center no-repeat;
 }
 
-
-/*-----------------CONTENIDO CABECERA: PASADOR HOME PAGE ------------------------------***/
-
+/* 9 Section Head
+------------------------------------------------*/
 .cf_element
 {
     position:relative;
@@ -773,7 +1394,8 @@ input.hidden
     padding:0;
 }
 
-.header {
+.header
+{
 
     z-index: 200;
     position:absolute;
@@ -797,11 +1419,12 @@ input.hidden
     height:430px;
     min-height:430px;
     float:right;
-    font-family: 'nevisBold',Geneva, sans-serif;
+    font-family: 'nevisBold', Geneva, sans-serif;
     zoom:1;
 }
 
-.header .title h2 a {
+.header .title h2 a
+{
     margin: 0px;
     padding-top:0.5em;
     padding-bottom:0.5em;
@@ -813,25 +1436,27 @@ input.hidden
     text-shadow: -1px  1px 1px  #0D0D0D;
     text-align: right;
     font-size:41px;
-    font-family: 'nevisBold',Geneva, sans-serif;
+    font-family: 'nevisBold', Geneva, sans-serif;
     text-transform:uppercase;
 }
 
-.header .date {
+.header .date
+{
     margin:0;
     padding: 0;
     color: #999;
     background-color:#040404;
     text-shadow: -1px  1px 1px  #0D0D0D;
-    font: normal 16px  'Molengo','MolengoRegular',Geneva, sans-serif;
+    font: normal 16px  'Molengo','MolengoRegular', Geneva, sans-serif;
     z-index: 200;
     float:right;
 }
 
-.featured_text {
+.featured_text
+{
     float: right;
     margin-top:3px;
-    font-family: 'Molengo','MolengoRegular',Geneva, sans-serif;
+    font-family: 'Molengo','MolengoRegular', Geneva, sans-serif;
     background-image: url("images/75p_honey.png");
     width: 380px;
     height:auto;
@@ -841,7 +1466,8 @@ input.hidden
     z-index: 220;
 }
 
-.image {
+.image
+{
     padding: 0;
     margin: 0 auto;
     z-index: -1;
@@ -849,7 +1475,8 @@ input.hidden
     background-color: #040404;
 }
 
-.image a img {
+.image a img
+{
     margin: 0 auto;
     padding: 0;
     border: none;
@@ -857,8 +1484,8 @@ input.hidden
 }
 
 
-
-/***************** CONTENIDO CABECERA: IZQUIERDA PAGINA Y TITULARES *********************/
+/* 10 Section Aside
+------------------------------------------------*/
 
 .nastymondays
 {
@@ -902,7 +1529,7 @@ input.hidden
     font-size: 48px;
     text-shadow: #ffffee  2px 1px -3px;
     color: #2fc2c1;
-    font-family: "nevisBold",Geneva, sans-serif;
+    font-family: "nevisBold", Geneva, sans-serif;
 }
 
 .left h2,
@@ -916,7 +1543,7 @@ input.hidden
     width: 400px;
     text-shadow: #040404 0px 1px -3px;
     color: #fff7c9;
-    font-family: 'nevisBold',Geneva, sans-serif;
+    font-family: 'nevisBold', Geneva, sans-serif;
 }
 
 .left h6
@@ -944,7 +1571,6 @@ input.hidden
     font: 18px bold Geneva, sans-serif;
 }
 
-
 .left p
 {
     margin: 5px 0 0 0;
@@ -957,13 +1583,14 @@ input.hidden
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     text-shadow: -1px  1px 1px #040404;
-    font: 18px bold 'Molengo', 'MolengoRegular',Geneva, sans-serif;
+    font: 18px bold 'Molengo', 'MolengoRegular', Geneva, sans-serif;
     word-spacing: 0.8px;
     background-image: url("images/75p_honey.png");
 }
 
 
-/******************** CONTENIDO: MENU SUPERIOR ***************************/
+/* 12 Sectioning Navigation
+------------------------------------------------*/
 
 .menu-top-container
 {
@@ -1041,8 +1668,6 @@ input.hidden
     text-shadow: #040404 -1px 2px 2px;
     text-transform: uppercase;
 }
-
-/************** CONTENIDO:  MENU 2 ICONOS CENTRALES ****************************************/
 
 .menu-nastymondays-container
 {
@@ -1238,8 +1863,6 @@ input.hidden
     text-indent: -999.999em;
 }
 
-
-
 .menu-nastymondays-container ul#menu-nastymondays li.current_page_item a,
 .menu-prensa_en-container ul#menu-prensa_en li.current_page_item a,
 .menu-top-container ul.menu li.current_page_item a
@@ -1248,10 +1871,81 @@ input.hidden
     text-shadow: #fff7c9 -1px 2px 2px;
 }
 
+.menu-prensa_en-container
+{
+    float: right;
+    width: 200px;
+    background: transparent;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    color: #ffffee;
+    min-height: 105px;
+    height: auto !important;
+    height: 105px;
+    text-align: center;
+    font-family: Geneva, sans-serif;
+    line-height: 1.4em;
+    background-color: #b50031;
+    border-bottom: 1em #fff7c9 solid;
+}
 
-/**************************CONTENIDO: MODULOS SIDEBAR ******************************************/
+.menu-prensa_en-container ul#menu-prensa_en
+{
+    float: left;
+    width: 200px;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    zoom: 1;
+    color: #020202;
+    text-shadow: #fff7c9 2px 1px 2px;
+    background: transparent none;
+    font-weight: bold;
+}
+
+.menu-prensa_en-container ul#menu-prensa_en li
+{
+    list-style-type: none;
+    margin-left: 10px;
+    font-family: Geneva, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    zoom: 1;
+    color: #d87600;
+    text-shadow: #000 1px 2px 2px;
+    float: left;
+    padding-left: 3px;
+}
+
+.menu-prensa_en-container ul#menu-prensa_en  li a
+{
+    list-style-type: none;
+    font-family: Geneva, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 3px 0;
+    margin: 0.5em 0 0;
+    color: #fff7c9;
+    text-shadow: black 1px 2px 2px;
+    text-transform: uppercase;
+}
+
+.menu-prensa_en-container ul#menu-prensa_en li a:hover
+{
+    list-style-type: none;
+    font-family: Geneva, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 3px 0;
+    margin: 0.5em 0 0;
+    color: #fff7c9;
+    text-shadow: #040404 -1px 2px 2px;
+    text-transform: uppercase;
+}
 
 
+/* 12 Section Sidebar
+------------------------------------------------*/
 
 #sidebar h5,
 #sidebar h5 a
@@ -1320,7 +2014,6 @@ input.hidden
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
-
 
 .left2b
 {
@@ -1441,11 +2134,32 @@ input.hidden
     color: #2fc2c1;
     text-shadow: -1px 1px 1px #203c4d;
     text-decoration: underline;
-    font-family: 'Reenie Beanie',Geneva, sans-serif;
+    font-family: 'Reenie Beanie', Geneva, sans-serif;
+}
+.left_prensa
+{
+    float: right;
+    display: block;
+    width: 250px !important;
+    padding: 5px;
+    margin: 0 10px 0;
+    min-height: 250px;
+    height: auto !important;
+    height: 250px;
+    text-align: left;
+    word-spacing: 0.5px;
+    color: #2fc2c1;
+    text-shadow: -1px  1px 1px #040404;
+    font: 14px normal 'Molengo','MolengoRegular', Geneva, sans-serif;
+}
+
+.left_prensa p {
+    background-image: url("images/75p_honey.png");
 }
 
 
-/************************* CONTENIDO: PIE DE PAGINA ****************************************/
+/* 13 Sectioning Footer
+------------------------------------------------*/
 
 #footer
 {
@@ -1488,7 +2202,6 @@ input.hidden
     text-align: center;
 }
 
-/*-------------------------------------- DISEÑO MENU PRINCIPAL PIE DE PAGINA  --------------------------------------- */
 div#footer ul.menu
 {
     display: inline-block;
@@ -1555,9 +2268,6 @@ div#footer ul.menu li.gen a:hover
     text-transform: uppercase;
 }
 
-/*---------------
-MENU SECUNDARIO PIE DE PAGINA  --------------------------------------- */
-
 div#footer_b
 {
     clear: both;
@@ -1620,231 +2330,9 @@ div#footer_b
     padding: 0;
 }
 
-/**************DISEÑO:  PIE DE PAGINA TITULARES ENLACE BACKSTAGE ****************************************/
 
-h4.backstage,
-h4.backstage a
-{
-    clear: both;
-    width: 990px;
-    font-size: 25px;
-    text-align: center;
-    text-transform: capitalize;
-    font-family: 'Lobster','Lobster1.3Regular',Geneva, sans-serif;
-    color: #999;
-    text-shadow: #005764 -1px 1px 2px;
-    margin: 2em 0 0 0;
-    padding: 1em 0 0 0.8em;
-}
-
-h4.backstage a:hover
-{
-    width: 990px;
-    font-size: 25px;
-    text-align: center;
-    text-transform: capitalize;
-    font-family: 'Lobster', 'Lobster1.3Regular',Geneva, sans-serif;
-    color: #fff;
-    text-decoration: underline;
-    text-shadow: #005764 -1px 1px 2px;
-    margin: 2em 0 0 0;
-    padding: 1em 0 0 0.8em;
-}
-
-
-/***************************** CONTENIDO: FORMULARIOS CONTACTO BOOKING Y REGISTRO *******************/
-
-#contact-form-login form,
-#contact-form form,
-#contact-form button,
-#booking form,
-#booking button
-{
-    border: 0;
-    font-size: 85%;
-}
-
-#contact-form label,
-#contactar label,#booking label
-{
-    display: block;
-    font-weight: bold;
-    text-align: right;
-    width: 145px;
-    float: left;
-    padding-bottom: 18px;
-    text-shadow: black 1px 1px 2px;
-}
-
-#contact-form h4,
-#contact-form-login h4
-{
-    margin: 0;
-    font-family: 'Lobster', 'Lobster1.3Regular',Geneva, sans-serif;
-    text-transform: capitalize;
-    font-size: 23px;
-    zoom: 1;
-    *display: block;
-    display: inline-block;
-    color: #b50031;
-    text-shadow: #040404 0px 1px 2px;
-    background-color: transparent none;
-    text-align: center;
-}
-
-#contact-form p,
-.entry #contact-form p
-{
-    padding: 0.75em 0 0 0.75em;
-    font-size: 0.675em;
-    color: #040404;
-}
-
-#contact-form-login label
-{
-    display: block;
-    font-weight: bold;
-    text-align: center;
-    width: 75px;
-    float: left;
-    padding-bottom: 15px;
-    text-shadow: black 1px 1px 2px;
-}
-
-#contact-form-login .small,
-#contact-form .small,
-#booking .small
-{
-    color: #fff7c9;
-    display: block;
-    float: left;
-    font-size: 0.6em;
-    font-weight: normal;
-    text-align: right;
-    width: 400px;
-}
-
-#contact-form input,
-#booking input
-{
-    float: left;
-    font-size: 12px;
-    padding: 4px 2px;
-    border: solid 1px #aacfe4;
-    width: 250px;
-    margin: 2px 0 20px 10px;
-    -webkit-box-shadow: 0px 1px 3px #040404;
-    -moz-box-shadow: 0px 1px 3px #040404;
-    box-shadow: 0px 1px 3px #040404;
-}
-
-#contact-form-login input
-{
-    float: left;
-    display: block;
-    font-size: 12px;
-    padding: 4px 2px;
-    border: solid 1px #aacfe4;
-    width: 170px;
-    margin: 2px 0 10px 10px;
-    -webkit-box-shadow: 0px 1px 3px #040404;
-    -moz-box-shadow: 0px 1px 3px #040404;
-    box-shadow: 0px 1px 3px #040404;
-}
-
-#contact-form textarea,
-#contact-form-login textarea,
-#booking textarea
-{
-    float: left;
-    border: solid 1px #aacfe4;
-    width: 250px;
-    height: 8.025em;
-    padding: 4px 2px;
-    margin: 2px 0 20px 10px;
-    -webkit-box-shadow: 0px 1px 3px #040404;
-    -moz-box-shadow: 0px 1px 3px #040404;
-}
-
-#contact-form form textarea:focus,
-#contact-form form input:focus,
-#contact-form-login form textarea:focus,
-#contact-form-login form input:focus
-{
-    border: 2px solid #900;
-    background-color: #fffffe;
-    -webkit-box-shadow: 0px 1px 3px #040404;
-    -moz-box-shadow: 0px 1px 3px #040404;
-}
-
-button,
-#contact-form button,
-#contact-form input.sendbutton,
-#contact-form .sendbutton,
-#contact-form input[type="submit"]
-{
-    clear: both;
-    margin-left: 150px;
-    width: 125px;
-    height: 31px;
-    background-color: #040404;
-    background-image: url("images/button.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    text-align: center;
-    line-height: 0.9em;
-    color: #fff7c9;
-    font-size: 11px;
-    font-weight: bold;
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-    border-bottom: 1px solid rgba(0,0,0,0.25);
-}
-
-/*
-
-Formulario PRENSA LOGIN SIGNUP --------------------------------*/
-
-#contact-form-login
-{
-    float: right;
-    display: block;
-    width: 195px;
-    height: auto;
-    min-height: 140px;
-    background-color: #b50031;
-    border: 0.5em #fff7c9 solid;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#132d40', EndColorStr='#000000');
-    background: #000 -moz-radial-gradient( center, circle farthest-side, #132d40 0%, #000 100%) no-repeat;
-    background: #000 -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 600, from(#132d40), to(#000)) no-repeat;
-}
-
-
-#contact-form-login button,
-#contact-form-login input[type="submit"]
-{
-    clear: both;
-    margin-left: 30px;
-    width: 125px;
-    height: 31px;
-    background-color: #040404;
-    background-image: url("images/button.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    text-align: center;
-    line-height: 0.9em;
-    color: #fff7c9;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-
-
-/*********************CONTENIDO: POSTS Y EVENTOS***************************/
+/* 14 Section Main
+------------------------------------------------*/
 
 .post
 {
@@ -1938,7 +2426,7 @@ Formulario PRENSA LOGIN SIGNUP --------------------------------*/
     line-height: 1.1em;
     height: 3.3em;
     min-height: 3.3em;
-    font-family: 'nevisBold',Geneva, sans-serif;
+    font-family: 'nevisBold', Geneva, sans-serif;
     letter-spacing: -1px;
     font-size: 33px;
     color: #fff7c9;
@@ -2023,23 +2511,6 @@ Formulario PRENSA LOGIN SIGNUP --------------------------------*/
     padding-top: 10px;
 }
 
-/*
-Texto que acompaña a la descripcion CAPTION de las imagenes en NEWS
----------------------------------------------*/
-
-
-.wp-caption-text,
-.entry .wp-caption-text
-{
-    color: #2fc2c1;
-    font: bold 0.7em  Geneva, sans-serif;
-    text-transform: uppercase;
-    background-color: #080d14;
-}
-
-
-/*********************  CONTENIDO: SECCION EVENTOS  ---------------------------------------------*/
-
 .entry
 {
     clear: right;
@@ -2050,8 +2521,8 @@ Texto que acompaña a la descripcion CAPTION de las imagenes en NEWS
     line-height: 1.5em;
 }
 
-
-.entry p {
+.entry p
+{
     color: #fff7c9;
     text-shadow: -1px  1px 1px #000;
     font: 20px normal 'Molengo','MolengoRegular', Geneva, sans-serif;
@@ -2133,736 +2604,6 @@ Texto que acompaña a la descripcion CAPTION de las imagenes en NEWS
     padding: 3px;
 }
 
-
-/* DISEÑO: Navegacion INFERIOR DE NEWS ---------------------------------------------*/
-
-
-.navigation,
-.wp-paginate
-{
-    clear: both;
-    margin: 0 auto auto 90px;
-    padding: 5px 0px;
-    font-size: 11px/60%;
-    font-weight: normal;
-    z-index: 1000;
-    border-top: 1px dotted #2fc2c1;
-    width: 880px;
-    text-align: left;
-}
-
-.navigation a,
-.navigation a:visited
-{
-    color: #b50031;
-    font-weight: normal;
-    font-family: 'Molengo','MolengoRegular', Geneva, sans-serif;
-}
-
-.wp-paginate .title
-{
-    color: #b50031;
-    font-weight: normal;
-    font: 20px normal 'Molengo','MolengoRegular',Geneva, sans-serif;
-
-}
-
-ol.wp-paginate li,
-ol.wp-paginate li span
-{
-    display: inline-block;
-    margin: 0;
-    list-style: none;
-    zoom: 1;
-    *display: inline;
-    color: #020202;
-    background: transparent none;
-    font-weight: normal;
-    font-family: 'Molengo','MolengoRegular',Geneva, sans-serif;
-}
-/* DISEÑO: Navegacion BASE de CADA SINGLE POST ----------------------------------------*/
-
-.single-post .navigation
-{
-    clear: both;
-    margin: 0 auto;
-    padding: 0;
-    font-size: 11px/60%;
-    font-weight: normal;
-    z-index: 1000;
-    border-top: 1px dotted #2fc2c1;
-    width: 580px;
-}
-
-.single-post .previous-entries
-{
-    float: left;
-    display: block;
-    margin-left: 50px;
-    padding-top: 10px;
-    padding-left: 15px;
-    color: #b50031;
-    text-decoration: underline;
-    font-family: Geneva, sans-serif;
-    font-size: 11px;
-}
-
-.next-entries,
-a.next-entries
-{
-    float: left;
-    display: block;
-    padding-top: 10px;
-    padding-left: 95px;
-    color: #b50031;
-    text-decoration: underline;
-    font-family: Geneva, sans-serif;
-    font-size: 11px;
-}
-
-.next-entries a:hover,
-.previous-entries a:hover
-{
-    color:#b4000d;
-}
-
-
-/* DISEÑO: ETIQUETAS TAGS Y PALABRAS CLAVE DE NEWS Y POSTS   -------------------- */
-
-
-ul.wp-tag-cloud
-{
-    color: #606772;
-    background: url("images/divider.png") no-repeat 50% 0;
-    width: 590px;
-    height: 50px;
-    margin: 1em auto;
-    text-align: left;
-}
-
-ul.wp-tag-cloud li.wp-tag-cloud
-{
-    list-style-type: none;
-    margin-left: 2px;
-    font-family: Geneva, sans-serif;
-    font-size: 9pt;
-    display: inline;
-    text-shadow: black 1px 2px 2px;
-    float: left;
-    text-align: left;
-}
-
-ul.wp-tag-cloud li.wp-tag-cloud a
-{
-    font-size: 9pt;
-    color: #2fc2c1;
-    background-color: #080d14;
-    text-decoration: none;
-}
-
-ul.wp-tag-cloud li.wp-tag-cloud a:hover
-{
-    color: #2fc2c1;
-    text-decoration: underline;
-}
-
-/* --------------- TIPOGRAFIA: CLASES ESPECIALES CABECERAS Y TITULARES -------------------- */
-
-
-
-.nasty, .nasty a,
-nasty a:hover, ul li.nasty a,
-ul li.nasty a:hover, span.nasty, a.nasty
-{
-    font-family: 'Molengo', 'MolengoRegular', Helvetica, Arial, sans-serif;
-    font-size: 39px;
-    letter-spacing: -1px;
-    text-shadow: black 1px 1px 2px;
-    color: #fff7c9;
-}
-
-.nasty2,
-.nasty2 a,
-nasty2 a:hover,
-span.nasty2 {
-    display: block;
-    font-family: 'Lobster','Lobster1.3Regular',Geneva, sans-serif;
-    font-size: 34px;
-    color: #fff7c9;
-    letter-spacing: -1px;
-    text-shadow: black 1px 1px 2px;
-    height: 30px;
-    background: transparent none;
-    text-transform: capitalize;
-    zoom: 1;
-}
-
-.nasty3, .nasty3 a,
-nasty3 a:hover,
-span.nasty3 {
-    font-family: 'Lobster','Lobster1.3Regular',Geneva, sans-serif;
-    font-size: 0.7em;
-    letter-spacing: -1px;
-    text-shadow: black 1px 1px 2px;
-    color: #b50031;
-    background: transparent;
-    text-transform: capitalize;
-}
-
-.nasty4, .nasty4 a, span.nasty4 {
-    font-family: 'Lobster','Lobster1.3Regular',Geneva, sans-serif;
-    font-size: 1.2em;
-    font-weight: normal;
-    letter-spacing: 1px;
-    text-shadow: black 1px 1px -2px;
-    color: #2fc2c1;
-    background: transparent;
-    text-transform: capitalize;
-}
-
-.nasty4 a:hover {
-    color: #ba371b;
-    text-decoration: underline;
-}
-
-.rolo, .rolo a {
-    font-family: Geneva, sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    color: #fff7c9;
-    text-align: left;
-    line-height: 1.2em;
-    letter-spacing: 1pt;
-    text-shadow: #222 0px 1px -3px;
-    float: left;
-}
-
-.rolo2 {
-    font-weight: bold;
-    font-size: 0.9em;
-    color: #fff7c9;
-    background: #393328;
-    padding: 6px;
-    text-transform: uppercase;
-    line-height: 1.2em;
-    letter-spacing: 1pt;
-    text-shadow: #222 0px 1px -3px;
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-}
-
-.rolo2 a:hover {
-    color: #ba371b;
-    border-bottom: 1px dotted #b2c9ce;
-}
-
-h4.rolo2, h4.rolo2 a {
-    font-family: Geneva, sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    color: #fff7c9;
-    margin: 0;
-    text-align: left;
-    line-height: 1.2em;
-    letter-spacing: 1pt;
-    text-shadow: #222 0px 1px -3px;
-}
-
-.rolo3 {
-    width: 200px;
-    font-weight: bold;
-    font-size: 0.9em;
-    color: #b50031;
-    background: #393328;
-    padding: 6px;
-    text-transform: uppercase;
-    line-height: 1.2em;
-    letter-spacing: 1pt;
-    text-shadow: #222 0px 1px -3px;
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-}
-
-.rolo3 a:hover {
-    color: #ba371b;
-    border-bottom: 1px dotted #b2c9ce;
-}
-
-#calendar {
-    margin: 1em 0 0;
-    padding: 0;
-    width: 650px;
-    background: transparent none;
-}
-
-#tabla_prensa
-{
-    clear: both;
-    background: #23334b;
-    text-shadow: #333 1px 1px 1px;
-    margin: 1em 0 0;
-    padding: 0;
-    border: none;
-    width: 100%;
-    height: auto;
-    background: transparent url("images/bg/bg_prensa.jpg") top center no-repeat;
-}
-
-#tabla_prensa .login-box
-{
-    z-index: 1;
-    position: relative;
-    width: 438px;
-    height: 407px;
-    border: 2px;
-    -webkit-box-shadow: 0px 1px 3px #040404;
-    -moz-box-shadow: 0px 1px 3px #040404;
-    box-shadow: 0px 1px 3px #040404
-}
-
-#tabla_prensa #login-image {
-    width: 372px;
-    float: left;
-    height: 407px;
-    position: relative;
-}
-
-#tabla_prensa #image-info {
-    position: absolute;
-    left: 0;
-    bottom: 25px;
-    width: 302px;
-    background: #111;
-    opacity: .7;
-    color: #ba371b;
-    padding: 1em;
-}
-
-#tabla_prensa #login-form-wrap {
-    width: 336px;
-    float: left;
-    height: 407px;
-    position: relative;
-}
-
-#tabla_prensa #login-form {
-    margin-top: 40px;
-}
-
-#tabla_prensa #login h2 {
-    background: none;
-    border: 0;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
-    top: 110px;
-    left: 135px;
-}
-
-#tabla_prensa #login legend {
-    color: #fff;
-    border: 0;
-    background: 0;
-    margin: 0;
-    padding: 0;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    display: block;
-    float: left;
-}
-
-#tabla_prensa #login p {
-    color: #ccc;
-}
-
-#tabla_prensa #login-form legend {
-    display: none;
-    text-align: center;
-}
-
-#tabla_prensa #login .form-link {
-    font-size: 1.1em;
-    margin: 33px 0 0 28px !important;
-    padding: 0;
-    color: #b50031;
-    font-weight: normal;
-}
-
-#tabla_prensa #login fieldset {
-    background: none !important;
-    border: 0 !important;
-    padding-top: 20px;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-#tabla_prensa #login p#signup {
-    text-align: center;
-    margin: -15px 0 10px 0;
-    color: #eee;
-    position: relative;
-    left: 8px;
-}
-
-#tabla_prensa #login p#signup a {
-    font-weight: normal;
-}
-
-#tabla_prensa #login label {
-    font-size: 12px;
-    color: #ccc;
-    margin-bottom: 5px;
-    text-transform: capitalize;
-    float: left;
-}
-
-#tabla_prensa #login-form label {
-    color: #fff;
-    margin-top: 15px;
-    font-size: 13px;
-}
-
-#tabla_prensa #login input {
-    position: relative;
-    z-index: 3;
-    float: right;
-}
-
-#tabla_prensa #login label a {
-    float: left;
-    font-size: 11px;
-    text-transform: capitalize;
-}
-
-#tabla_prensa #login input.btn,#login input[type="submit"]
-{
-    width: 80px;
-    height: 55px;
-    text-transform: capitalize;
-    font-weight: 100;
-    border: 0;
-    background: url("images/button.png");
-    display: block;
-    float: right !important;
-    font-size: 16px !important;
-    padding-bottom: 10px !important;
-    margin-top: 30px;
-    position: relative;
-    left: 7px;
-    color: #fff;
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-    border-bottom: 1px solid rgba(0,0,0,0.25);
-}
-
-#tabla_prensa #login fieldset#forgot-username,
-#tabla_prensa #login fieldset#forgot-password
-{
-    padding-top: 0;
-    font-size: 9pt;
-}
-
-#tabla_prensa #login #remember-me-group
-{
-    float: right;
-    margin-top: 43px;
-    margin-left: 7px;
-}
-
-#tabla_prensa #login #remember-me-group,
-#login #show-password-group
-{
-    opacity: 1;
-}
-
-#tabla_prensa #login #remember-me-group *,
-#tabla_prensa #login #show-password-group *
-{
-    width: auto;
-}
-
-#tabla_prensa #login #remember-me-group .inline-label,
-#tabla_prensa #login #show-password-group .inline-label
-{
-    margin-left: 3px;
-    line-height: 14px;
-    color: #eee;
-    font-size: 90%;
-    text-transform: capitalize;
-    font-weight: normal;
-}
-
-#tabla_prensa #login #password-group
-{
-    position: relative;
-}
-
-#tabla_prensa #login #show-password-group
-{
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    background: #222222 none repeat scroll 0 0;
-    bottom: -21px;
-    color: #333333;
-    font-size: 10px;
-    opacity: 0.7;
-    padding: 10px 3px 3px 10px;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-}
-
-#tabla_prensa #login #show-password-group label
-{
-    color: #fff !important;
-}
-
-#tabla_prensa #login .invalid-error
-{
-    font-size: 11px;
-    z-index: 2;
-    position: relative;
-    padding: 2px 5px;
-}
-
-#login #av-flash-block p
-{
-    color: #777;
-    padding: 0;
-}
-
-#login a {
-    color: #b50031;
-    text-decoration: underline;
-}
-
-#tabla_prensa #reset-password-form
-{
-    padding-top: 0;
-}
-
-#tabla_prensa #reset-password-form fieldset
-{
-    padding-top: 0;
-}
-
-#tabla_prensa #reset-password-form .btn
-{
-    margin: -18px 15px 0 0;
-}
-
-#tabla_prensa #security-question .btn
-{
-    margin-top: 20px;
-}
-
-#tabla_prensa #signup-confirm
-{
-    width: 318px;
-    margin: 0 0 0 10px;
-}
-
-#tabla_prensa #signup-confirm h2
-{
-    background: #26344c;
-    padding: 10px 0;
-    text-align: center;
-    top: 98px;
-    left: 100px;
-    width: 140px;
-}
-
-#tabla_prensa #signup-confirm p
-{
-    padding: 0 30px 15px 50px;
-    margin: -10px 0 0 0;
-}
-
-#tabla_prensa av-content
-{
-    float: right;
-    display: inline;
-    width: 389px;
-    height: 390px;
-    background-image: url("images/75p_honey.png");
-    border: 0.5em #2fc2c1 solid;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-tabla_prensa #signup-confirm input.btn
-{
-    margin-top: 10px;
-}
-
-#tabla_prensa {
-    background-image: url("images/bg/bg_prensa.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-}
-
-btn:hover,.btn:focus
-{
-    color: #c8defd;
-    border-color: #a1bde6 !important;
-}
-
-button.cancel,input.cancel,.revert
-{
-    margin-left: 14px;
-    background: #040404;
-    color: #ba371b !important;
-    border-color: #fff !important;
-    font-size: 14px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-
-.cancel:hover
-{
-    background: #26344c;
-    border-color: #fedebe !important;
-}
-
-.done-btn button {
-    background: #26344c!important;
-}
-
-#tabla_prensa .av-checkbox {
-    width: 15px;
-    float: right;
-    display: block;
-}
-
-#tabla_prensa .av-radio {
-    width: 13px;
-}
-
-#tabla_prensa .form-link {
-    float: left;
-    margin: 12px 0 0 24px;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-#tabla_prensa .checkbox-group-label {
-    margin: 0 0 5px 5px;
-    padding: 0;
-    color: #333;
-    border: none;
-}
-
-#tabla_prensa .checkbox-group {
-    width: auto;
-    clear: none;
-    line-height: 15px;
-}
-
-#tabla_prensa .linear-list .checkbox-group {
-    border: none;
-    display: inline;
-}
-
-#tabla_prensa .checkbox-group input {
-    float: left;
-    margin: 0;
-}
-
-#tabla_prensa .checkbox-group label {
-    display: inline;
-    padding-right: 15px;
-}
-
-#wp-calendar table {
-    border: none;
-    width: 100%;
-    -webkit-box-shadow: 0px 1px 3px #040404;
-    -moz-box-shadow: 0px 1px 3px #040404;
-    box-shadow: 0px 1px 3px #040404;
-}
-
-/********************* ESTRUCTURA: MENU_PRENSA ********************/
-
-.menu-prensa_en-container {
-    float: right;
-    width: 200px;
-    background: transparent;
-    padding: 5px;
-    margin: 5px 0 5px 0;
-    color: #ffffee;
-    min-height: 105px;
-    height: auto !important;
-    height: 105px;
-    text-align: center;
-    font-family: Geneva, sans-serif;
-    line-height: 1.4em;
-    background-color: #b50031;
-    border-bottom: 1em #fff7c9 solid;
-}
-
-.menu-prensa_en-container ul#menu-prensa_en {
-    float: left;
-    width: 200px;
-    margin: 0;
-    list-style: none;
-    text-align: left;
-    zoom: 1;
-    color: #020202;
-    text-shadow: #fff7c9 2px 1px 2px;
-    background: transparent none;
-    font-weight: bold;
-}
-
-.menu-prensa_en-container ul#menu-prensa_en li {
-    list-style-type: none;
-    margin-left: 10px;
-    font-family: Geneva, sans-serif;
-    font-size: 16px;
-    text-align: left;
-    zoom: 1;
-    color: #d87600;
-    text-shadow: #000 1px 2px 2px;
-    float: left;
-    padding-left: 3px;
-}
-
-.menu-prensa_en-container ul#menu-prensa_en  li a {
-    list-style-type: none;
-    font-family: Geneva, sans-serif;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 3px 0;
-    margin: 0.5em 0 0;
-    color: #fff7c9;
-    text-shadow: black 1px 2px 2px;
-    text-transform: uppercase;
-}
-
-.menu-prensa_en-container ul#menu-prensa_en li a:hover
-{
-    list-style-type: none;
-    font-family: Geneva, sans-serif;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 3px 0;
-    margin: 0.5em 0 0;
-    color: #fff7c9;
-    text-shadow: #040404 -1px 2px 2px;
-    text-transform: uppercase;
-}
-
-/*--------------------------- CONTENIDO:   Seccion PRENSA SUB_APARTADOS----------------------------------*/
-
 .entry2
 {
     clear: both;
@@ -2886,8 +2627,6 @@ button.cancel,input.cancel,.revert
     background: #040404;
 }
 
-/*---------------------------   CONTENIDO: Seccion PRENSA pagina Principal ---------------------------------*/
-
 
 .events
 {
@@ -2903,7 +2642,7 @@ button.cancel,input.cancel,.revert
 
 .events h5
 {
-    font-family: "Reenie Beanie",Geneva, sans-serif;
+    font-family: "Reenie Beanie", Geneva, sans-serif;
     margin: 5px 0;
     padding: 3px;
     font-size: 18px;
@@ -2970,49 +2709,163 @@ button.cancel,input.cancel,.revert
     position: relative;
 }
 
-.left_prensa
+.wp-caption-text,
+.entry .wp-caption-text
 {
-    float: right;
-    display: block;
-    width: 250px !important;
-    padding: 5px;
-    margin: 0 10px 0;
-    min-height: 250px;
-    height: auto !important;
-    height: 250px;
-    text-align: left;
-    word-spacing: 0.5px;
     color: #2fc2c1;
-    text-shadow: -1px  1px 1px #040404;
-    font: 14px normal 'Molengo','MolengoRegular', Geneva, sans-serif;
-}
-
-.left_prensa p {
-    background-image: url("images/75p_honey.png");
+    font: bold 0.7em  Geneva, sans-serif;
+    text-transform: uppercase;
+    background-color: #080d14;
 }
 
 
-/* --------------- CONTENIDO:  PAGINA DE ERROR 404-------------------- */
+/* 18a Pagination WP
+------------------------------------------------*/
 
-h1.cuatro0cuatro a {
-    background: url("images/err/404.png") top left no-repeat;
+.navigation,
+.wp-paginate
+{
+    clear: both;
+    margin: 0 auto auto 90px;
+    padding: 5px 0px;
+    font-size: 11px/60%;
+    font-weight: normal;
+    z-index: 1000;
+    border-top: 1px dotted #2fc2c1;
+    width: 880px;
+    text-align: left;
+}
+
+.navigation a,
+.navigation a:visited
+{
+    color: #b50031;
+    font-weight: normal;
+    font-family: 'Molengo','MolengoRegular', Geneva, sans-serif;
+}
+
+.wp-paginate .title
+{
+    color: #b50031;
+    font-weight: normal;
+    font: 20px normal 'Molengo','MolengoRegular', Geneva, sans-serif;
+
+}
+
+ol.wp-paginate li,
+ol.wp-paginate li span
+{
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    zoom: 1;
+    *display: inline;
+    color: #020202;
+    background: transparent none;
+    font-weight: normal;
+    font-family: 'Molengo','MolengoRegular', Geneva, sans-serif;
+}
+
+.single-post .navigation
+{
+    clear: both;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 11px/60%;
+    font-weight: normal;
+    z-index: 1000;
+    border-top: 1px dotted #2fc2c1;
+    width: 580px;
+}
+
+.submenu, ul ul
+{
+    display: none;
+}
+
+.single-post .previous-entries
+{
     float: left;
     display: block;
-    width: 980px;
-    height: 359px;
-    border: none;
-    margin: 170px 0px 0px 0px;
-    text-indent: -999.999em;
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: #b50031;
+    text-decoration: underline;
+    font-family: Geneva, sans-serif;
+    font-size: 11px;
 }
 
-h1.cuatro0cuatro a:hover {
-    background: url("/src/images/err/404.png") 0px -400px no-repeat;
-    text-indent: -999.999em;
+.next-entries,
+a.next-entries
+{
+    float: left;
+    display: block;
+    padding-top: 10px;
+    padding-left: 95px;
+    color: #b50031;
+    text-decoration: underline;
+    font-family: Geneva, sans-serif;
+    font-size: 11px;
 }
 
-h1.cuatro0cuatro a img {
-    height: 0;
+.next-entries a:hover,
+.previous-entries a:hover
+{
+    color:#b4000d;
 }
+
+/* 18 Add-Ons WP
+------------------------------------------------*/
+
+ul.wp-tag-cloud
+{
+    color: #606772;
+    background: url("images/divider.png") no-repeat 50% 0;
+    width: 590px;
+    height: 50px;
+    margin: 1em auto;
+    text-align: left;
+}
+
+ul.wp-tag-cloud li.wp-tag-cloud
+{
+    list-style-type: none;
+    margin-left: 2px;
+    font-family: Geneva, sans-serif;
+    font-size: 9pt;
+    display: inline;
+    text-shadow: black 1px 2px 2px;
+    float: left;
+    text-align: left;
+}
+
+ul.wp-tag-cloud li.wp-tag-cloud a
+{
+    font-size: 9pt;
+    color: #2fc2c1;
+    background-color: #080d14;
+    text-decoration: none;
+}
+
+ul.wp-tag-cloud li.wp-tag-cloud a:hover
+{
+    color: #2fc2c1;
+    text-decoration: underline;
+}
+
+
+/* 20 Custom Elements Section Main
+------------------------------------------------*/
+
+
+#calendar {
+    margin: 1em 0 0;
+    padding: 0;
+    width: 650px;
+    background: transparent none;
+}
+
 
 div#nmondays {
     width: 500px;
@@ -3020,7 +2873,6 @@ div#nmondays {
     background: transparent url("/src/images/bg/bg_prensa.jpg") bottom center no-repeat;
     z-index: -1;
 }
-
 
 #archives-list li {
     width: 150px;
@@ -3047,34 +2899,11 @@ div#nmondays {
     text-align: center;
 }
 
-#gallery-1 img {
+#gallery-1 img
+{
     border: 1px solid #FFF7C9;
     background-image: none;
 }
-
-h1.inicio, h2.inicio, .inicio {
-    text-indent: -9999.9999px;
-    height: 1px;
-    color: #040404;
-    margin: 0;
-    padding: 0;
-}
-
-/*
-Generamos un espaciador para formularios
--------------------- */
-
-div.spacer {
-    clear: both;
-    margin-bottom: 8px;
-}
-
-img.wp-post-image, a img.wp-post-image {
-    display: inline;
-    float: left;
-    background-color: #040404;
-}
-
 
 .entry object {
     clear: left;
@@ -3085,19 +2914,13 @@ img.wp-post-image, a img.wp-post-image {
     border: 1px dotted #bdd77f;
 }
 
-
-iframe {
-    clear: left;
-    margin: 0 auto;
+div.flashmovie {
+    margin: 1em auto;
+    background: #040404;
+    border: none;
     display: block;
-    border: 1px solid #999;
     padding: 0;
 }
-
-button::-moz-focus-inner {
-    border: 0;
-}
-
 
 .post-calendar {
     padding-left: 18px;
@@ -3106,6 +2929,215 @@ button::-moz-focus-inner {
     color: #999999;
 }
 
+/* 19 Custom Heading Elements
+------------------------------------------------*/
+
+h1.inicio,
+h2.inicio,
+.inicio
+{
+    text-indent: -9999.9999px;
+    height: 1px;
+    color: #040404;
+    margin: 0;
+    padding: 0;
+}
+
+.nasty, .nasty a,
+nasty a:hover, ul li.nasty a,
+ul li.nasty a:hover, span.nasty, a.nasty
+{
+    font-family: 'Molengo', 'MolengoRegular', Helvetica, Arial, sans-serif;
+    font-size: 39px;
+    letter-spacing: -1px;
+    text-shadow: black 1px 1px 2px;
+    color: #fff7c9;
+}
+
+.nasty2,
+.nasty2 a,
+nasty2 a:hover,
+span.nasty2
+{
+    display: block;
+    font-family: 'Lobster','Lobster1.3Regular', Geneva, sans-serif;
+    font-size: 34px;
+    color: #fff7c9;
+    letter-spacing: -1px;
+    text-shadow: black 1px 1px 2px;
+    height: 30px;
+    background: transparent none;
+    text-transform: capitalize;
+    zoom: 1;
+}
+
+.nasty3,
+.nasty3 a,
+nasty3 a:hover,
+span.nasty3
+{
+    font-family: 'Lobster','Lobster1.3Regular', Geneva, sans-serif;
+    font-size: 0.7em;
+    letter-spacing: -1px;
+    text-shadow: black 1px 1px 2px;
+    color: #b50031;
+    background: transparent;
+    text-transform: capitalize;
+}
+
+.nasty4,
+.nasty4 a,
+span.nasty4
+{
+    font-family: 'Lobster','Lobster1.3Regular', Geneva, sans-serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-shadow: black 1px 1px -2px;
+    color: #2fc2c1;
+    background: transparent;
+    text-transform: capitalize;
+}
+
+.nasty4 a:hover
+{
+    color: #ba371b;
+    text-decoration: underline;
+}
+
+.rolo, .rolo a
+{
+    font-family: Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff7c9;
+    text-align: left;
+    line-height: 1.2em;
+    letter-spacing: 1pt;
+    text-shadow: #222 0px 1px -3px;
+    float: left;
+}
+
+.rolo2
+{
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #fff7c9;
+    background: #393328;
+    padding: 6px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    letter-spacing: 1pt;
+    text-shadow: #222 0px 1px -3px;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.rolo2 a:hover {
+    color: #ba371b;
+    border-bottom: 1px dotted #b2c9ce;
+}
+
+.rolo3
+
+{
+    width: 200px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #b50031;
+    background: #393328;
+    padding: 6px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    letter-spacing: 1pt;
+    text-shadow: #222 0px 1px -3px;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.rolo3 a:hover
+{
+    color: #ba371b;
+    border-bottom: 1px dotted #b2c9ce;
+}
+
+h4.rolo2,
+h4.rolo2 a
+{
+    font-family: Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff7c9;
+    margin: 0;
+    text-align: left;
+    line-height: 1.2em;
+    letter-spacing: 1pt;
+    text-shadow: #222 0px 1px -3px;
+}
+
+h4.backstage,
+h4.backstage a
+{
+    clear: both;
+    width: 990px;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Lobster','Lobster1.3Regular', Geneva, sans-serif;
+    color: #999;
+    text-shadow: #005764 -1px 1px 2px;
+    margin: 2em 0 0 0;
+    padding: 1em 0 0 0.8em;
+}
+
+h4.backstage a:hover
+{
+    width: 990px;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Lobster', 'Lobster1.3Regular', Geneva, sans-serif;
+    color: #fff;
+    text-decoration: underline;
+    text-shadow: #005764 -1px 1px 2px;
+    margin: 2em 0 0 0;
+    padding: 1em 0 0 0.8em;
+}
+
+h1.cuatro0cuatro a {
+    background: url("images/err/404.png") top left no-repeat;
+    float: left;
+    display: block;
+    width: 980px;
+    height: 359px;
+    border: none;
+    margin: 170px 0px 0px 0px;
+    text-indent: -999.999em;
+}
+
+h1.cuatro0cuatro a:hover {
+    background: url("/src/images/err/404.png") 0px -400px no-repeat;
+    text-indent: -999.999em;
+}
+
+h1.cuatro0cuatro a img {
+    height: 0;
+}
+
+/* 20 Custom Pluigin Elements
+------------------------------------------------*/
+
+img.wp-post-image,
+a img.wp-post-image
+{
+    display: inline;
+    float: left;
+    background-color: #040404;
+}
+
+
 
 img.floatLeft {
     float: left;
@@ -3113,25 +3145,12 @@ img.floatLeft {
     border: 1px #FFF7C9 solid;
 }
 
-
-img {
-    -ms-interpolation-mode: bicubic;
-}
-
-
-
-
-/*  Ocultamos icono stat wordpress
--------------------- */
-
-
 #wpstats, #wpstats img {
     display: none;
     height: 1px;
     width: 1px;
     border: none;
 }
-
 
 img#wpstats {
     width: 0px;
@@ -3141,22 +3160,11 @@ img#wpstats {
     overflow: hidden;
 }
 
+/* 21 Queries
+------------------------------------------------*/
 
-
-div.flashmovie {
-    margin: 1em auto;
-    background: #040404;
-    border: none;
-    display: block;
-    padding: 0;
-}
-
-.submenu, ul ul {
-    display: none;
-}
-
-
-@font-face {
+@font-face
+{
     font-family: 'FrancoisOneRegular';
     src: url('http://nastymondays.com/src/fonts/FrancoisOne-webfont.eot');
     src: url('http://nastymondays.com/src/fonts/FrancoisOne-webfont.eot?#iefix') format('embedded-opentype'),
@@ -3165,13 +3173,14 @@ div.flashmovie {
         url('http://nastymondays.com/src/fonts/FrancoisOne-webfont.svg#FrancoisOneRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 480px)
+{
 
-    img {
+    img
+    {
         max-width: 100%;
         height: auto;
     }
