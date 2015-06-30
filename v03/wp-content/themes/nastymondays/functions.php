@@ -3,7 +3,7 @@
 // Nasty Mondays BCN Kustom Kar Kommando Wordpress 2.9 Theme . Developed at SEgonquart Studio
 // WP 2.9
 
-define ('THEMENAME', 'Nasty Mondays');
+define ('THEMENAME', 'nastymondays');
 if ( is_page_template () || is_attachment () || !is_active_sidebar ('') )
     {
     global $content_width;
@@ -22,6 +22,8 @@ if ( function_exists ('add_theme_support') )
     add_theme_support ('nav-menus');
     add_theme_support ('custom-header');
     }
+
+wp_enqueue_style ('nastymondays', get_stylesheet_uri ());
 
 add_custom_background ();
 add_editor_style ();
