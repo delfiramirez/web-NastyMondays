@@ -1,7 +1,5 @@
 @media screen
 {
-
-
     .entry
     {
         clear: right;
@@ -40,7 +38,6 @@
         border-bottom: 5px solid #7D1120;
         background: url("/src/images/divider.png") no-repeat 50% 0;
     }
-
 
     .entry p,
     .entry p em
@@ -113,7 +110,6 @@
         padding: 5px;
     }
 
-
     .entry h5,
     .entry h5 a
     {
@@ -168,13 +164,13 @@
 
     .entry img,
     .entry img a,
-    .entry p a img {
+    .entry p a img 
+    {
         float: left;
         text-align: center;
         margin: 10px;
         padding: 2px;
     }
-
 
     .events
     {
@@ -192,7 +188,6 @@
         border: 1px #41443e solid;
     }
 
-
     .events2
     {
         float: left;
@@ -205,7 +200,6 @@
         color: #fff7c9;
         padding: 0;
     }
-
 
     .events h4,
     .entry4 h4 a,
@@ -295,8 +289,6 @@
         text-decoration: underline;
     }
 
-
-
     .left-column h5 a,
     .right-column h5 a
     {
@@ -309,7 +301,6 @@
         background: url("../images/divider.png") no-repeat 100% 0;
         border-bottom: 1px #41443e solid;
     }
-
 
     .left-column img,
     .left-column img a,
@@ -414,7 +405,6 @@
         position: relative;
         border: 1px #41443e solid;
     }
-
 
     .left_prensa
     {
