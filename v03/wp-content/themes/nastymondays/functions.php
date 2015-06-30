@@ -1,6 +1,7 @@
 <?php
 
-// Nasty Mondays BCN Kustom Kar Kommando Wordpress 2.9 Theme . Developed at SEgonquart Studio
+// Nasty Mondays BCN Kustom Kar Kommando Wordpress 2.9 Theme .
+// Developed at Segonquart Studio HQ in the year 2010
 // WP 2.9
 
 define ('THEMENAME', 'nastymondays');
