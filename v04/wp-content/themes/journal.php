@@ -45,7 +45,7 @@ get_header ();
                     {
                     echo the_title ();
                     wp_title ('|');
-                    print ' &spades; NM Official Website';
+                    echo blogInfo ('description');
                     }
                 ?>
             </title>
