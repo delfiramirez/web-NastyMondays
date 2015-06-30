@@ -35,7 +35,7 @@ get_header ();
                 </a>
             </li>
             <li>
-                <a href="http://nastymondays.com/crappy-tuesdays/">
+                <a href="<?php bloginfo ("template_url"); ?>/crappy-tuesdays/">
                     Crappy Tuesdays
                 </a>
             </li>

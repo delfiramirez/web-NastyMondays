@@ -239,7 +239,7 @@ function nm_get_fbimage ()
         }
     if ( empty ($fbimage) )
         {
-        $fbimage = "http://nastymondays.com/src/images/logo.gif";
+        $fbimage = "<?php bloginfo ('template_url'); ?>/src/images/logo.gif";
         }
     return $fbimage;
     }
@@ -249,10 +249,13 @@ function nm_clean_bad_content ($bPrint = false)
     global $post;
     $szPostContent  = $post->post_content;
     $szRemoveFilter = array ( "~<p[^>]*>\s?</p>~", "~<a[^>]*>\s?</a>~", "~<font[^>]*>~", "~<\/font>~", "~style\=\"[^\"]*\"~", "~<span[^>]*>\s?</span>~" );
-    $szPostContent  = preg_replace ($szRemoveFilter, '', $szPostContent);
+    $szPostContent  = preg_replace ($szRemoveFilter, '
+
+        ', $szPostContent);
     $szPostContent  = apply_filters ('the_content', $szPostContent);
     if ( $bPrint == false )
-        return $szPostContent;
+        return
+                $szPostContent;
     else
         echo $szPostContent;
     }
@@ -267,8 +270,11 @@ function nm_drop_bad_comments ()
             'viagra',
             'hydrocodone',
             'hair loss',
-            '[url=http',
-            '[link=http',
+            '[ url =   http
+            ',
+            '
+
+        [ link = http',
             'xanax',
             'tramadol',
             'konfuxi',
@@ -297,7 +303,7 @@ function nm_drop_bad_comments ()
             fwrite ($txtdrop, "  [USERAGENT] = " . $_SERVER[ 'HTTP_USER_AGENT' ] . "\n");
             fwrite ($txtdrop, "  [REFERER  ] = " . $_SERVER[ 'HTTP_REFERER' ] . "\n");
             fwrite ($txtdrop, "  [FILE_NAME] = " . $_SERVER[ 'SCRIPT_NAME' ] . " - [REQ_URI] = " . $_SERVER[ 'REQUEST_URI' ] . "\n");
-            fwrite ($txtdrop, '--------------**********------------------' . "\n");
+            fwrite ($txtdrop, ' --------------********** ------------------' . "\n");
             header ("HTTP/1.1 406 Not Acceptable");
             header ("Status: 406 Not Acceptable");
             header ("Connection: Close");
@@ -312,16 +318,16 @@ function bm_displayArchives ()
     {
     global $month, $wpdb, $wp_version;
     $sql = 'SELECT
-            DISTINCT YEAR(post_date) AS year,
-            MONTH(post_date) AS month,
-            count(ID) as posts
-            FROM ' . $wpdb->posts . '
-            WHERE post_status="publish"
-            AND post_type="post"
-            AND post_password=""
-            GROUP BY YEAR(post_date),
-            MONTH(post_date)
-            ORDER BY post_date DESC';
+                DISTINCT YEAR ( post_date ) AS year,
+                MONTH ( post_date ) AS month,
+                count ( ID ) as posts
+                FROM ' . $wpdb->posts . '
+                WHERE post_status = "publish"
+                AND post_type = "post"
+                AND post_password = ""
+                GROUP BY YEAR ( post_date ),
+                MONTH ( post_date )
+                ORDER BY post_date DESC';
 
 
     $archiveSummary = $wpdb->get_results ($sql);
@@ -334,7 +340,7 @@ function bm_displayArchives ()
 
             unset ($bmWp);
 
-            $bmWp = new WP_Query ('year=' . $date->year . '&monthnum=' . zeroise ($date->month, 2) . '&posts_per_page=-1' . '&cat=-126,-127' . '&paged=' . $paged);
+            $bmWp = new WP_Query ('year = ' . $date->year . '&monthnum = ' . zeroise ($date->month, 2) . '&posts_per_page = -1' . '&cat = -126, -127' . '&paged = ' . $paged);
 
 
             if ( $bmWp->have_posts () )
@@ -343,15 +349,16 @@ function bm_displayArchives ()
                 $url  = get_month_link ($date->year, $date->month);
                 $text = $month[ zeroise ($date->month, 2) ] . ' ' . $date->year;
 
-                echo get_archives_link ($url, $text, '', '<div class="sitemap"><h5>', '</h5>');
+                echo get_archives_link ($url, $text, '', '<div class = "sitemap"><h5>', '</h5>');
                 echo '<ul>';
                 while ( $bmWp->have_posts () )
                     {
                     $bmWp->the_post ();
-                    echo '<li>&spades; <a href=" ' . get_permalink ($bmWp->post) . '" title="' . wp_specialchars ($text, 1) . '">' . wptexturize ($bmWp->post->post_title) . '</a></li>';
+                    echo '<li>&spades;
+                <a href = " ' . get_permalink ($bmWp->post) . '" title = "' . wp_specialchars ($text, 1) . '">' . wptexturize ($bmWp->post->post_title) . '</a></li>';
                     }
 
-                echo '</ul></div>';
+                echo '</ul></div>               ';
                 }
             }
         }
