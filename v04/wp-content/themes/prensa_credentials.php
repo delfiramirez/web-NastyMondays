@@ -28,10 +28,10 @@ get_header ();
 
                 <h2>Please, login into your account</h2>
                 <p id="signup">
-                    or <a href="/prensa/registro-prensa/"
-                          title="Signup for a Nasty Mondays Press account">
+                    or <a href="<?php bloginfo ('template_url'); ?>/prensa/registro-prensa/"
+                          title="Signup for a<?php bloginfo ('name'); ?> Press account">
                         Signup</a>
-                    |  for a Nasty Mondays Press account &raquo;</p>
+                    |  for a <?php bloginfo ('name'); ?> Press account &raquo;</p>
             </div>
         </div>
 
@@ -43,7 +43,8 @@ get_header ();
 
             </div>
 
-        <?php endwhile;
+            <?php
+        endwhile;
     endif;
     ?>
 </div>

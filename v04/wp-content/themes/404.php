@@ -23,7 +23,7 @@ get_header ();
                 <a href="/">
 
                     <img
-                        src="http://nastymondays.com/src/images/err/not-found.jpg"
+                        src="<?php echo get_template_directory (); ?>/src/images/err/not-found.jpg"
                         alt="<?php print 'Error 404. We cannot seem to find what you are looking for. Let us take you back home.'; ?>"  />
                 </a>
 

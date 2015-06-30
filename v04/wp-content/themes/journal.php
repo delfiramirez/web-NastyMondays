@@ -22,12 +22,12 @@ get_header ();
             <title><?php
                 if ( is_single () )
                     {
-                    echo 'NASTY MONDAYS';
+                    echo wp_title ();
                     single_post_title ();
                     }
                 elseif ( is_home () || is_front_page () )
                     {
-                    echo the_title ();
+                    return __ ('Home', 'theme_domain') . ' | ' . the_title ();
                     print ' &spades; ';
                     }
                 elseif ( is_page () )
@@ -129,52 +129,51 @@ get_header ();
 
             <meta name="google-site-verification" content="AWjiBhKD6lYzAVMMplUipBoFzUQ_VdR3CIY0C58ZPJ8" />
 
-            <link rel="canonical" href="http://www.nastymondays.com/" />
+            <link rel="canonical" href="<?php bloginfo ('url'); ?>" />
 
             <link rel="start"
-                  href="http://www.nastymondays.com/"
+                  href="<?php bloginfo ('url'); ?>/"
                   title="<?php the_title (); ?>" />
 
-            <link rel="alternate" media="handheld" href="http://www.nastymondays.com/" />
+            <link rel="alternate" media="handheld" href="<?php bloginfo ('url'); ?>/" />
 
             <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 
 
-                <link rel="stylesheet" href="http://nastymondays.com/src/css/style.css" type="text/css" media="screen, projection" />
+                <link rel="stylesheet" href="<?php echo get_template_directory (); ?>/src/css/style.css" type="telesheet" href="<?php bloginfo ('template_url'); ?>/xt/css" media="screen, projection" />
 
                 <!--[if (gte IE 5.5)&(lte IE 8)]>
 
-                <script type="text/javascript" src="../../js/ie-css3.js"></script>
+                <script type="text/javascript" src="<?php echo get_template_directory (); ?>/js/ie-css3.js"></script>
 
                 <![endif]-->
 
-
-
-                <!-- PNG FIX de IE6 -->
 
                 <!--[if lte IE 6]
 
-                <script type="text/javascript" src="../../js/supersleight/supersleight-min.js"></script>
+                <script type="text/javascript" src="<?php echo get_template_directory (); ?>/js/supersleight/supersleight-min.js"></script>
 
                 <![endif]-->
 
-<!--[if gte IE 9]> <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script> <![endif]-->
+                <!--[if gte IE 9]>
+                <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script>
+                <![endif]-->
 
                 <script type="text/javascript"
-                src="../../src/js/nasty.js"></script>
+                src="<?php echo get_template_directory (); ?>/src/js/nasty.js"></script>
 
                 <script type="text/javascript"
-                src="../../src/js/cufon-yui.js"></script>
+                src="<?php echo get_template_directory (); ?>/src/js/cufon-yui.js"></script>
 
                 <script type="text/javascript"
-                src="../../src/js/nasty_400.font.js"></script>
+                src="<?php echo get_template_directory (); ?>/src/js/nasty_400.font.js"></script>
 
                 <script type="text/javascript"
-                rc="../../src/js/tipografia.js"></script>
+                rc="<?php echo get_template_directory (); ?>/src/js/tipografia.js"></script>
 
                 <script type="text/javascript"
-                src="../../src/js/bsn.Crossfader.js"></script>
+                src="<?php echo get_template_directory (); ?>/src/js/bsn.Crossfader.js"></script>
 
 
 

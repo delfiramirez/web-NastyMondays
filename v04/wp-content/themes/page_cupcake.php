@@ -46,7 +46,7 @@ get_header ();
 
 <div class="izquierda">
     <h3>
-        <strong>   <?php the_title (); ?> </strong>
+        <strong> <?php the_title (); ?> </strong>
     </h3>
 </div>
 

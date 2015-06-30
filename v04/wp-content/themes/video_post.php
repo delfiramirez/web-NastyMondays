@@ -14,27 +14,27 @@
 
     <div id="social">
 
-        &spades;
+        <?php print '&spades;' ?>
         <a
             class="nasty3"
             href="http://www.facebook.com/sharer.php?u=<?php the_permalink (); ?>&t=<?php the_title (); ?>"
             target="blank">
-            Share on Facebook
+                <?php _e ("<!--:en-->on Facebook<!--:--><!--:es-->en facebook<!--:--><!--:ca-->a facebook<!--:-->"); ?>
         </a>
 
-        &spades;
+        <?php print '&spades;' ?>
         <a
             class="nasty3"
             href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
             title="Click to send this page to Twitter!"
             target="_blank">
-            Share on Twitter
+                <?php _e ("<!--:en-->on Twitter<!--:--><!--:es--> en Twitter<!--:--><!--:ca-->a Twitter<!--:-->"); ?>
         </a>
 
-        &spades;
+        <?php print '&spades;' ?>
 
         <p>
-            <?php echo tweetCount ('http://nastymondays.com'); ?>
+            <?php echo tweetCount (bloginfo ('url')); ?>
         </p>
 
     </div>

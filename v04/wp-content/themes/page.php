@@ -73,7 +73,8 @@ get_header ();
     </a>
 
     <a class="nasty3"
-       href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>" title="Click to send this page to Twitter!"
+       href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
+       title="Click to send this page to Twitter!"
        target="_blank">
            <?php _e ("<!--:en-->Share on Twitter<!--:--><!--:es-->Compartir en Twitter<!--:--><!--:ca-->Compartir a twitter<!--:-->"); ?>
     </a>

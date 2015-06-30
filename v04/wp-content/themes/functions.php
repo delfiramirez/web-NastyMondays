@@ -10,6 +10,8 @@ if ( is_page_template () || is_attachment () || !is_active_sidebar ('') )
 if ( !defined ('WP_POST_REVISIONS') )
     define ('WP_POST_REVISIONS', 1);
 
+wp_enqueue_style ('nastymondays', get_stylesheet_uri ());
+
 if ( function_exists ('add_theme_support') )
     {
     add_theme_support ('custom-background');
@@ -52,7 +54,7 @@ echo $nmExcerpt;
 
 function nm_admin_footer ()
     {
-    echo '<a href="http://segonquart.net">Nasty Mondays Website designed and developed by Delfi Ramirez for Nasty Garage SL.</a>';
+    echo '<a href="http://segonquart.net">' . blogInfo ('name') . 'Website designed and developed by Delfi Ramirez for Nasty Garage SL.</a>';
     }
 
 add_filter ('admin_footer_text', 'nm_admin_footer');

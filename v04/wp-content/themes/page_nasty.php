@@ -24,7 +24,7 @@ get_header ();
         <li>
             <a class="tw"
                href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
-               title="Click to send this page to Twitter!"
+               title="<?php bloginfo ('name'); ?> on Twitter!"
                target="_blank">
 
                 <?php _e ("<!--:en-->on Twitter<!--:--><!--:es--> en Twitter<!--:--><!--:ca-->a Twitter<!--:-->"); ?>
@@ -34,7 +34,7 @@ get_header ();
         <li>
             <a class="vimeo"
                href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
-               title="Nasty Mondays on Vimeo"
+               title="<?php bloginfo ('name'); ?> on Vimeo"
                target="_blank">
 
                 <?php _e ("<!--:en-->on Vimeo<!--:--><!--:es-->en Vimeo<!--:--><!--:ca-->a Vimeo<!--:-->"); ?>
@@ -43,7 +43,7 @@ get_header ();
         <li>
             <a class="tumbrl"
                href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
-               title="Click to send this page to Twitter!"
+               title="<?php bloginfo ('name'); ?> on Tumblr!"
                target="_blank">
 
                 <?php _e ("<!--:en-->on Tumbrl<!--:--><!--:es-->en Tumbrl<!--:--><!--:ca-->a Tumbrl<!--:-->"); ?></a></li></ul>

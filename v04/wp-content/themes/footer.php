@@ -1,7 +1,7 @@
 <h6 class="backstage">
-    <a href="http://nastymondays.com/backstage/">
+    <a href="<?php bloginfo ('url'); ?>/backstage/">
 
-        <?php _e ("<!--:en-->&#x2660;  &#x2660;  Visit Nasty Mondays Backstage. It's free and you'll meet Soren and Max &#x2660;  &#x2660;<!--:--><!--:es-->&#x2660;  &#x2660;  Visita el Backstage. Es gratis y descubriras a Soren y Max &#x2660;  &#x2660;<!--:--><!--:ca-->&#x2660;  &#x2660;  Visita el Backstage. Es gratis,  descubriras a Soren i en Max &#x2660;  &#x2660;<!--:-->"); ?>
+        <?php _e ("<!--:en-->&#x2660;  &#x2660;  Visit' . bloginfo('url')' . 'Backstage. It's free and you'll meet Soren and Max &#x2660;  &#x2660;<!--:--><!--:es-->&#x2660;  &#x2660;  Visita el Backstage. Es gratis y descubriras a Soren y Max &#x2660;  &#x2660;<!--:--><!--:ca-->&#x2660;  &#x2660;  Visita el Backstage. Es gratis, descubriras a Soren i en Max &#x2660;  &#x2660;<!--:-->"); ?>
     </a>
 </h6>
 <hr />
@@ -34,7 +34,7 @@
 
 <p>
     <strong>
-        <a href="http://www.nastymondays.com">
+        <a href="<?php bloginfo ('url'); ?>">
             <?php bloginfo ('name'); ?>
         </a>
     </strong> was invented 5 years ago in Barcelona, by our friends <strong><a href="http://greenselfstorage.es" >Max "GreenSelfStorage"</a></strong> and <strong>Soren</strong> - local celebrities, mad minds, blonde lovers and tattoo addicts! With their fable to indie and electro rock, they started with a party series that did not exist like that in <strong>Barcelona</strong> before. Constantly reinventing themselves, with new themes, bands playing live, different locations and becoming crazier each time, they have managed to establish their base within Barcelona, and have toured in Denmark, Sweden, Germany, Austria, Holland or the United States.</p>
@@ -47,8 +47,8 @@
 @font-face
 {
 font-family:'DeftoneStylusRegular';
-src: url('../../src/fonts/deftone_stylus-webfont.eot');
-src: url('../../src/fonts/deftone_stylus-webfont.eot?#iefix') format('embedded-opentype');
+src: url('<?php echo get_template_directory (); ?>/src/fonts/deftone_stylus-webfont.eot');
+src: url('<?php echo get_template_directory (); ?>/src/fonts/deftone_stylus-webfont.eot?#iefix') format('embedded-opentype');
 
 }
 </style>

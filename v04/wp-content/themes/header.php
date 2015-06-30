@@ -41,137 +41,137 @@
                     }
                 ?>
             </title>
-            <base href=http://nastymondays.com"/>
+            <base href=<?php bloginfo ('url'); ?>"/>
 
-            <?php
-            global $post;
-            if ( is_single () || is_page () || is_home () ) :
-                $tags = get_the_tags ($post->ID);
-                if ( $tags ) :
-                    foreach ( $tags as $tag ) :
-                        $sep = (empty ($keywords)) ? '' : ', ';
-                        $keywords .= $sep . $tag->name;
-                    endforeach;
-                    ?>
+                  <?php
+                  global $post;
+                  if ( is_single () || is_page () || is_home () ) :
+                      $tags = get_the_tags ($post->ID);
+                      if ( $tags ) :
+                          foreach ( $tags as $tag ) :
+                              $sep = (empty ($keywords)) ? '' : ', ';
+                              $keywords .= $sep . $tag->name;
+                          endforeach;
+                          ?>
 
-                    <meta name="description"
+                          <meta name="description"
                           content="<?php echo get_the_excerpt (); ?>" />
-                    <meta name="keywords"
+                          <meta name="keywords"
                           content="<?php echo $keywords; ?>" />
 
-                    <meta property="og:title"
-                          content="<?php the_title (); ?>"/>
-                    <meta property="og:description"
-                          content="<?php
-                          if ( function_exists ('wpseo_get_value') )
-                              {
-                              echo wpseo_get_value ('metadesc');
-                              }
-                          else
-                              {
-                              echo $post->post_excerpt;
-                              }
-                          ?>"/>
+                        <meta property="og:title"
+                              content="<?php the_title (); ?>"/>
+                        <meta property="og:description"
+                              content="<?php
+                              if ( function_exists ('wpseo_get_value') )
+                                  {
+                                  echo wpseo_get_value ('metadesc');
+                                  }
+                              else
+                                  {
+                                  echo $post->post_excerpt;
+                                  }
+                              ?>"/>
 
-                    <meta property="og:url"
-                          content="<?php the_permalink (); ?>"/>
-                    <meta property="og:image"
-                          content="<?php echo get_fbimage (); ?>"/>
-                    <meta property="og:type"
-                          content="<?php
-                          if ( is_single () || is_page () )
-                              {
-                              echo "article";
-                              }
-                          else
-                              {
-                              echo "website";
-                              }
-                          ?>"/>
-                    <meta property="og:site_name"
-                          content="<?php bloginfo ('name'); ?>"/>
-                    <meta property="fb:app_id"
-                          content="158602467548779"/>
+                        <meta property="og:url"
+                              content="<?php the_permalink (); ?>"/>
+                        <meta property="og:image"
+                              content="<?php echo get_fbimage (); ?>"/>
+                        <meta property="og:type"
+                              content="<?php
+                              if ( is_single () || is_page () )
+                                  {
+                                  echo "article";
+                                  }
+                              else
+                                  {
+                                  echo "website";
+                                  }
+                              ?>"/>
+                        <meta property="og:site_name"
+                              content="<?php bloginfo ('name'); ?>"/>
+                        <meta property="fb:app_id"
+                              content="158602467548779"/>
 
-                    <meta property="og:type"
-                          content="<?php
-                          if ( is_single () || is_page () )
-                              {
-                              echo "article";
-                              }
-                          else
-                              {
-                              echo "website";
-                              }
-                          ?>"/>
-                          <?php
+                        <meta property="og:type"
+                              content="<?php
+                              if ( is_single () || is_page () )
+                                  {
+                                  echo "article";
+                                  }
+                              else
+                                  {
+                                  echo "website";
+                                  }
+                              ?>"/>
+                              <?php
+                          endif;
                       endif;
-                  endif;
-                  ?>
+                      ?>
 
-            <meta http-equiv="imagetoolbar"
-                  content="false" />
+                <meta http-equiv="imagetoolbar"
+                      content="false" />
 
-            <meta http-equiv="X-UA-Compatible"
-                  content="IE=8" />
+                <meta http-equiv="X-UA-Compatible"
+                      content="IE=8" />
 
-            <meta name="google-site-verification"
-                  content="AWjiBhKD6lYzAVMMplUipBoFzUQ_VdR3CIY0C58ZPJ8" />
-            <link rel="canonical"
-                  href="http://www.nastymondays.com/" />
+                <meta name="google-site-verification"
+                      content="AWjiBhKD6lYzAVMMplUipBoFzUQ_VdR3CIY0C58ZPJ8" />
+                <link rel="canonical"
+                      href="<?php bloginfo ('url'); ?>" />
 
-            <link rel="start"
-                  href="http://www.nastymondays.com/"
-                  title="<?php the_title (); ?>" />
+                <link rel="start"
+                      href="<?php bloginfo ('url'); ?>"
+                      title="<?php the_title (); ?>" />
 
-            <link rel="alternate"
-                  media="handheld"
-                  href="http://www.nastymondays.com/" />
+                <link rel="alternate"
+                      media="handheld"
+                      href="<?php bloginfo ('url'); ?>" />
 
-            <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+                <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-                <link rel="stylesheet"
-                      href="http://nastymondays.com/src/css/style.css"
-                      type="text/css"
-                      media="screen, projection" />
+                    <link rel="stylesheet"
+                          href="<?php bloginfo ("template_url"); ?>//style.css"
+                          type="text/css"
+                          media="screen, projection" />
 
-                <!--[if (gte IE 5.5)&(lte IE 8)]>
-                <script type="text/javascript" src="../../js/ie-css3.js"></script>
-                <![endif]-->
+                    <!--[if (gte IE 5.5)&(lte IE 8)]>
+                    <script type="text/javascript" src="../../js/ie-css3.js"></script>
+                    <![endif]-->
 
-                <!--[if lte IE 6]
-                <script type="text/javascript" src="../../js/supersleight/supersleight-min.js"></script>
-                <![endif]-->
+                    <!--[if lte IE 6]
+                    <script type="text/javascript" src="../../js/supersleight/supersleight-min.js"></script>
+                    <![endif]-->
 
-                <!--[if gte IE 9]>
-                <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script>
-                <![endif]-->
+                    <!--[if gte IE 9]>
+                    <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script>
+                    <![endif]-->
 
-                <script type="text/javascript"
-                src="../../src/js/nasty.js"></script>
-                <script type="text/javascript"
-                src="../../src/js/cufon-yui.js"></script>
-                <script type="text/javascript"
-                src="../../src/js/nasty_400.font.js"></script>
-                <script type="text/javascript"
-                src="../../src/js/tipografia.js"></script>
-                <script type="text/javascript"
-                src="../../src/js/bsn.Crossfader.js"></script>
+                    <script type="text/javascript"
+                    src="<?php bloginfo ("template_url"); ?>/js/nasty.js"></script>
+                    <script type="text/javascript"
+                    src="<?php bloginfo ("template_url"); ?>/js/cufon-yui.js"></script>
+                    <script type="text/javascript"
+                    src="<?php bloginfo ("template_url"); ?>/js/nasty_400.font.js"></script>
+                    <script type="text/javascript"
+                    src="<?php bloginfo ("template_url"); ?>/js/tipografia.js"></script>
+                    <script type="text/javascript"
+                    src="<?php bloginfo ("template_url"); ?>/js/bsn.Crossfader.js"></script>
 
-                <?php wp_head (); ?>
+                    <?php wp_head (); ?>
 
-                </head>
+                    </head>
 
-                <body>
+                    <body>
 
-                    <div id="wrapper">
+                        <div id="wrapper">
 
-                        <div class="langi">
-                            <?php echo qtrans_generateLanguageSelectCode ('text'); ?>
-                        </div>
+                            <div class="langi">
+                                <?php echo qtrans_generateLanguageSelectCode ('text'); ?>
+                            </div>
 
-                        <h1 class="inicio">
-                            <?php the_title (); ?>. Official Website
-                        </h1>
+                            <h1 class="inicio">
+                                <?php the_title (); ?>. Official Website
+                            </h1>
 
-                        <?php wp_nav_menu ('menu=Top'); ?>
+                            <?php wp_nav_menu ('menu=Top'); ?>

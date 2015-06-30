@@ -21,9 +21,9 @@ get_header ();
     <div class="events_pre">
 
         <p>
-            <a href="http://www.nastymondays.com/docs/media-buzz-nastymondays-2010.pdf">
+            <a href="<?php bloginfo ("template_url"); ?>/docs/media-buzz-nastymondays-2010.pdf">
                 <img
-                    src="http://www.nastymondays.com/src/images/media.jpg"
+                    src="<?php bloginfo ("template_url"); ?>/src/images/media.jpg"
                     alt="<?php the_title (); ?> Media Buzz Report 2010"
                     target="_blank" />
             </a>

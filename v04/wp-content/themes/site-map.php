@@ -20,17 +20,17 @@ get_header ();
         <ul class="page_item">
 
             <li>
-                <a href="http://nastymondays.com">
+                <a href="<?php bloginfo ('template_url'); ?>">
                     <?php _e ("<!--:en-->Home<!--:--><!--:es-->Inicio<!--:--><!--:ca-->Inici<!--:-->"); ?>
                 </a>
             </li>
             <li>
-                <a href="http://nastymondays.com/nasty-mondays-barcelona/">
+                <a href="<?php bloginfo ('template_url'); ?>/nasty-mondays-barcelona/">
                     <?php bloginfo ('name'); ?>
                 </a>
             </li>
             <li>
-                <a href="http://nastymondays.com/nasty-mondays-barcelona/">
+                <a href="<?php bloginfo ('template_url'); ?>/nasty-mondays-barcelona/">
                     We are [2] Nasty
                 </a>
             </li>
@@ -40,22 +40,22 @@ get_header ();
                 </a>
             </li>
             <li>
-                <a href="http://nastymondays.com/crappy-tuesdays/">
+                <a href="<?php bloginfo ('template_url'); ?>/crappy-tuesdays/">
                     Crappy [2]'s Days
                 </a>
             </li>
             <li>
-                <a href="http://nastymondays.com/cupcake/">
+                <a href="<?php bloginfo ('template_url'); ?>/cupcake/">
                     Cupcake
                 </a>
             </li>
             <li>
-                <a href="http://nastymondays.com/cuppcake/">
+                <a href="<?php bloginfo ('template_url'); ?>cuppcake/">
                     BoomBox
                 </a>
             </li>
             <li>
-                <a href="http://nastymondays.com/nasty-mondays-new-york/">
+                <a href="<?php bloginfo ('template_url'); ?>/nasty-mondays-new-york/">
                     NY  <?php bloginfo ('name'); ?>
                 </a>
             </li>

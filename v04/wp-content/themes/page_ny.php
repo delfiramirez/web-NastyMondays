@@ -62,19 +62,31 @@ get_header ();
 
 </div>
 
+
 <div id="social">
 
-    <?php print ' &spades;' ?>
-    <a class ="nasty3" href="http://www.facebook.com/sharer.php?u=<?php the_permalink (); ?>&t=<?php the_title (); ?>"
-       target="blank">
-           <?php _e ("<!--:en-->Share on Facebook<!--:--><!--:es-->Compartir en facebook<!--:--><!--:ca-->Compartir a facebook<!--:-->"); ?>
-    </a><?php print ' &spades;' ?>
-    <a class="nasty3" href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
-       title="Click to send this page to Twitter!"
-       target="_blank">
-           <?php _e ("<!--:en-->Share on Twitter<!--:--><!--:es-->Compartir en Twitter<!--:--><!--:ca-->Compartir a Twitter<!--:-->"); ?>
+    <?php print '&spades;' ?>
+    <a
+        class="nasty3"
+        href="http://www.facebook.com/sharer.php?u=<?php the_permalink (); ?>&t=<?php the_title (); ?>"
+        target="blank">
+        Share on Facebook
     </a>
-    <?php print ' &spades;' ?>
+
+    <?php print '&spades;' ?>
+    <a
+        class="nasty3"
+        href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
+        title="Click to send this page to Twitter!"
+        target="_blank">
+        Share on Twitter
+    </a>
+
+    <?php print '&spades;' ?>
+
+    <p>
+        <?php echo tweetCount (bloginfo ('url')); ?>
+    </p>
 
 </div>
 

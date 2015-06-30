@@ -23,7 +23,7 @@ get_header ();
 
         <meta http-equiv="content-language" content="en, es">
 
-            <link rel="stylesheet" href="../../src/css/style.css" type="text/css" media="screen, projection" />
+            <link rel="stylesheet" href="<?php echo get_stylesheet_uri (); ?>/style.css" type="text/css" media="screen, projection" />
 
             <meta http-equiv="imagetoolbar" content="false" />
             <meta http-equiv="X-UA-Compatible" content="IE=8" />
@@ -32,22 +32,24 @@ get_header ();
             <link rel="start" href="http://www.nastymondays.com/" title="Nasty Mondays Official Website" />
             <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-                <!-- PNG FIX de IE6 -->
+
                 <!--[if lte IE 6]
-                <script type="text/javascript" src="../../js/supersleight/supersleight-min.js"></script>
+                <script type="text/javascript" src="<?php echo get_template_directory (); ?>/js/supersleight/supersleight-min.js"></script>
                 <![endif]-->
-                <!--[if gte IE 9]> <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script> <![endif]-->
+                <!--[if gte IE 9]>
+                <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script>
+                <![endif]-->
 
                 <script type="text/javascript"
-                src="../../src/js/nasty.js"></script>
+                src="<?php bloginfo ("template_url"); ?>/js/nasty.js"></script>
                 <script type="text/javascript"
-                src="../../src/js/cufon-yui.js"></script>
+                src="<?php bloginfo ("template_url"); ?>/js/cufon-yui.js"></script>
                 <script type="text/javascript"
-                src="../../src/js/nasty_400.font.js"></script>
+                src="<?php bloginfo ("template_url"); ?>/src/js/nasty_400.font.js"></script>
                 <script type="text/javascript"
-                src="../../src/js/tipografia.js"></script>
+                src="<?php bloginfo ("template_url"); ?>/src/js/tipografia.js"></script>
                 <script type="text/javascript"
-                src="../../src/js/bsn.Crossfader.js"></script>
+                src="<?php bloginfo ("template_url"); ?>/src/js/bsn.Crossfader.js"></script>
 
                 <script type="text/javascript">
                     /* <![CDATA[ */
@@ -90,7 +92,7 @@ get_header ();
 
                             window.onload = loadScript;
 
-                            var image = "http://nastymondays.com/src/images/logo.gif";
+                            var image = "<?php echo get_bloginfo ('template_directory'); ?>/images/logo.gif";
                             var myLatLng2 = new google.maps.LatLng (41.374506,2.169456);
                             var nastyMarker = new google.maps.Marker ({
                                 position:myLatLng2,
