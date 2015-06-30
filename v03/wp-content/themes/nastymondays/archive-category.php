@@ -36,10 +36,10 @@ get_header ();
         <div class="post">
             <div class="navigation">
                 <div class="prev">
-                    <?php next_posts_link ('&laquo; Older Entries') ?>
+                    <?php next_posts_link ('&laquo; ') ?>
                 </div>
                 <div class="next">
-                    <?php previous_posts_link ('Newer Entries &raquo;') ?>
+                    <?php previous_posts_link (' &raquo;') ?>
                 </div>
             </div>
         </div>
