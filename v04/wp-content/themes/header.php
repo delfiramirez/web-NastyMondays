@@ -8,14 +8,13 @@
 
     <head>
 
-
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
             <title>
                 <?php
                 if ( is_single () )
                     {
-                    echo 'NASTY MONDAYS';
+                    echo bloginfo ('name');
                     single_post_title ();
                     }
                 elseif ( is_home () || is_front_page () )
@@ -37,10 +36,11 @@
                 else
                     {
                     echo the_title ();
-                    print ' &spades; NM Official Website';
+                    print ' &spades; ' . bloginfo ('description');
                     }
                 ?>
             </title>
+
             <base href=<?php bloginfo ('url'); ?>"/>
 
                   <?php
@@ -118,29 +118,33 @@
                 <meta name="google-site-verification"
                       content="AWjiBhKD6lYzAVMMplUipBoFzUQ_VdR3CIY0C58ZPJ8" />
                 <link rel="canonical"
-                      href="<?php bloginfo ('url'); ?>" />
+                      href="<?php bloginfo ('url'); ?>"
+                      />
 
                 <link rel="start"
                       href="<?php bloginfo ('url'); ?>"
-                      title="<?php the_title (); ?>" />
+                      title="<?php the_title (); ?>"
+                      />
 
                 <link rel="alternate"
                       media="handheld"
-                      href="<?php bloginfo ('url'); ?>" />
+                      href="<?php bloginfo ('url'); ?>"
+                      />
 
                 <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
                     <link rel="stylesheet"
                           href="<?php bloginfo ("template_url"); ?>//style.css"
                           type="text/css"
-                          media="screen, projection" />
+                          media="screen, projection"
+                          />
 
                     <!--[if (gte IE 5.5)&(lte IE 8)]>
-                    <script type="text/javascript" src="../../js/ie-css3.js"></script>
+                    <script type="text/javascript" src="<?php bloginfo ("template_url"); ?>/js/ie-css3.js"></script>
                     <![endif]-->
 
                     <!--[if lte IE 6]
-                    <script type="text/javascript" src="../../js/supersleight/supersleight-min.js"></script>
+                    <script type="text/javascript" src="<?php bloginfo ("template_url"); ?>/js/supersleight/supersleight-min.js"></script>
                     <![endif]-->
 
                     <!--[if gte IE 9]>
@@ -171,7 +175,7 @@
                             </div>
 
                             <h1 class="inicio">
-                                <?php the_title (); ?>. Official Website
+                                <?php the_title (); ?>. <?php bloginfo ('description'); ?>
                             </h1>
 
                             <?php wp_nav_menu ('menu=Top'); ?>

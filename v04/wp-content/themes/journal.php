@@ -129,117 +129,131 @@ get_header ();
 
             <meta name="google-site-verification" content="AWjiBhKD6lYzAVMMplUipBoFzUQ_VdR3CIY0C58ZPJ8" />
 
-            <link rel="canonical" href="<?php bloginfo ('url'); ?>" />
+            <link rel="canonical"
+                  href="<?php bloginfo ('url'); ?>"
+                  />
 
             <link rel="start"
                   href="<?php bloginfo ('url'); ?>/"
-                  title="<?php the_title (); ?>" />
+                  title="<?php the_title (); ?>"
+                  />
 
-            <link rel="alternate" media="handheld" href="<?php bloginfo ('url'); ?>/" />
+            <link rel="alternate"
+                  media="handheld"
+                  href="<?php bloginfo ('url'); ?>/"
+                  />
 
-            <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-
-
-                <link rel="stylesheet" href="<?php echo get_template_directory (); ?>/src/css/style.css" type="telesheet" href="<?php bloginfo ('template_url'); ?>/xt/css" media="screen, projection" />
-
-                <!--[if (gte IE 5.5)&(lte IE 8)]>
-
-                <script type="text/javascript" src="<?php echo get_template_directory (); ?>/js/ie-css3.js"></script>
-
-                <![endif]-->
+            <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext'
+                  rel='stylesheet'
+                  type='text/css'
+                  />
 
 
-                <!--[if lte IE 6]
+            <link rel="stylesheet"
+                  href="<?php echo get_template_directory (); ?>/src/css/style.css"
+                  type="stylesheet"
+                  media="screen, projection"
+                  />
 
-                <script type="text/javascript" src="<?php echo get_template_directory (); ?>/js/supersleight/supersleight-min.js"></script>
+            <!--[if (gte IE 5.5)&(lte IE 8)]>
 
-                <![endif]-->
+            <script type="text/javascript" src="<?php echo get_template_directory (); ?>/js/ie-css3.js"></script>
 
-                <!--[if gte IE 9]>
-                <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script>
-                <![endif]-->
-
-                <script type="text/javascript"
-                src="<?php echo get_template_directory (); ?>/src/js/nasty.js"></script>
-
-                <script type="text/javascript"
-                src="<?php echo get_template_directory (); ?>/src/js/cufon-yui.js"></script>
-
-                <script type="text/javascript"
-                src="<?php echo get_template_directory (); ?>/src/js/nasty_400.font.js"></script>
-
-                <script type="text/javascript"
-                rc="<?php echo get_template_directory (); ?>/src/js/tipografia.js"></script>
-
-                <script type="text/javascript"
-                src="<?php echo get_template_directory (); ?>/src/js/bsn.Crossfader.js"></script>
+            <![endif]-->
 
 
+            <!--[if lte IE 6]
 
-                <?php get_the_category ('157') ?>
+            <script type="text/javascript" src="<?php echo get_template_directory (); ?>/js/supersleight/supersleight-min.js"></script>
 
-                <?php wp_head (); ?>
+            <![endif]-->
 
-                <style type="text/css">
-                    .hero{display: none;}
-                </style>
+            <!--[if gte IE 9]>
+            <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script>
+            <![endif]-->
 
-                </head>
+            <script type="text/javascript"
+            src="<?php echo get_template_directory (); ?>/src/js/nasty.js"></script>
 
-                <body>
+            <script type="text/javascript"
+            src="<?php echo get_template_directory (); ?>/src/js/cufon-yui.js"></script>
 
-                    <div id="wrapper">
+            <script type="text/javascript"
+            src="<?php echo get_template_directory (); ?>/src/js/nasty_400.font.js"></script>
 
-                        <?php if ( have_posts () ) : ?>
+            <script type="text/javascript"
+            rc="<?php echo get_template_directory (); ?>/src/js/tipografia.js"></script>
 
-                            <?php while ( have_posts () ) : the_post (); ?>
+            <script type="text/javascript"
+            src="<?php echo get_template_directory (); ?>/src/js/bsn.Crossfader.js"></script>
 
-                                <h2 class="prensa">
-                                    <?php the_title (); ?>
-                                </h2>
 
-                                <div class="post">
+            <?php get_the_category ('157') ?>
 
-                                    <div class="left">
+            <?php wp_head (); ?>
 
-                                        <p class="postmetadata">
+            <style type="text/css">
+                .hero{
 
-                                            <strong>
-                                                <?php print'Nasty Journal'; ?></strong>
-                                            <br />
+                    display: none;
+                }
+            </style>
 
-                                            <?php _e ("<!--:en-->Date<!--:--><!--:es-->Fecha<!--:--><!--:es-->Data<!--:-->"); ?>: <em><?php the_time ('l, jS F, Y'); ?></em> at <em><?php the_time ('g:i a'); ?></em>.
-                                            <br />
-                                            <?php _e ("<!--:en-->Number of comments<!--:--><!--:es-->Comentarios<!--:--><!--:es-->Nombre de Comentaris<!--:-->"); ?> : <em><?php comments_number ('none', '1', '%'); ?></em>.
-                                        </p>
-                                    </div>
+    </head>
 
-                                    <div class="right">
+    <body>
 
-                                        <h2>
-                                            <?php the_title (); ?>
-                                        </h2>
+        <div id="wrapper">
 
-                                        <div class="entry">
+            <?php if ( have_posts () ) : ?>
 
-                                            <?php the_content ('More yeahs...'); ?>
-                                        </div>
+                <?php while ( have_posts () ) : the_post (); ?>
 
-                                    </div>
+                    <h2 class="prensa">
+                        <?php the_title (); ?>
+                    </h2>
 
-                                </div>
+                    <div class="post">
 
-                                <?php
-                            endwhile;
-                        endif;
-                        ?>
-                        <hr />
+                        <div class="left">
 
-                        <?php wp_nav_menu ('menu=Division'); ?>
-                        <?php get_template_part ('segonquart'); ?>
-                        <?php get_footer (); ?>
+                            <p class="postmetadata">
+
+                                <strong>
+                                    <?php echo bloginfo ('name') . ' Journal'; ?></strong>
+                                <br />
+
+                                <?php _e ("<!--:en-->Date<!--:--><!--:es-->Fecha<!--:--><!--:es-->Data<!--:-->"); ?>: <em><?php the_time ('l, jS F, Y'); ?></em> at <em><?php the_time ('g:i a'); ?></em>.
+                                <br />
+                                <?php _e ("<!--:en-->Number of comments<!--:--><!--:es-->Comentarios<!--:--><!--:es-->Nombre de Comentaris<!--:-->"); ?> : <em><?php comments_number ('none', '1', '%'); ?></em>.
+                            </p>
+                        </div>
+
+                        <div class="right">
+
+                            <h2>
+                                <?php the_title (); ?>
+                            </h2>
+
+                            <div class="entry">
+
+                                <?php the_content ('More yeahs...'); ?>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                </body>
-                </html>
+                    <?php
+                endwhile;
+            endif;
+            ?>
+            <hr />
+
+            <?php wp_nav_menu ('menu=Division'); ?>
+            <?php get_template_part ('segonquart'); ?>
+            <?php get_footer (); ?>
+        </div>
+
+    </body>
+</html>

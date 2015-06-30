@@ -1,5 +1,9 @@
 <?php
 
+// Nasty Mondays BCN Kustom Kar Kommando Wordpress 2.9 Theme. Extensible up to 3.2
+// Developed at Segonquart Studio HQ in the year 2011
+// WP 2.9
+
 define ('THEMENAME', 'nastymondays');
 if ( is_page_template () || is_attachment () || !is_active_sidebar ('') )
     {
@@ -270,11 +274,7 @@ function nm_drop_bad_comments ()
             'viagra',
             'hydrocodone',
             'hair loss',
-            '[ url =   http
-            ',
-            '
-
-        [ link = http',
+            '[link = http',
             'xanax',
             'tramadol',
             'konfuxi',
@@ -307,7 +307,7 @@ function nm_drop_bad_comments ()
             header ("HTTP/1.1 406 Not Acceptable");
             header ("Status: 406 Not Acceptable");
             header ("Connection: Close");
-            wp_die (__ ('bang bang.'));
+            wp_die (__ ('catched you launderer.'));
             }
         }
     }
