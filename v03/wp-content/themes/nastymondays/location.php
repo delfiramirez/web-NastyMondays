@@ -17,11 +17,25 @@
         <base href="<?php bloginfo ('url'); ?>" />
 
         <meta http-equiv="content-language" content="en, es">
-            <link rel="start" href="<?php bloginfo ('url'); ?>/location" title="<?php bloginfo ('name'); ?> Addres - Location" />
-            <link rel="stylesheet" href="<?php bloginfo ('stylesheet_url'); ?>" type="text/css" media="screen" />
-            <link rel="stylesheet" type="text/css" href="<?php bloginfo ("template_url"); ?>/c/retina.css" media="only screen and (-webkit-min-device-pixel-ratio: 2)"
+
+            <link rel="start"
+                  href="<?php bloginfo ('url'); ?>/location"
+                  title="<?php bloginfo ('name'); ?> Addres - Location"
                   />
-            <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lobster' type='text/css' />
+            <link rel="stylesheet"
+                  href="<?php bloginfo ('stylesheet_url'); ?>"
+                  type="text/css"
+                  media="screen"
+                  />
+            <link rel="stylesheet"
+                  type="text/css"
+                  href="<?php bloginfo ("template_url"); ?>/c/retina.css"
+                  media="only screen and (-webkit-min-device-pixel-ratio: 2)"
+                  />
+            <link rel='stylesheet'
+                  href='http://fonts.googleapis.com/css?family=Lobster'
+                  type='text/css'
+                  />
 
             <!--[if lte IE 6]>
             <script type="text/javascript" src="<?php bloginfo ("template_url"); ?>/js/supersleight/supersleight-min.js"></script>
@@ -29,6 +43,7 @@
 
             <script type="text/javascript" src="http://www.google.com/jsapi"></script>
             <script type="text/javascript">
+
                 /* <![CDATA[ */
                 google.load ("maps","3",{other_params:"sensor=false"});
                 function initialize ()
@@ -54,18 +69,23 @@
 
                     }
                 /* ]]> */
+
             </script>
 
     </head>
+
     <body onload="initialize ();">
+
         <div id="wrapper">
 
             <h1 class="inicio">
                 <?php bloginfo ("name") . ('- Address &middot; Location'); ?>
             </h1>
+
             <?php wp_nav_menu ('menu=Top'); ?>
 
             <div id ="pasador2">
+
                 <div class="left">
 
                     <h1 class="inicio">
@@ -73,6 +93,7 @@
                         <a href="<?php echo get_option ('home'); ?>">
                             <?php bloginfo ('name'); ?>
                         </a>
+
                     </h1>
 
                     <h2 class="inicio">
@@ -80,6 +101,7 @@
                     </h2>
 
                     <address>
+
                         <span class="nasty2">
                             <?php bloginfo ('name'); ?> Barcelona</span>
                         <br />
@@ -92,11 +114,14 @@
                         <span class="nasty2">La [2] de Nasty</span>
                         <br />
                         Nou de la Rambla 111<br />
+
                     </address>
                 </div>
 
                 <div id="map_canvas"></div>
+
             </div>
+
             <hr />
             <?php wp_nav_menu ('menu=NastyMondays'); ?>
 
