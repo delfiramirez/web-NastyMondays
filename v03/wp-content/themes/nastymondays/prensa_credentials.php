@@ -23,7 +23,7 @@ get_header ();
         <h2>
             <?php print 'Please, login into your account'; ?>
         </h2>
-        <?php echo '<p id="signup">or <a href="/prensa/registro-prensa/" title="Signup for a' . blogInfo ('name') . ' Press account">Signup</a>|  for a' . blogInfo ('name') . ' Press account &raquo;</p>'; ?>
+        <?php echo '<p id="signup">or <a href="/prensa/registro-prensa/" title="Signup for a' . bloginfo ('name') . ' Press account">Signup</a>|  for a' . bloginfo ('name') . ' Press account &raquo;</p>'; ?>
     </div>
 </div>
 
