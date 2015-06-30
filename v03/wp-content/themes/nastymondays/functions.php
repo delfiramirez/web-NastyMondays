@@ -152,7 +152,7 @@ add_filter ('pre_get_posts', 'nm_feedFilter');
 
 function nm_custom_admin_footer ()
     {
-    print '<a href="http://segonquart.net">Nasty Mondays Website, designed and developed by Delfi Ramirez for Nasty Mondays Inc.</a>';
+    print '<a href="http://segonquart.net">' . bloginfo ('name') . 'theme by Mr. Delfi Ramirez at 2qt HQ for Nasty Mondays .</a>';
     }
 
 add_filter ('admin_footer_text', 'nm_custom_admin_footer');
