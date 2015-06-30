@@ -1,9 +1,14 @@
 
 Options All -Indexes
 
+SetEnv TZ Europe/Berlin
+
+SetEnv SERVER_ADMIN 2qt@segonquart.net
+
 <Files .htaccess>
 deny from all
 </Files>
+
 <FilesMatch "\.(ttf|ttc|otf|eot|woff)$">
     <IfModule mod_headers.c>
         Header set Access-Control-Allow-Origin "*"
@@ -35,4 +40,3 @@ AddType font/ttf .ttf
 AddType font/eot .eot
 AddType font/otf .otf
 AddType font/woff .woff
-
