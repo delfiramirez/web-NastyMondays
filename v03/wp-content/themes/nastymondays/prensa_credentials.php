@@ -21,9 +21,9 @@ get_header ();
 
     <div class="left_prensa">
         <h2>
-            <?php print _e ('Please, login into your account'); ?>
+            <?php print 'Please, login into your account'; ?>
         </h2>
-        <?php echo _e ('<p id="signup">or <a href="/prensa/registro-prensa/" title="Signup for a' . $blogName . ' Press account">Signup</a>|  for a' . $blogName . ' Press account &raquo;</p>'); ?>
+        <?php echo '<p id="signup">or <a href="/prensa/registro-prensa/" title="Signup for a' . blogInfo ('name') . ' Press account">Signup</a>|  for a' . blogInfo ('name') . ' Press account &raquo;</p>'; ?>
     </div>
 </div>
 

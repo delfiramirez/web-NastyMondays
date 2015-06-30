@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes (); ?>>
 
     <head>
-        <base href="http://nastymondays.com" />
+
 
         <title><?php
             if (
@@ -63,7 +63,7 @@
             endif;
         endif;
         ?>
-
+        <base href="<?php bloginfo ('url'); ?>" />
         <meta http-equiv="imagetoolbar" content="false" />
         <meta name="MSSmartTagsPreventParsing" content="true" />
         <meta http-equiv="X-UA-Compatible" content="IE=8" />

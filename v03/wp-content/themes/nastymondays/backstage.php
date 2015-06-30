@@ -10,7 +10,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
-        <title>NASTY MONDAYS BACKSTAGE</title>
+        <title><?php bloginfo ("name"); ?> BACKSTAGE</title>
+
+        <base href="<?php bloginfo ('url'); ?>" />
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="<?php echo get_the_excerpt (); ?>" />
         <?php
@@ -31,10 +34,10 @@
         endif;
         ?>
         <script type="text/javascript" src="<?php bloginfo ('stylesheet_directory'); ?>src/js/swfobject.js"></script>
-        <script src="/src/js/swfaddress.js" type="text/javascript" charset="utf-8"></script>
+        <script src="<?php bloginfo ("template_url"); ?>/src/js/swfaddress.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript">
-            var attributes = {id: "nastymondays"};
-            swfobject.registerObject ("nastymondays", "10.0.45", "expressInstall.swf");
+            var attributes = {id:"nastymondays"};
+            swfobject.registerObject ("nastymondays","10.0.45","expressInstall.swf");
         </script>
         <style type="text/css" media="screen">
             html,

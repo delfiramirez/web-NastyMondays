@@ -11,10 +11,15 @@ get_header ();
 <div id ="pasador4">
     <div class="left">
         <h1 class="inicio">
+
             <a href="<?php echo get_option ('home'); ?>">
+
                 <?php bloginfo ('name'); ?>
+
             </a>
+
             <?php bloginfo ('description'); ?>
+
         </h1>
 
         <?php get_template_part ('modules/blah'); ?>
@@ -30,11 +35,14 @@ get_header ();
         <div class="spacer"></div>
 
         <p class="small">
+
             <?php print 'All fields are mandatory'; ?>
         </p>
 
         <div class="spacer"></div>
+
         <?php insert_cform ('2'); ?>
+
     </div>
 </div>
 

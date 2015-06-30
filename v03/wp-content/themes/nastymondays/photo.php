@@ -30,7 +30,7 @@ get_header ();
             </h2>
 
             <p>
-                <?php print _e ('Sorry, bro ; were in the snow'); ?>.
+                <?php print _e ('Sorry, bro ; we are dealing in the snow'); ?>.
             </p>
 
         <?php endif; ?>

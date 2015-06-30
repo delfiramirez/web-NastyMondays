@@ -45,7 +45,7 @@
 
             <a href="#">
 
-                <?php print $blogTitle . '' . _e ('Videos'); ?>
+                <?php print $blogTitle . 'Videos'; ?>
 
             </a>
 
@@ -66,7 +66,7 @@
     <div class="left2b">
 
         <h5>
-            <?php print $blogTitle . '' . _e ('Sponsorship'); ?>
+            <?php print $blogTitle . 'Sponsorship'; ?>
         </h5>
 
     </div>
