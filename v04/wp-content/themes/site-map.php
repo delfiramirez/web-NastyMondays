@@ -25,38 +25,38 @@ get_header ();
                 </a>
             </li>
             <li>
-                <a href="<?php echo get_permalink( 001 ); ?>">
+                <a href="<?php echo get_permalink (001); ?>">
                     <?php bloginfo ('name'); ?>
                 </a>
             </li>
             <li>
-                <a href="<?php echo get_permalink( 007 ); ?>">
-                     %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f 
+                <a href="<?php echo get_permalink (007); ?>">
+                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f
                 </a>
             </li>
             <li>
-                <a href="<?php echo get_permalink( 007 ); ?>">
-                 %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f 
+                <a href="<?php echo get_permalink (007); ?>">
+                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f
                 </a>
             </li>
             <li>
-              
-                      <?php permalink_anchor('007'); ?>
-            
+                <!-- alternate method Not recommended due to the use of lots of resource on cheap servers -->
+                <?php permalink_anchor ('007'); ?>
+
             </li>
             <li>
-                <a href="<?php echo get_permalink( 007 ); ?>">
-                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f 
+                <a href="<?php echo get_permalink (007); ?>">
+                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f
                 </a>
             </li>
             <li>
-                <a href="<?php echo get_permalink( 007 ); ?>">
-                   %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f 
+                <a href="<?php echo get_permalink (007); ?>">
+                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f
                 </a>
             </li>
             <li>
-                <a href="<?php echo get_permalink( 007 ); ?>">
-                   %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f 
+                <a href="<?php echo get_permalink (007); ?>">
+                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f
                 </a>
             </li>
             <li>
