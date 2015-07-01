@@ -36,9 +36,9 @@ get_header ();
     </div>
 
     <?php
-    	$featuredPosts = new WP_Query();
-    	$featuredPosts->query ('category_name=events&showposts=4');
-   		 while ( $featuredPosts->have_posts () ) :
+    $featuredPosts = new WP_Query();
+    $featuredPosts->query ('category_name=events&showposts=4');
+    while ( $featuredPosts->have_posts () ) :
         $featuredPosts->the_post ();
         ?>
 
@@ -62,12 +62,14 @@ get_header ();
             <p class="nasty3">
 
                 <a href="<?php the_permalink () ?>">
+
                     <?php _e ("<!--:en-->Read more<!--:--><!--:es-->Leer noticia<!--:--><!--:ca-->llegir noticia<!--:-->"); ?>
+
                     <?php print '>>' ?>
                 </a>
             </p>
         </div>
-        
+
     <?php endwhile; ?>
 
 

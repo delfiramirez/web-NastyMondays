@@ -27,26 +27,26 @@ get_header ();
                title="<?php bloginfo ('name'); ?> on Twitter!"
                target="_blank">
 
-                <?php _e ("<!--:en-->on Twitter<!--:--><!--:es--> en Twitter<!--:--><!--:ca-->a Twitter<!--:-->"); ?>
+                <?php _e ("<!--:en-->at Twitter<!--:--><!--:es--> en Twitter<!--:--><!--:ca-->a Twitter<!--:-->"); ?>
             </a>
         </li>
 
         <li>
             <a class="vimeo"
-               href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
+               href=<?php the_permalink (); ?>"
                title="<?php bloginfo ('name'); ?> on Vimeo"
                target="_blank">
 
-                <?php _e ("<!--:en-->on Vimeo<!--:--><!--:es-->en Vimeo<!--:--><!--:ca-->a Vimeo<!--:-->"); ?>
-            </a>
-        </li>
-        <li>
-            <a class="tumbrl"
-               href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
-               title="<?php bloginfo ('name'); ?> on Tumblr!"
-               target="_blank">
+               <?php _e ("<!--:en-->in Vimeo<!--:--><!--:es-->en Vimeo<!--:--><!--:ca-->a Vimeo<!--:-->"); ?>
+        </a>
+    </li>
+    <li>
+        <a class="tumbrl"
+           href="<?php the_permalink (); ?>"
+           title="<?php bloginfo ('name'); ?> on Tumblr!"
+           target="_blank">
 
-                <?php _e ("<!--:en-->on Tumbrl<!--:--><!--:es-->en Tumbrl<!--:--><!--:ca-->a Tumbrl<!--:-->"); ?></a></li></ul>
+            <?php _e ("<!--:en-->at Tumbrl<!--:--><!--:es-->en Tumbrl<!--:--><!--:ca-->a Tumbrl<!--:-->"); ?></a></li></ul>
 </div>
 
 <div class="izquierda">
@@ -134,7 +134,7 @@ get_header ();
                 <a href="<?php the_permalink () ?>">
 
                     <?php _e ("<!--:en-->Read more<!--:--><!--:es-->Leer noticia<!--:--><!--:ca-->Llegir noticia<!--:-->"); ?>
-                   <?php print '&raquo;' ?>
+                    <?php print '&raquo;' ?>
                 </a>
             </p>
 

@@ -26,12 +26,15 @@ get_header ();
             </div>
             <div class="left_prensa">
 
-                <h2>Please, login into your account</h2>
+                <h2>
+                    <?php _e ("<!--:en-->Please, login into your account<!--:--><!--:es-->Por favor, complete su registro<!--:--><!--:ca-->Sisplau, registreu-vos-hi<!--:-->"); ?>
+                </h2>
+
                 <p id="signup">
-                    or <a href="<?php bloginfo ('template_url'); ?>/prensa/registro-prensa/"
-                          title="Signup for a<?php bloginfo ('name'); ?> Press account">
+                    or <a href="<?php echo get_permalink (007); ?>"
+                          title="<?php _e ("<!--:en-->Sign Up<!--:--><!--:es-->Registro<!--:--><!--:ca-->Registre<!--:-->"); ?>">
                         Signup</a>
-                    |  for a <?php bloginfo ('name'); ?> Press account &raquo;</p>
+                    |  for a <?php bloginfo ('name'); ?> <?php _e ("<!--:en-->Press account &raquo;<!--:--><!--:es-->Usuario Prensa &raquo;<!--:--><!--:ca-->Usuari Premsa &raquo;<!--:-->"); ?></p>
             </div>
         </div>
 

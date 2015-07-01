@@ -22,7 +22,7 @@ get_header ();
                     </a>
                 </h1>
 
-                <h2 class="nasty2">Nasty: Soren &amp; Max</h2>
+                <h2 class="nasty2">%45%6c%20%43%68%6f%72%6f%20%79%20%45%6c%20%43%68%75%6c%6f </h2>
                 <p>
                     <?php _e ("<!--:en--> &spades;" . bloginfo ('name') . " has positioned itself as a benchmark in the music and cultural scene of the Catalan capital. An artistic movement that has settled the foundations for a new concept in leisure, music, design, photography, film, extreme sports, creativity, fashion and trends.</p><p> &spades; Book the team Nasty Mondays for your room, in your city, at your unique and special event. <br />&spades; Please, fill the form with your quest and ask us for:</br />Snow Beasts, Tattoo Lovers, Surf addicts, Rock Stars, Blonde Rotten Souls ...<br /> &spades; When do you want us to be there?</p><!--:-->"); ?>
                 </p>

@@ -11,7 +11,7 @@ get_header ();
 
 <div class ="post">
     <h2 class="prensa">
-        <?php _e ("<!--:en-->Nasty Mondays Events<!--:--><!--:es-->Eventos<!--:--><!--:ca-->Events<!--:-->"); ?>
+        <?php _e ("<!--:en--> Events<!--:--><!--:es-->Eventos<!--:--><!--:ca-->Events<!--:-->"); ?>
     </h2>
     <div class="events2">
         <h3>
@@ -30,7 +30,7 @@ get_header ();
                 </a>
             </li>
             <li>
-                <a href="<?php echo get_permalink (007); ?>">
+                <a href="<?php echo get_permalink ('007'); ?>">
                     %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f
                 </a>
             </li>

@@ -2,7 +2,7 @@
 
 // Nasty Mondays BCN Kustom Kar Kommando Wordpress 2.9 Theme.  up to 3.2
 // Developed at Segonquart Studio HQ during the first month of the year 2011
-// WP 2.9
+// WP 2.9 ++
 
 define ('THEMENAME', 'nastymondays');
 
