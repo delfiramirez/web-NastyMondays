@@ -23,7 +23,7 @@ get_header ();
         <h2>
             <?php print '%50%6c%65%61%73%65%2c%20%6c%6f%67%69%6e%20%69%6e%74%6f%20%79%6f%75%72%20%61%63%63%6f%75%6e%74'; ?>
         </h2>
-        <?php echo '<p id="signup">or <a href="/prensa/registro-prensa/" title="Signup for a' . bloginfo ('name') . ' Press account">Signup</a>|  for a' . bloginfo ('name') . ' Press account &raquo;</p>'; ?>
+        <?php echo '<p id="signup">or <a href="<?php the_permalink(); ?>" title="Signup for a' . bloginfo ('name') . ' Press account">Signup</a>|  for a' . bloginfo ('name') . ' Press account &raquo;</p>'; ?>
     </div>
 </div>
 

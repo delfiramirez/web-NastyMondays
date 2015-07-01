@@ -45,6 +45,7 @@
 
         <meta http-equiv="content-language" content="en" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
         <meta name="viewport" content="width=970" />
 
         <meta name="description" content="<?php echo get_the_excerpt (); ?>" />
@@ -70,41 +71,70 @@
         <meta name="robots" content="noarchive" />
         <meta name="google-site-verification" content="AWjiBhKD6lYzAVMMplUipBoFzUQ_VdR3CIY0C58ZPJ8" />
 
-        <link rel="canonical" href="<?php bloginfo ('url'); ?>" />
-        <link rel="start" href="<?php bloginfo ('uri'); ?>" title="<?php bloginfo ('name'); ?>" />
-        <link rel="pingback" href="<?php bloginfo ('pingback_url'); ?>" />
-        <link rel="alternate" media="handheld" href="h<?php bloginfo ('uri'); ?>" />
-        <link rel="stylesheet" href="<?php bloginfo ('stylesheet_url'); ?>" type="text/css" media="screen, projection" />
-        <link rel="stylesheet" href="<?php bloginfo ('stylesheet_url'); ?>" type="text/css"  media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+        <link rel="canonical"
+              href="<?php bloginfo ('url'); ?>"
+              />
+        <link rel="start"
+              href="<?php bloginfo ('uri'); ?>"
+              title="<?php bloginfo ('name'); ?>"
+              />
+        <link rel="pingback"
+              href="<?php bloginfo ('pingback_url'); ?>"
+              />
+        <link rel="alternate"
+              media="handheld"
+              href="<?php bloginfo ('uri'); ?>"
+              />
+        <link rel="stylesheet"
+              href="<?php bloginfo ('stylesheet_url'); ?>"
+              type="text/css"
+              media="screen, projection"
+              />
+        <link rel="stylesheet" h
+              ref="<?php bloginfo ('stylesheet_url'); ?>"
+              type="text/css"
+              media="only screen and (-webkit-min-device-pixel-ratio: 2)"
+              />
 
         <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type='text/css' />
         <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css" />
         <link href="http://fonts.googleapis.com/css?family=Molengo" rel="stylesheet" type="text/css" />
 
-        <link rel="apple-touch-icon-precomposed" href="<?php bloginfo ('stylesheet_url'); ?>/ico/nasty-icon.png" />
+        <link rel="apple-touch-icon-precomposed"
+              href="<?php bloginfo ('stylesheet_url'); ?>/ico/nasty-icon.png"
+              />
 
         <!--[if lte IE 5]
-          <link rel="stylesheet" type="text/css" media="screen, projection" href="http://nastymondays.com/inicio/src/c/reset.css" />
+          <link rel="stylesheet" type="text/css" media="screen, projection" href="<?php bloginfo ("template_url"); ?>/src/c/reset.css" />
         <![endif]-->
+
         <!--[if lte IE 6]
           <link rel="stylesheet" type="text/css" media="screen, projection" href="http://universal-ie6-css.googlecode.com/files/ie6.0.3.css" />
         <![endif]-->
-        <!-- PNG FIX de IE6 -->
+
+
         <!--[if lte IE 6]
-        <script type="text/javascript" src="http://www.nastymondays.com/js/supersleight/supersleight-min.js"></script>
+        <script type="text/javascript" src="<?php bloginfo ("template_url"); ?>/js/supersleight/supersleight-min.js"></script>
         <![endif]-->
+
         <!--[if IE]
         <meta http-equiv="Page-Enter" content="blendTrans(duration=0)" />
         <meta http-equiv="Page-Exit" content="blendTrans(duration=0)" />
         <![endif]-->
 
-        <script type="text/javascript" src="<?php bloginfo ("template_url"); ?>/src/js/nasty.js"></script>
-        <script type="text/javascript" src="<?php bloginfo ("template_url"); ?>/src/js/jquery-1.3.2.min.js"></script>
-        <script type="text/javascript" src="<?php bloginfo ("template_url"); ?>/src/js/bsn.Crossfader.js"></script>
+        <script type="text/javascript"
+        src="<?php bloginfo ("template_url"); ?>/src/js/nasty.js"></script>
+        <script type="text/javascript"
+        src="<?php bloginfo ("template_url"); ?>/src/js/jquery-1.3.2.min.js"></script>
+        <script type="text/javascript"
+        src="<?php bloginfo ("template_url"); ?>/src/js/bsn.Crossfader.js"></script>
     </head>
     <body>
+
         <div id="wrapper">
+
             <h1 class="inicio">
+
                 <?php bloginfo ('name'); ?>
             </h1>
             <?php wp_nav_menu ('menu=Top'); ?>

@@ -68,7 +68,7 @@ get_header ();
                         <a
                             href="<?php the_permalink () ?>">
 
-                            <?php print 'Read more &raquo;'; ?>
+                            <?php print '&raquo;'; ?>
                         </a>
 
                     </p>

@@ -17,7 +17,7 @@ get_header ();
         <div class="left_prensa">
 
             <h2>
-                <?php echo _e (' Press Registration Professional'); ?>
+                <?php echo ' Press Registration Professional'; ?>
             </h2>
 
             <p>
@@ -30,13 +30,13 @@ get_header ();
 
     <div id="contact-form" class="myform">
         <h4>
-            <?php print _e ('Professional Registration'); ?>
+            <?php print 'Professional Registration'; ?>
         </h4>
 
         <div class="spacer"></div>
 
         <p class="small">
-            <?php print _e ('All fields are mandatory'); ?>
+            <?php print 'All fields are mandatory'; ?>
         </p>
 
         <?php insert_cform ('4'); ?>

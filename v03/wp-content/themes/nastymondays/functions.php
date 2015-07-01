@@ -1,10 +1,11 @@
 <?php
 
 // Nasty Mondays BCN Kustom Kar Kommando Wordpress 2.9 Theme.
-// Developed at Segonquart Studio HQ in the year 2010
+// Developed at Segonquart Studio HQ in the early year 2010
 // WP 2.9 ++
 
 define ('THEMENAME', 'nastymondays');
+
 if ( is_page_template () || is_attachment () || !is_active_sidebar ('') )
     {
     global $content_width;
@@ -153,10 +154,10 @@ add_filter ('pre_get_posts', 'nm_feedFilter');
 
 function nm_custom_admin_footer ()
     {
-    print '<a href="http://segonquart.net">' . bloginfo ('name') . 'theme by Mr. Delfi Ramirez at 2qt HQ for ' . bloginfo ('name'). ' </a>';
+    print '<a href="http://segonquart.net">' . bloginfo ('name') . 'theme by Mr. Delfi Ramirez at 2qt HQ for ' . bloginfo ('name') . ' </a>';
     }
 
-add_filter ('admin_footer_text', 'nm_custom_admin_footer'); 
+add_filter ('admin_footer_text', 'nm_custom_admin_footer');
 
 function nm_debug_admin_bar ()
     {
@@ -491,7 +492,6 @@ function nm_breadcrumb ()
  *  . @456bereastreet.com
  *
  */
- 
 function bm_displayArchives ()
     {
     global $month, $wpdb, $wp_version;
@@ -609,7 +609,6 @@ function nm_hierarchical_submenu_get_children ($post, $current_page)
     return $menu;
     }
 
-
 function get_work ($exclude = null, $limit = -1, $parent = 3, $args = array ( 'orderby' => 'menu_order', 'order' => 'ASC', 'post_type' => 'page' ))
     {
 
@@ -689,7 +688,7 @@ function nm_drop_bad_comments ()
             'madmax',
             'adrià',
             'deskontrol',
-          	'colombian smartphones',
+            'colombian smartphones',
             'russian girls',
             'russian brides',
             'lorazepam',
@@ -705,9 +704,9 @@ function nm_drop_bad_comments ()
             'cialis',
             'best forex',
             'amoxicillin'
-            // more to be added manually
+                // more to be added manually
         );
-        
+
         if ( nm_comment_post_like ($lower_case_comment, $bad_comment_content) )
             {
             $comment_box_text = wordwrap (trim ($post_comment_content), 80, "\n  ", true);
