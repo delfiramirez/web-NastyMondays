@@ -279,6 +279,11 @@ function nm_drop_bad_comments ()
             'xanax',
             'tramadol',
             'konfuxi',
+            'badoo',
+            'quim_4',
+            'rape',
+            'drugs',
+            'kim',
             'madmax',
             'colombian smartphone',
             'bcneta',
@@ -298,6 +303,7 @@ function nm_drop_bad_comments ()
             'cialis',
             'best forex',
             'amoxicillin'
+                //to be added as needed
         );
         if ( nm_comment_post_like ($lower_case_comment, $bad_comment_content) )
             {
