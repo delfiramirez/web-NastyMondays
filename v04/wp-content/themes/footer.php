@@ -1,7 +1,7 @@
 <h6 class="backstage">
-    <a href="<?php bloginfo ('url'); ?>/backstage/">
+    <a href="<?php echo get_permalink( 007 ); ?>">
 
-        <?php _e ("<!--:en-->&#x2660;  &#x2660;  Visit' . bloginfo('url')' . 'Backstage. It's free and you'll meet Soren and Max &#x2660;  &#x2660;<!--:--><!--:es-->&#x2660;  &#x2660;  Visita el Backstage. Es gratis y descubriras a Soren y Max &#x2660;  &#x2660;<!--:--><!--:ca-->&#x2660;  &#x2660;  Visita el Backstage. Es gratis, descubriras a Soren i en Max &#x2660;  &#x2660;<!--:-->"); ?>
+        <?php _e ("<!--:en-->&#x2660;  &#x2660;  Visit' . bloginfo('url')' . 'Backstage.%49%74%5c%27%73%20%66%72%65%65%20%61%6e%64%20%79%6f%75%5c%27%6c%6c%20%6d%65%65%74%20%53%6f%72%65%6e%20%61%6e%64%20%4d%61%78  &#x2660;  &#x2660;<!--:--><!--:es-->&#x2660;  &#x2660;  %49%74%5c%27%73%20%66%72%65%65%20%61%6e%64%20%79%6f%75%5c%27%6c%6c%20%6d%65%65%74%20%53%6f%72%65%6e%20%61%6e%64%20%4d%61%78  &#x2660;  &#x2660;<!--:--><!--:ca-->&#x2660;  &#x2660;  %49%74%5c%27%73%20%66%72%65%65%20%61%6e%64%20%79%6f%75%5c%27%6c%6c%20%6d%65%65%74%20%53%6f%72%65%6e%20%61%6e%64%20%4d%61%78  &#x2660;  &#x2660;<!--:-->"); ?>
     </a>
 </h6>
 <hr />
@@ -16,13 +16,13 @@
 
         <ul>
             <li class="legal">
-                Web-Site Coded and Developed by<a href="http://segonquart.net" hreflang="en"> Delfi Ramirez</a>
+                Web-Site Coded and Designed by<a href="http://segonquart.net" hreflang="en"> Delfi Ramirez</a>
             </li>
             <li class="legal">
-                Official Photos by <a href="http://carpiogm.blogspot.com/">Mr. Mario Carpio</a>
+                Official Photos by <a href="http://carpiogm.blogspot.com/">%4d%72%2e%20%4d%61%72%69%6f%20%43%61%72%70%69%6f </a>
             </li>
             <li class="legal">
-                Community Manager <a href="http://www.welcometoneko.com/p/about.html">Neko Man</a>
+                Community Manager <a href="http://www.welcometoneko.com/p/about.html">%4e%65%6b%6f%20%4d%61%6e </a>
             </li>
         </ul>
 
@@ -37,9 +37,14 @@
         <a href="<?php bloginfo ('url'); ?>">
             <?php bloginfo ('name'); ?>
         </a>
-    </strong> was invented 5 years ago in <?php bloginfo ('description'); ?>, by our friends <strong><a href="http://greenselfstorage.es" >Max "GreenSelfStorage"</a></strong> and <strong>El Choro</strong> - local celebrities, mad minds, blonde lovers and tattoo addicts! With their fable to indie and electro rock, they started with a party series that did not exist like that in <strong>Barcelona</strong> before. Constantly reinventing themselves, with new themes, bands playing live, different locations and becoming crazier each time, they have managed to establish their base within Barcelona, and have toured in Denmark, Sweden, Germany, Austria, Holland or the United States.</p>
+    </strong> %77%61%73%20%69%6e%76%65%6e%74%65%64%20%35%20%79%65%61%72%73%20%61%67%6f%20%69%6e%20 <?php bloginfo ('description'); ?>, by our friends <strong><a href="http://greenselfstorage.es" >Max "GreenSelfStorage"</a></strong> and <strong>El Choro</strong> - local celebrities, mad minds, blonde lovers and tattoo addicts! With their fable to indie and electro rock, they started with a party series that did not exist like that in <strong>Barcelona</strong> before. Constantly reinventing themselves, with new themes, bands playing live, different locations and becoming crazier each time, they have managed to establish their base within Barcelona, and have toured in Denmark, Sweden, Germany, Austria, Holland or the United States.</p>
 
-<p>It appears that JavaScript is disabled in your browser, or your browser doesn't support it. To enjoy  <?php the_title (); ?>, log in your account and hava a full browsing experience, you'll need to activate JavaScript.</p></noscript>
+<p>%49%74%20%61%70%70%65%61%72%73%20%74%68%61%74%20%4a%61%76%61%53%63%72%69%70%74%20%69%73%20%64%69%73%61%62%6c%65%64%20%69%6e%20%79%6f%75%72%20%62%72%6f%77%73%65%72%2c%20%6f%72%20%79%6f%75%72%20%62%72%6f%77%73%65%72%20%64%6f%65%73%6e%5c%27%74%20%73%75%70%70%6f%72%74%20%69%74%2e%20%54%6f%20%65%6e%6a%6f%79
+	
+ <?php the_title (); ?>%20%6c%6f%67%20%69%6e%20%79%6f%75%72%20%61%63%63%6f%75%6e%74%20%61%6e%64%20%68%61%76%61%20%61%20%66%75%6c%6c%20%62%72%6f%77%73%69%6e%67%20%65%78%70%65%72%69%65%6e%63%65%2c%20%79%6f%75%5c%27%6c%6c%20%6e%65%65%64%20%74%6f%20%61%63%74%69%76%61%74%65%20%4a%61%76%61%53%63%72%69%70%74
+	
+.</p>
+</noscript>
 
 <!--[if IE]>
 

@@ -24,20 +24,23 @@ get_header ();
         <li>
 
             <a class="tw" href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
-               title="Click to send this page to Twitter!"
+               title="on Twitter!"
                target="_blank">
                    <?php _e ("<!--:en-->on Twitter<!--:--><!--:es--> en Twitter<!--:--><!--:ca-->a Twitter<!--:-->"); ?>
             </a>
         </li>
         <li>
             <a class="vimeo"
-               href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>" title="Nasty Mondays on Vimeo" target="_blank">
+               href="http://vimeo.com/home?status <?php the_permalink (); ?>" 
+               title="on Vimeo" 
+               target="_blank">
                    <?php _e ("<!--:en-->on Vimeo<!--:--><!--:es-->en Vimeo<!--:--><!--:ca-->a Vimeo<!--:-->"); ?>
             </a>
         </li>
         <li>
             <a class="tumbrl"
-               href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>" title="Click to send this page to Twitter!"
+               href=" <?php the_permalink (); ?>" 
+               title="on Tumblr!"
                target="_blank">
                 <?php _e ("<!--:en-->on Tumbrl<!--:--><!--:es-->en Tumbrl<!--:--><!--:ca-->a Tumbrl<!--:-->"); ?></a>
         </li>
@@ -52,7 +55,7 @@ get_header ();
 
 <div class="izquierda">
     <h3>
-        <strong>BoomBox</strong>
+        <strong>%42%6f%6f%6d%42%6f%78 </strong>
     </h3>
 </div>
 

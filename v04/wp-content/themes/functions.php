@@ -1,10 +1,11 @@
 <?php
 
-// Nasty Mondays BCN Kustom Kar Kommando Wordpress 2.9 Theme. Extensible up to 3.2
-// Developed at Segonquart Studio HQ in the year 2011
+// Nasty Mondays BCN Kustom Kar Kommando Wordpress 2.9 Theme.  up to 3.2
+// Developed at Segonquart Studio HQ during the first month of the year 2011
 // WP 2.9
 
 define ('THEMENAME', 'nastymondays');
+
 if ( is_page_template () || is_attachment () || !is_active_sidebar ('') )
     {
     global $content_width;
@@ -58,7 +59,7 @@ echo $nmExcerpt;
 
 function nm_admin_footer ()
     {
-    echo '<a href="http://segonquart.net">' . bloginfo ('name') . 'Website designed and developed by Delfi Ramirez for Nasty Garage SL.</a>';
+    echo '<a href="http://segonquart.net">' . bloginfo ('name') . 'Website designed and developed by Delfi Ramirez at Segonquart Studio HQ for your ' . bloginfo ('name') . '</a>';
     }
 
 add_filter ('admin_footer_text', 'nm_admin_footer');
@@ -278,6 +279,10 @@ function nm_drop_bad_comments ()
             'xanax',
             'tramadol',
             'konfuxi',
+            'madmax',
+            'colombian smartphone',
+            'bcneta',
+            'lhospitalet',
             'russian girls',
             'russian brides',
             'lorazepam',
@@ -307,7 +312,7 @@ function nm_drop_bad_comments ()
             header ("HTTP/1.1 406 Not Acceptable");
             header ("Status: 406 Not Acceptable");
             header ("Connection: Close");
-            wp_die (__ ('catched you launderer.'));
+            wp_die (__ ('%63%61%74%63%68%65%64%20%79%6f%75%20%6c%61%75%6e%64%65%72%65%72 .'));
             }
         }
     }

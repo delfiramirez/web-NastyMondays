@@ -13,7 +13,7 @@
         <h5>
             <a href="#">
 
-                <?php print e_ ('Past &amp; Forthcoming Events'); ?>
+                <?php print 'Past &amp; Forthcoming Events'; ?>
 
             </a>
         </h5>
@@ -28,7 +28,7 @@
         <h5>
             <a href="#">
 
-                <?php echo $blogTitle . '' . _e ('Crew Album'); ?>
+                <?php echo $blogTitle . ' ' . 'Crew Album'; ?>
 
             </a>
 
@@ -45,7 +45,7 @@
 
             <a href="#">
 
-                <?php print $blogTitle . 'Videos'; ?>
+                <?php print $blogTitle . ' ' . 'Videos'; ?>
 
             </a>
 

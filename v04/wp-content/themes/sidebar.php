@@ -31,7 +31,7 @@ get_header ();
 
     <div class="left2">
 
-        <img src=" ../src/images/nastymondays.gif" alt="<?php the_title (); ?>" />
+        <img src=" <?php bloginfo ('template_url'); ?>/src/images/nastymondays.gif" alt="<?php the_title (); ?>" />
 
     </div>
 

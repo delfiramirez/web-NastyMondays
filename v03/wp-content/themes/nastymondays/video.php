@@ -37,7 +37,7 @@ get_header ();
 
                         <div class="entry">
 
-                            <?php the_content ('read more...'); ?>
+                            <?php the_content ('...'); ?>
 
                         </div>
 

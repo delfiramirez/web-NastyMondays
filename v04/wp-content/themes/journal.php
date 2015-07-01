@@ -169,7 +169,9 @@ get_header ();
             <![endif]-->
 
             <!--[if gte IE 9]>
+            
             <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script>
+            
             <![endif]-->
 
             <script type="text/javascript"
@@ -223,9 +225,9 @@ get_header ();
                                     <?php echo bloginfo ('name') . ' Journal'; ?></strong>
                                 <br />
 
-                                <?php _e ("<!--:en-->Date<!--:--><!--:es-->Fecha<!--:--><!--:es-->Data<!--:-->"); ?>: <em><?php the_time ('l, jS F, Y'); ?></em> at <em><?php the_time ('g:i a'); ?></em>.
+                                <?php _e ("<!--:en-->Date<!--:--><!--:es-->Fecha<!--:--><!--:caa-->Data<!--:-->"); ?>: <em><?php the_time ('l, jS F, Y'); ?></em> at <em><?php the_time ('g:i a'); ?></em>.
                                 <br />
-                                <?php _e ("<!--:en-->Number of comments<!--:--><!--:es-->Comentarios<!--:--><!--:es-->Nombre de Comentaris<!--:-->"); ?> : <em><?php comments_number ('none', '1', '%'); ?></em>.
+                                <?php _e ("<!--:en-->Number of comments<!--:--><!--:es-->Comentarios<!--:--><!--:ca-->Nombre de Comentaris<!--:-->"); ?> : <em><?php comments_number ('none', '1', '%'); ?></em>.
                             </p>
                         </div>
 
@@ -237,7 +239,7 @@ get_header ();
 
                             <div class="entry">
 
-                                <?php the_content ('More yeahs...'); ?>
+                                <?php the_content ('...'); ?>
                             </div>
 
                         </div>

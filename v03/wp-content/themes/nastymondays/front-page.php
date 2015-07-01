@@ -44,6 +44,7 @@ get_header ();
                             <a href="<?php the_permalink (); ?>"
                                title="<?php the_title (); ?>"
                                rel="bookmark">
+                               
                                    <?php the_title (); ?>
                             </a>
                         </h2>
@@ -54,8 +55,7 @@ get_header ();
 
             </div>
 
-        <?php endwhile; ?>
-    <?php endif; ?>
+        <?php endwhile; endif; ?>
 
     <script type="text/javascript">
 

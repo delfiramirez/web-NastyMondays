@@ -13,29 +13,47 @@ get_header ();
     <head>
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        
         <title>
             <?php wp_title (); ?> <?php print '&spades;'; ?>  <?php bloginfo ('name'); ?>
         </title>
+        
         <meta name="description"
-              content="<?php echo get_the_excerpt (); ?>" />
+              content="<?php echo get_the_excerpt (); ?>" 
+              />
+              
         <meta name="keywords"
-              content="<?php echo $keywords; ?>" />
+              content="<?php echo $keywords; ?>" 
+              />
 
         <meta http-equiv="content-language" content="en, es">
+        <meta http-equiv="imagetoolbar" content="false" />
+        <meta http-equiv="X-UA-Compatible" content="IE=8" />
+        <meta name="google-site-verification" content="AWjiBhKD6lYzAVMMplUipBoFzUQ_VdR3CIY0C58ZPJ8" />
+            
+            <link rel="canonical" 
+            	  href="<?php bloginfo('url') ?>" 
+            	  />
+            	  
+            <link rel="start"
+            	  href="<?php bloginfo('url') ?>" 
+            	  title="<?php bloginfo('name') ?>"
+            	   />
+            	   
+            <link rel="stylesheet" 
+            	  href="<?php echo get_stylesheet_uri (); ?>/style.css" 
+            	  type="text/css" 
+            	  media="screen, projection" 
+            	  />
 
-            <link rel="stylesheet" href="<?php echo get_stylesheet_uri (); ?>/style.css" type="text/css" media="screen, projection" />
-
-            <meta http-equiv="imagetoolbar" content="false" />
-            <meta http-equiv="X-UA-Compatible" content="IE=8" />
-            <meta name="google-site-verification" content="AWjiBhKD6lYzAVMMplUipBoFzUQ_VdR3CIY0C58ZPJ8" />
-            <link rel="canonical" href="http://www.nastymondays.com/" />
-            <link rel="start" href="http://www.nastymondays.com/" title="Nasty Mondays Official Website" />
+            	   
             <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 
                 <!--[if lte IE 6]
                 <script type="text/javascript" src="<?php echo get_template_directory (); ?>/js/supersleight/supersleight-min.js"></script>
                 <![endif]-->
+                
                 <!--[if gte IE 9]>
                 <script type="text/javascript"> Cufon.set('engine', 'canvas'); </script>
                 <![endif]-->
@@ -52,6 +70,7 @@ get_header ();
                 src="<?php bloginfo ("template_url"); ?>/src/js/bsn.Crossfader.js"></script>
 
                 <script type="text/javascript">
+                
                     /* <![CDATA[ */
 
                     Cufon.replace ('h5');
@@ -59,11 +78,12 @@ get_header ();
                     Cufon.replace ('.menu');
 
                     /* ]]> */
+                    
                 </script>
 
                 <script
                     type="text/javascript"
-                src="http://www.google.com/jsapi"></script>
+                	src="http://www.google.com/jsapi"></script>
 
                 <script type="text/javascript">
 
@@ -101,6 +121,7 @@ get_header ();
                             });
 
                         }
+                        
                     /* ]]> */
 
                 </script>
@@ -147,12 +168,12 @@ get_header ();
                                             <h4> <?php bloginfo ('name'); ?></h4>
                                             <br />
                                             Nou de la Rambla 113<br />
-                                            Barcelona 08004<br />
+                                            %42%61%72%63%65%6c%6f%6e%61  08004<br />
                                             Phone: (0034) 93 441 40 01<br />
                                             TUBE: Paral.lel [L3]<br />
                                             BUS: 20, 36, 57, 64<br />
                                             NIT BUS: N0, N6<br />
-                                            <h4>La [2] de Nasty</h4>
+                                            <h4>%4c%61%20%5b%32%5d%20%64%65%20%4e%61%73%74%79</h4>
                                             <br />
                                             Nou de la Rambla 111<br />
                                         </address>
@@ -168,9 +189,8 @@ get_header ();
 
                         </div>
 
-
-
                         <hr />
+                        
                         <?php wp_nav_menu ('menu=Division'); ?>
 
                         <?php get_sidebar (); ?>

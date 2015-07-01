@@ -26,11 +26,11 @@ get_header ();
         <?php else : ?>
 
             <h2>
-                <?php print _e ('Not Found'); ?>
+                <?php print 'Not Found'; ?>
             </h2>
 
             <p>
-                <?php print _e ('Sorry, bro ; we are dealing in the snow'); ?>.
+                <?php print '%53%6f%72%72%79%2c%20%62%72%6f%20%3b%20%77%65%20%61%72%65%20%64%65%61%6c%69%6e%67%20%69%6e%20%74%68%65%20%73%6e%6f%77 '; ?>.
             </p>
 
         <?php endif; ?>

@@ -29,7 +29,7 @@ get_header ();
 
 <div class="izquierda">
     <h3>
-        <strong>Crappy 2'Days</strong>
+        <strong>%43%72%61%70%70%79%20%32%5c%27%44%61%79</strong>
     </h3>
 </div>
 
@@ -59,6 +59,7 @@ get_header ();
             <p class="nasty3">
 
                 <a href="<?php the_permalink () ?>">
+                
                     <?php _e ("<!--:en-->Read more<!--:--><!--:es-->Leer noticia<!--:--><!--:ca-->Llegir noticia<!--:-->"); ?> &raquo;
                 </a>
 

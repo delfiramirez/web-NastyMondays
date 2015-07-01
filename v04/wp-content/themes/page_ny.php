@@ -77,7 +77,7 @@ get_header ();
     <a
         class="nasty3"
         href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
-        title="Click to send this page to Twitter!"
+        title="on Twitter!"
         target="_blank">
         Share on Twitter
     </a>

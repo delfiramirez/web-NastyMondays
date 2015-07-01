@@ -18,7 +18,7 @@ get_header ();
 
             <h2 class="prensa">
 
-                <?php _e ("<!--:en-->Crew Member Photo<!--:--><!--:es-->Album Crew member<!--:-->"); ?>
+                <?php _e ("<!--:en-->Crew Member Photo<!--:--><!--:es-->Album Crew member<!--:--><!--:ca-->Album Crew member<!--:-->"); ?>
 
             </h2>
             <div class="gallery">

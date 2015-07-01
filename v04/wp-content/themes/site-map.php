@@ -25,38 +25,38 @@ get_header ();
                 </a>
             </li>
             <li>
-                <a href="<?php bloginfo ('template_url'); ?>/nasty-mondays-barcelona/">
+                <a href="<?php echo get_permalink( 001 ); ?>">
                     <?php bloginfo ('name'); ?>
                 </a>
             </li>
             <li>
-                <a href="<?php bloginfo ('template_url'); ?>/nasty-mondays-barcelona/">
-                    We are [2] Nasty
+                <a href="<?php echo get_permalink( 007 ); ?>">
+                     %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f 
                 </a>
             </li>
             <li>
-                <a href="<?php bloginfo ("template_url"); ?>/crappy-tuesdays/">
-                    Crappy Tuesdays
+                <a href="<?php echo get_permalink( 007 ); ?>">
+                 %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f 
                 </a>
             </li>
             <li>
-                <a href="<?php bloginfo ('template_url'); ?>/crappy-tuesdays/">
-                    Crappy [2]'s Days
+              
+                      <?php permalink_anchor('007'); ?>
+            
+            </li>
+            <li>
+                <a href="<?php echo get_permalink( 007 ); ?>">
+                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f 
                 </a>
             </li>
             <li>
-                <a href="<?php bloginfo ('template_url'); ?>/cupcake/">
-                    Cupcake
+                <a href="<?php echo get_permalink( 007 ); ?>">
+                   %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f 
                 </a>
             </li>
             <li>
-                <a href="<?php bloginfo ('template_url'); ?>/cupcake/">
-                    BoomBox
-                </a>
-            </li>
-            <li>
-                <a href="<?php bloginfo ('template_url'); ?>/nasty-mondays-new-york/">
-                    NY  <?php bloginfo ('name'); ?>
+                <a href="<?php echo get_permalink( 007 ); ?>">
+                   %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f 
                 </a>
             </li>
             <li>

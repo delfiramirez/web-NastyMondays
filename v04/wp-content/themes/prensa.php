@@ -21,10 +21,10 @@ get_header ();
     <div class="events_pre">
 
         <p>
-            <a href="<?php bloginfo ("template_url"); ?>/docs/media-buzz-nastymondays-2010.pdf">
+            <a href="<?php bloginfo ('template_url'); ?>/docs/media-buzz-nastymondays-2010.pdf">
                 <img
-                    src="<?php bloginfo ("template_url"); ?>/src/images/media.jpg"
-                    alt="<?php the_title (); ?> Media Buzz Report 2010"
+                    src="<?php bloginfo ('template_url'); ?>/src/images/media.jpg"
+                    alt="<?php the_title (); ?> %4d%65%64%69%61%20%42%75%7a%7a%20%52%65%70%6f%72%74%20%32%30%31%30"
                     target="_blank" />
             </a>
         </p>
@@ -33,13 +33,12 @@ get_header ();
 
         </div>
 
-
     </div>
 
     <?php
-    $featuredPosts = new WP_Query();
-    $featuredPosts->query ('category_name=events&showposts=4');
-    while ( $featuredPosts->have_posts () ) :
+    	$featuredPosts = new WP_Query();
+    	$featuredPosts->query ('category_name=events&showposts=4');
+   		 while ( $featuredPosts->have_posts () ) :
         $featuredPosts->the_post ();
         ?>
 
@@ -64,9 +63,11 @@ get_header ();
 
                 <a href="<?php the_permalink () ?>">
                     <?php _e ("<!--:en-->Read more<!--:--><!--:es-->Leer noticia<!--:--><!--:ca-->llegir noticia<!--:-->"); ?>
-                    <?php print '>>' ?></a>
+                    <?php print '>>' ?>
+                </a>
             </p>
         </div>
+        
     <?php endwhile; ?>
 
 

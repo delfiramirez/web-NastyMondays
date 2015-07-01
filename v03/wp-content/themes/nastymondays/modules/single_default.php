@@ -33,9 +33,11 @@ get_header ();
 
                 <?php the_content () ?>
                 <hr />
-                &spades;  <a class ="nasty3" href="http://www.facebook.com/sharer.php?u=<?php the_permalink (); ?>&t=<?php the_title (); ?>" target="blank">
-                    <?php print 'Share on Facebook' ?></a>
-                &spades; <a class="nasty3" href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>" title="Click to send NM to Twitter!" target="_blank"><?php print 'Share on Twitter' ?></a> &spades;
+               <?php print '&spades;' ?>
+               <a class ="nasty3" href="http://www.facebook.com/sharer.php?u=<?php the_permalink (); ?>&t=<?php the_title (); ?>" target="blank">
+                    <?php print 'on Facebook' ?></a>
+               <?php print '&spades;' ?>
+               <a class="nasty3" href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>" title="Click to send NM to Twitter!" target="_blank"><?php print 'Share on Twitter' ?></a> &spades;
 
                 <div class="navigation">
                     <span class="previous-entries">
