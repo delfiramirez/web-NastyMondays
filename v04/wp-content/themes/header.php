@@ -134,7 +134,7 @@
                 <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
                     <link rel="stylesheet"
-                          href="<?php bloginfo ("template_url"); ?>//style.css"
+                          href="<?php bloginfo ("template_url"); ?>/style.css"
                           type="text/css"
                           media="screen, projection"
                           />
