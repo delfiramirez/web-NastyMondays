@@ -1,6 +1,6 @@
 <?php
-/*
-  Template Name: Press_Credentials
+/**
+ * Template Name: Press_Credentials
  *
  * @package WordPress
  * @subpackage nastymondays
@@ -8,7 +8,6 @@
 get_header ();
 ?>
 <div class="entry2">
-
 
     <div class="events_pre">
         <?php wp_nav_menu ('menu=Prensa_en'); ?>
