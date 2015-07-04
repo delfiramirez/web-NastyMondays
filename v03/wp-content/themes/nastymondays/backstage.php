@@ -1,6 +1,6 @@
 <?php
-/*
-  Template Name: Backstage
+/**
+ * Template Name: Backstage
  *
  * @package WordPress
  * @subpackage nastymondays
