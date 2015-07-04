@@ -1,10 +1,9 @@
 <?php
-/*
+/**
  * Template Name: Register_Press
  *
  * @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
@@ -20,7 +19,7 @@ get_header ();
 
         <div class="left_prensa">
             <h2>
-                <?php _e ("<!--:en-->Register Professional Press<!--:--><!--:es-->Registro Prensa Oficial <!--:--><!--:ca-->Registre Premsa<!--:-->"); ?>
+                <?php _e ("<!--:en-->Register Professional Press<!--:--><!--:es-->Registro Prensa Oficial <!--:--><!--:ca-->Registre Premsa Professional<!--:-->"); ?>
             </h2>
 
             <p>
@@ -40,7 +39,7 @@ get_header ();
         <div class="spacer"></div>
 
         <p class="small">
-            <?php _e ("<!--:en-->All fields are mandatory<!--:--><!--:es-->Introduzca todos los datos<!--:--><!--:ca-->Ompleneu tottes les dades<!--:-->"); ?>
+            <?php _e ("<!--:en-->All fields are mandatory<!--:--><!--:es-->Introduzca todos los datos<!--:--><!--:ca-->Ompleneu totes les dades<!--:-->"); ?>
         </p>
 
         <?php insert_cform ('4'); ?>
