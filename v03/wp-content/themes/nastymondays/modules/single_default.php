@@ -1,6 +1,5 @@
 <?php
-/*
-
+/**
  * Module Name: Single Page
  *
  * @package WordPress
