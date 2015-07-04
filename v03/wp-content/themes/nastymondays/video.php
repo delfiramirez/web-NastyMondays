@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Template Name: Video
  *
  * @package WordPress
