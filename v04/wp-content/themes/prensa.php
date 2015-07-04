@@ -1,10 +1,9 @@
 <?php
-/*
+/**
  * Template Name: Press
  *
  * @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
