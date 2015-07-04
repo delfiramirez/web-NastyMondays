@@ -1,9 +1,9 @@
 <?php
-/* Template Name : Location
+/**
+ * Template Name : Location
  *
  * @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
@@ -47,7 +47,9 @@ get_header ();
             	  />
 
             	   
-            <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' 
+                  rel='stylesheet' 
+                  type='text/css'>
 
 
                 <!--[if lte IE 6]
