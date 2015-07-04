@@ -1,10 +1,9 @@
 <?php
-/*
+/**
  * Template Name: SideBar
  *
  * @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
@@ -15,7 +14,7 @@ get_header ();
 
         <h5>
             <a href="#">
-                <?php _e ("<!--:en-->Contact!<!--:--><!--:es-->Contacta!<!--:--><!--:ca-->Contacta!<!--:-->"); ?>
+                <?php _e ("<!--:en-->Contact!<!--:--><!--:es-->Contacta!<!--:--><!--:ca-->Contacte!<!--:-->"); ?>
             </a>
         </h5>
 
