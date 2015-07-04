@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Module Name: Social
  *
  * @package WordPress
