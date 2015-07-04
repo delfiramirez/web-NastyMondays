@@ -1,10 +1,9 @@
 <?php
-/*
+/**
  * Template Name: SiteMap
  *
  * @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
@@ -40,7 +39,7 @@ get_header ();
                 </a>
             </li>
             <li>
-                <!-- alternate method Not recommended due to the use of lots of resource on cheap servers -->
+                <!-- alternate method Not recommended due to the use of lots of resource on non-temperated servers -->
                 <?php permalink_anchor ('007'); ?>
 
             </li>
