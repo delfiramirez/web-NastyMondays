@@ -18,7 +18,6 @@
 			var loader:URLLoader=new URLLoader  ;
 			loader.addEventListener(Event.COMPLETE,xmlDisplay);
 			loader.load(new URLRequest(XMLname));
-			
 		}
 		
 		public function xmlDisplay(e:Event):void 
