@@ -1,6 +1,6 @@
 <?php
-/*
-  Template Name: Registro_Prensa
+/**
+ * Template Name: Registro_Prensa
  *
  * @package WordPress
  * @subpackage nastymondays
