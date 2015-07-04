@@ -1,10 +1,9 @@
 <?php
-/*
+/**
  * Template Name: Contratacion
  *
  * @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
