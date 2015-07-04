@@ -1,10 +1,9 @@
 <?php
-/*
+/**
  * Template Name: Segonquart
  *
  * @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
