@@ -1,10 +1,12 @@
 <?php
-/*
+/**
  * Template Name: Home
  *
+ * Contains slider, three sectioning areas, one column
+ * social links
+ * 
  * @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
