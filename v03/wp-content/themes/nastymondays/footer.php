@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Module Footer
  *
  * @package WordPress
