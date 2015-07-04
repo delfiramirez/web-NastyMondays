@@ -1,6 +1,6 @@
 <?php
-/*
- * Template Name: PhotoAlbum
+/**
+ * Template Name: Photo
  *
  * @package WordPress
  * @subpackage nastymondays
