@@ -1,9 +1,10 @@
 <?php
-/* Template Name : Page_Cupcake
+/**
+ *Template Name : Page_Cupcake
+ *
  *
  * @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
