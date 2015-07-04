@@ -1,6 +1,9 @@
 <?php
-/*
-  Template Name: Page_NY
+/**
+ * Template Name: PPage_NY
+ *
+ * @package WordPress
+ * @subpackage sagarra
  */
 get_header ();
 ?>
