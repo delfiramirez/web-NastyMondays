@@ -1,9 +1,9 @@
 <?php
-/* Template Name : Page_Crappy
+/**
+ *Template Name : Page_Crappy
  *
- * @package WordPress
+ *  @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
