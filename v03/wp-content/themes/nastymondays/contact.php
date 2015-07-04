@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Template Name: Contact
  *
  * @package WordPress
@@ -29,9 +29,11 @@ get_header ();
     <div
         id="contact-form"
         class="myform">
+        
         <h4>
             <?php print 'Have You Say'; ?>
         </h4>
+        
         <div class="spacer"></div>
 
         <p class="small">
