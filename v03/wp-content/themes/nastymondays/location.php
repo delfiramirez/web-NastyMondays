@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Template Name: Location
  *
  * @package WordPress
