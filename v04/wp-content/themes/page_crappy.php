@@ -1,6 +1,6 @@
 <?php
 /**
- *Template Name : Page_Crappy
+ * Template Name : Page_Crappy
  *
  *  @package WordPress
  * @subpackage nastymondays
