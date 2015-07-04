@@ -1,17 +1,15 @@
 <?php
-/*
+/**
  * Template Name: Page_Video
  *
  * @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
 
 
 <div class="entry4">
-
 
     <h2 class="vids">
 
@@ -42,7 +40,6 @@ get_header ();
 
             </a>
         </h4>
-
     </div>
 
     <?php
