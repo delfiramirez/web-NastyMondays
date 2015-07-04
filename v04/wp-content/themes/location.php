@@ -46,11 +46,9 @@ get_header ();
             	  media="screen, projection" 
             	  />
 
-            	   
             <link href='http://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' 
                   rel='stylesheet' 
                   type='text/css'>
-
 
                 <!--[if lte IE 6]
                 <script type="text/javascript" src="<?php echo get_template_directory (); ?>/js/supersleight/supersleight-min.js"></script>
