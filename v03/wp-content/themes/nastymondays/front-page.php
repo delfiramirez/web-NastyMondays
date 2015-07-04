@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Template Name: Home
  *
  * @package WordPress
@@ -60,13 +60,13 @@ get_header ();
     <script type="text/javascript">
 
         var cf = new Crossfader (new Array (
-<?php
-foreach ( $div_ids as $id )
-    {
-    $stringlist[] = "'cf" . $id . "'";
-    }
-echo implode (',', $stringlist);
-?>
+        <?php
+        foreach ( $div_ids as $id )
+            {
+            $stringlist[] = "'cf" . $id . "'";
+            }
+        echo implode (',', $stringlist);
+        ?>
         ), 1000, 4000);
 
     </script>
