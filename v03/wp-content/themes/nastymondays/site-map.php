@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Template Name: Site-Map
  *
  * @package WordPress
