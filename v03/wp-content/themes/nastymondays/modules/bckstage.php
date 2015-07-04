@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Template BckStage
  *
  * @package WordPress
