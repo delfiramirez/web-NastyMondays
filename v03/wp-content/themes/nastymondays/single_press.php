@@ -1,14 +1,12 @@
 <?php
-/*
+/**
  * Module Single Press
  *
  * @package WordPress
  * @subpackage nastymondays
  */
-
 get_header ();
 ?>
-
 
 <div class="post">
     <?php query_posts ('cat=126,127&showposts=10'); ?>
