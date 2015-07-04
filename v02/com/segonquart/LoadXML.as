@@ -19,8 +19,8 @@
 			loader.addEventListener(Event.COMPLETE,xmlDisplay);
 			loader.load(new URLRequest(XMLname));
 			
-			
 		}
+		
 		public function xmlDisplay(e:Event):void 
 		{
 			xml = new XML(e.target.data);
