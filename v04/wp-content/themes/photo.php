@@ -1,10 +1,9 @@
 <?php
-/*
+/**
  * Template Name: Photo
  *
  * @package WordPress
  * @subpackage nastymondays
- *
  */
 get_header ();
 ?>
@@ -18,7 +17,7 @@ get_header ();
 
             <h2 class="prensa">
 
-                <?php _e ("<!--:en-->Crew Member Photo<!--:--><!--:es-->Album Crew member<!--:--><!--:ca-->Album Crew member<!--:-->"); ?>
+                <?php _e ("<!--:en-->Crew Member Photo<!--:--><!--:es-->Album Crew miembro<!--:--><!--:ca-->Album Crew membresia<!--:-->"); ?>
 
             </h2>
             <div class="gallery">
