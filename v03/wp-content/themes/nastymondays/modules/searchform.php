@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Custom Module SearchForm
  *
  * @package WordPress
