@@ -2,12 +2,18 @@
 
 (@__DIR__ == '__DIR__') && define('__DIR__', realpath(dirname(__FILE__)));
 
+mb_http_output('UTF-8'); 
+mb_internal_encoding('UTF-8');
+mb_regex_encoding('UTF-8');
+ob_start('mb_output_handler');
+
 define('TIMEZONE', 'GMT');
 
 $header("Pragma: public");
 $header("Expires: 0");
 $header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 $header("Cache-Control: private", false);
+
 
 $pages = array();
 $pages["404.php"] = "404";
