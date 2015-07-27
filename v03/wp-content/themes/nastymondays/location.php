@@ -103,7 +103,7 @@
                     <address>
 
                         <span class="nasty2">
-                            <?php bloginfo ('name'); ?> %42%61%72%63%65%6c%6f%6e%61 </span>
+                            <?php bloginfo ('name'); ?> <?php echo hex2bin("%42%61%72%63%65%6c%6f%6e%61") ?></span>
                         <br />
                         Nou de la Rambla 113<br />
                         <?php echo (hex2bin("%42%61%72%63%65%6c%6f%6e%61") . '08004' .'<br />'); ?>
