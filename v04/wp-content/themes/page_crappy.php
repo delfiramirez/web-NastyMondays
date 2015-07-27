@@ -29,7 +29,7 @@ get_header ();
 
 <div class="izquierda">
     <h3>
-        <strong>%43%72%61%70%70%79%20%32%5c%27%44%61%79</strong>
+        <strong><?php echo hex2bin("%43%72%61%70%70%79%20%32%5c%27%44%61%79"); ?></strong>
     </h3>
 </div>
 
