@@ -32,10 +32,10 @@ get_header ();
 
                 <?php the_content () ?>
                 <hr />
-               <?php print '&spades;' ?>
+               <?php print  htmlentities('&spades;'); ?>
                <a class ="nasty3" href="http://www.facebook.com/sharer.php?u=<?php the_permalink (); ?>&t=<?php the_title (); ?>" target="blank">
                     <?php print 'on Facebook' ?></a>
-               <?php print '&spades;' ?>
+               <?php print  htmlentities('&spades;'); ?>
                <a class="nasty3" href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>" title="Click to send NM to Twitter!" target="_blank"><?php print 'Share on Twitter' ?></a> &spades;
 
                 <div class="navigation">
@@ -60,7 +60,7 @@ get_header ();
                 </div>
                 <hr />
                 <span>
-                    <?php the_tags ('<ul class="wp-tag-cloud"><li class="wp-tag-cloud">', ' &spades; ', '</li><li class="wp-tag-cloud"><a>', '</a></li></ul>'); ?>
+                    <?php the_tags ('<ul class="wp-tag-cloud"><li class="wp-tag-cloud">', htmlentities('&spades;') , '</li><li class="wp-tag-cloud"><a>', '</a></li></ul>'); ?>
                 </span>
             <?php endwhile; ?>
 
