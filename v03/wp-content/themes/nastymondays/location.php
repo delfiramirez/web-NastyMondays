@@ -106,12 +106,12 @@
                             <?php bloginfo ('name'); ?> %42%61%72%63%65%6c%6f%6e%61 </span>
                         <br />
                         Nou de la Rambla 113<br />
-                        %42%61%72%63%65%6c%6f%6e%61 08004<br />
+                        <?php echo (hex2bin("%42%61%72%63%65%6c%6f%6e%61") . '08004' .'<br />'); ?>
                         Phone: (0034) 93 441 40 01<br />
                         TUBE: Paral.lel [L3]<br />
                         BUS: 20, 36, 57, 64<br />
                         NIT BUS: N0, N6<br />
-                        <span class="nasty2">%4c%61%20%5b%32%5d%20%64%65%20%4e%61%73%74%79</span>
+                        <span class="nasty2"> <?php echo hex2bin("%4c%61%20%5b%32%5d%20%64%65%20%4e%61%73%74%79") ; ?></span>
                         <br />
                         Nou de la Rambla 111<br />
 
