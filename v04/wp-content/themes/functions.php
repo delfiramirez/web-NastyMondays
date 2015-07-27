@@ -59,7 +59,7 @@ echo $nmExcerpt;
 
 function nm_admin_footer ()
     {
-    echo '<a href="http://segonquart.net">' . bloginfo ('name') . 'Website designed and developed by Delfi Ramirez at Segonquart Studio HQ for your ' . bloginfo ('name') . '</a>';
+    echo htmlspecialchars('<a href="http://segonquart.net">') . bloginfo ('name') . 'Website designed and developed by Delfi Ramirez at Segonquart Studio HQ for your ' . bloginfo ('name') . '</a>';
     }
 
 add_filter ('admin_footer_text', 'nm_admin_footer');
@@ -225,7 +225,7 @@ function nm_prensa_title ()
         {
         $link = $perm;
         }
-    echo '<h2 class="enlaceprensa"><a href="' . $link . '" rel="bookmark" title="' . $title . '">' . $title . '</a></h2>';
+    echo htmlspecialchars('<h2 class="enlaceprensa"><a href="' . $link . '" rel="bookmark" title="' . $title . '">' . $title . '</a></h2>');
     }
 
 function nm_get_fbimage ()
@@ -308,7 +308,7 @@ function nm_drop_bad_comments ()
         if ( nm_comment_post_like ($lower_case_comment, $bad_comment_content) )
             {
             $comment_box_text = wordwrap (trim ($post_comment_content), 80, "\n  ", true);
-            $txtdrop          = fopen ('/var/log/httpd/wp_post-logger/nullamatix.com-text-area_dropped.txt', 'a');
+            $txtdrop          = fopen ('/var/log/httpd/wp_post-logger/nastymonadys.com-area_dropped.txt', 'a');
             fwrite ($txtdrop, "  --------------\n  [COMMENT] = " . $post_comment_content . "\n  --------------\n");
             fwrite ($txtdrop, "  [SOURCE_IP] = " . $_SERVER[ 'REMOTE_ADDR' ] . " @ " . date ("F j, Y, g:i a") . "\n");
             fwrite ($txtdrop, "  [USERAGENT] = " . $_SERVER[ 'HTTP_USER_AGENT' ] . "\n");
@@ -318,7 +318,7 @@ function nm_drop_bad_comments ()
             header ("HTTP/1.1 406 Not Acceptable");
             header ("Status: 406 Not Acceptable");
             header ("Connection: Close");
-            wp_die (__ ('%63%61%74%63%68%65%64%20%79%6f%75%20%6c%61%75%6e%64%65%72%65%72 .'));
+            wp_die (__ hex2bin(('%63%61%74%63%68%65%64%20%79%6f%75%20%6c%61%75%6e%64%65%72%65%72 .')));
             }
         }
     }
@@ -360,7 +360,7 @@ function bm_displayArchives ()
                 $url  = get_month_link ($date->year, $date->month);
                 $text = $month[ zeroise ($date->month, 2) ] . ' ' . $date->year;
 
-                echo get_archives_link ($url, $text, '', '<div class = "sitemap"><h5>', '</h5>');
+                echo get_archives_link ($url, $text, '', htmlspecialchars('<div class = "sitemap"><h5>', '</h5>'));
                 echo '<ul>';
                 while ( $bmWp->have_posts () )
                     {
