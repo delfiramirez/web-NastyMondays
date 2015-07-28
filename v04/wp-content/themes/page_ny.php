@@ -68,7 +68,7 @@ get_header ();
 
 <div id="social">
 
-    <?php print '&spades;' ?>
+        <?php print htmlentitities ('&spades;') ?>
     <a
         class="nasty3"
         href="http://www.facebook.com/sharer.php?u=<?php the_permalink (); ?>&t=<?php the_title (); ?>"
@@ -76,7 +76,7 @@ get_header ();
         Share on Facebook
     </a>
 
-    <?php print '&spades;' ?>
+       <?php print htmlentities ('&spades;') ?>
     <a
         class="nasty3"
         href="http://twitter.com/home?status=Currently reading <?php the_permalink (); ?>"
@@ -84,8 +84,7 @@ get_header ();
         target="_blank">
         Share on Twitter
     </a>
-
-    <?php print '&spades;' ?>
+        <?php print htmlentities ('&spades;') ?>
 
     <p>
         <?php echo tweetCount (bloginfo ('url')); ?>
