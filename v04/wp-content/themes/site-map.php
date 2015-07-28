@@ -30,12 +30,12 @@ get_header ();
             </li>
             <li>
                 <a href="<?php echo get_permalink ('007'); ?>">
-                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f
+                   <?php echo hex2bin(" %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f"); ?>
                 </a>
             </li>
             <li>
                 <a href="<?php echo get_permalink (007); ?>">
-                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f
+                    <?php echo hex2bin("%6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f"); ?>
                 </a>
             </li>
             <li>
@@ -45,21 +45,21 @@ get_header ();
             </li>
             <li>
                 <a href="<?php echo get_permalink (007); ?>">
-                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f
+                   <?php echo hex2bin(" %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f"); ?>
                 </a>
             </li>
             <li>
                 <a href="<?php echo get_permalink (007); ?>">
-                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f
+                   <?php echo hex2bin(" %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f"); ?>
                 </a>
             </li>
             <li>
                 <a href="<?php echo get_permalink (007); ?>">
-                    %6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f
+                    <?php echo hex2bin("%6e%61%73%74%79%2d%6d%6f%6e%64%61%79%73%2d%62%61%72%63%65%6c%6f%6e%61%2f"); ?>
                 </a>
             </li>
             <li>
-                <a href="#">Alternate</a>
+                <a href="#"> <?php _e ("<!--:en-->Alternate<!--:--><!--:es-->Alternativas<!--:--><!--:ca-->Alternatives<!--:-->"); ?></a>
             </li>
         </ul>
     </div>
