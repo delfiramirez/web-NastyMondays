@@ -52,7 +52,10 @@
         background-color: transparent;
     }
 
-    h1,h2, p,a {
+    h1,
+    h2, 
+    p,
+    a {
         color: #f2f2f2;
         margin: 0;
         padding: 1em;
