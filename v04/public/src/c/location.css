@@ -12,7 +12,9 @@ div.left {
 	font-family: "nevisBold",Helvetica,Arial, sans-serif;
 }
 
-div.left h1 a, div.left h1 a:visited, div.left h1 a:hover {
+div.left h1 a, 
+div.left h1 a:visited, 
+div.left h1 a:hover {
 
 	font-size: 78px;
 	text-shadow: #ffffee  0px 1px -3px;
@@ -20,7 +22,8 @@ div.left h1 a, div.left h1 a:visited, div.left h1 a:hover {
 	font-family: "nevisBold",Helvetica,Arial, sans-serif;
 }
 
-div.left h1, div.left h2 {
+div.left h1, 
+div.left h2 {
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 70px;
@@ -137,7 +140,8 @@ td {
 	text-align: left;
 }
 
-td.alt, table td.alt {
+td.alt, 
+table td.alt {
 	background: #F5FAFA;
 	color: #797268;
 }
