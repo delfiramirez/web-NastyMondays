@@ -1,4 +1,10 @@
-body#login #outer-content,body#login #footer,body#login #header #logotype,body#login #header #login-mascot,body#login #header,form#login-form fieldset {
+/* Custom styles for CForm WP Plugin */
+
+body#login #outer-content,
+body#login #footer,
+body#login #header #logotype,
+body#login #header #login-mascot,
+body#login #header,form#login-form fieldset {
 	background: transparent;
 	border: 0;
 }
@@ -35,7 +41,8 @@ body#login {
 	padding: 1em;
 }
 
-body#login #av-flash-block,body#login .invalid-error {
+body#login #av-flash-block,
+body#login .invalid-error {
 	text-shadow: none;
 }
 
@@ -179,7 +186,8 @@ body#login #av-flash-block,body#login .invalid-error {
 	opacity: 1;
 }
 
-#login #remember-me-group *,#login #show-password-group * {
+#login #remember-me-group *,
+#login #show-password-group * {
 	width: auto;
 }
 
@@ -301,7 +309,7 @@ body#login #av-flash-block,body#login .invalid-error {
 }
 
 body#login #login-image {
-	/*background: url(images/login/freddie.jpg);*/
+
 }
 
 body#login #login-form-wrap {
@@ -313,7 +321,7 @@ body#login.default,body#login.default_light {
 }
 
 body#login.default #login-image {
-	/*background: url(images/login/freddie.jpg);*/
+	
 }
 
 body#login.default #login-form-wrap {
