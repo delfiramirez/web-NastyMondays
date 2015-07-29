@@ -2173,6 +2173,7 @@ tabla_prensa #signup-confirm input.btn
     text-decoration: underline;
     font-family: 'Reenie Beanie', Geneva, sans-serif;
 }
+
 .left_prensa
 {
     float: right;
@@ -2664,7 +2665,6 @@ div#footer_b
     background: #040404;
 }
 
-
 .events
 {
     float: left;
@@ -2896,7 +2896,8 @@ ul.wp-tag-cloud li.wp-tag-cloud a:hover
 ------------------------------------------------*/
 
 
-#calendar {
+#calendar 
+{
     margin: 1em 0 0;
     padding: 0;
     width: 650px;
@@ -2904,14 +2905,16 @@ ul.wp-tag-cloud li.wp-tag-cloud a:hover
 }
 
 
-div#nmondays {
+div#nmondays
+{
     width: 500px;
     height: auto;
     background: transparent url("/src/images/bg/bg_prensa.jpg") bottom center no-repeat;
     z-index: -1;
 }
 
-#archives-list li {
+#archives-list li 
+{
     width: 150px;
     height: 150px;
     margin-left: 10px;
@@ -2923,10 +2926,12 @@ div#nmondays {
 }
 
 
-#gallery_page {
+#gallery_page
+{
     width: 990px;
 }
-.gallery li {
+.gallery li 
+{
     display: inline;
     list-style: none;
     width: 150px;
@@ -2942,7 +2947,8 @@ div#nmondays {
     background-image: none;
 }
 
-.entry object {
+.entry object 
+{
     clear: left;
     display: block;
     margin: 0 auto;
@@ -2951,7 +2957,8 @@ div#nmondays {
     border: 1px dotted #bdd77f;
 }
 
-div.flashmovie {
+div.flashmovie 
+{
     margin: 1em auto;
     background: #040404;
     border: none;
@@ -2959,7 +2966,8 @@ div.flashmovie {
     padding: 0;
 }
 
-.post-calendar {
+.post-calendar 
+{
     padding-left: 18px;
     float: right;
     font-size: 95%;
@@ -2980,9 +2988,13 @@ h2.inicio,
     padding: 0;
 }
 
-.nasty, .nasty a,
-nasty a:hover, ul li.nasty a,
-ul li.nasty a:hover, span.nasty, a.nasty
+.nasty, 
+.nasty a,
+nasty a:hover, 
+ul li.nasty a,
+ul li.nasty a:hover, 
+span.nasty,
+a.nasty
 {
     font-family: 'Molengo', 'MolengoRegular', Helvetica, Arial, sans-serif;
     font-size: 39px;
@@ -3071,13 +3083,13 @@ span.nasty4
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
-.rolo2 a:hover {
+.rolo2 a:hover 
+{
     color: #ba371b;
     border-bottom: 1px dotted #b2c9ce;
 }
 
 .rolo3
-
 {
     width: 200px;
     font-weight: bold;
@@ -3143,7 +3155,8 @@ h4.backstage a:hover
     padding: 1em 0 0 0.8em;
 }
 
-h1.cuatro0cuatro a {
+h1.cuatro0cuatro a 
+{
     background: url("images/err/404.png") top left no-repeat;
     float: left;
     display: block;
@@ -3154,12 +3167,14 @@ h1.cuatro0cuatro a {
     text-indent: -999.999em;
 }
 
-h1.cuatro0cuatro a:hover {
+h1.cuatro0cuatro a:hover 
+{
     background: url("/src/images/err/404.png") 0px -400px no-repeat;
     text-indent: -999.999em;
 }
 
-h1.cuatro0cuatro a img {
+h1.cuatro0cuatro a img 
+{
     height: 0;
 }
 
@@ -3174,22 +3189,23 @@ a img.wp-post-image
     background-color: #040404;
 }
 
-
-
-img.floatLeft {
+img.floatLeft 
+{
     float: left;
     padding: 2px;
     border: 1px #FFF7C9 solid;
 }
 
-#wpstats, #wpstats img {
+#wpstats, #wpstats img 
+{
     display: none;
     height: 1px;
     width: 1px;
     border: none;
 }
 
-img#wpstats {
+img#wpstats 
+{
     width: 0px;
     height: 0px;
     padding: 0px;
