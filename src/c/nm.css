@@ -32,21 +32,8 @@
         height: 100%;
         overflow: hidden;
     }
-
-    * html #content {
-        height: 100%;
-    }
-
-    #content {
-        position: relative;
-        margin: auto;
-        text-align: left;
-        width: 100%;
-        min-height: 100%;
-        background-color: #000;
-    }
-
-    a {
+    
+   a {
         color: #f2f2f2;
         text-decoration: underline;
         background-color: transparent;
@@ -63,6 +50,19 @@
         line-height: 1.5em;
         display: inline;
         text-indent: -9999.999px;
+    }
+
+    * html #content {
+        height: 100%;
+    }
+
+    #content {
+        position: relative;
+        margin: auto;
+        text-align: left;
+        width: 100%;
+        min-height: 100%;
+        background-color: #000;
     }
 
     #invi {
