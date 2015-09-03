@@ -84,8 +84,8 @@ a:visited
 {
     background: transparent;
     font-weight: 700;
-    text-decoration:
-        underline;color:#333;
+    text-decoration:underline;
+    color:#333;
 }
 
 a:link[href^="http://"]:after,
