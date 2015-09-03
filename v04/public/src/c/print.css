@@ -19,7 +19,6 @@ body
     font-size: 12pt;
 }
 
-
 h1,
 h2,
 h3,
@@ -80,7 +79,8 @@ a img
     border: none;
 }
 
-a:link, a:visited 
+a:link, 
+a:visited 
 {
     background: transparent;
     font-weight: 700;
@@ -166,7 +166,6 @@ th.specalt
 td.alt
 {
     padding: 4px 10px 4px 0;
-
 }
 
 #login-box,
