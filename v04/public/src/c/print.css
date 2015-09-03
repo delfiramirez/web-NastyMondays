@@ -20,7 +20,12 @@ body
 }
 
 
-h1,h2,h3,h4,h5,h6
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
 {
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -40,35 +45,43 @@ h3
     font-size:15pt;
 }
 
-h4,h5,h6{
+h4,
+h5,
+h6
+{
     font-size:12pt;
 }
 
-code {
+code 
+{
     font: 10pt Courier, monospace;
 }
 
-blockquote {
+blockquote 
+{
     margin: 1.3em;
     padding: 1em;
     font-size: 10pt;
 }
 
-hr {
+hr 
+{
     background-color: #ccc;
 }
 
-img {
+img 
+{
     float: left;
     margin: 1em 1.5em 1.5em 0;
 }
 
-a img {
+a img 
+{
     border: none;
 }
 
-
-a:link, a:visited {
+a:link, a:visited 
+{
     background: transparent;
     font-weight: 700;
     text-decoration:
@@ -76,7 +89,8 @@ a:link, a:visited {
 }
 
 a:link[href^="http://"]:after,
-a[href^="http://"]:visited:after {
+a[href^="http://"]:visited:after 
+{
     content: " (" attr(href) ") ";
     font-size: 90%;
 }
@@ -90,6 +104,7 @@ table
 {
     margin: 1px; text-align:left;
 }
+
 th
 {
     border-bottom: 1px solid #333;
@@ -106,6 +121,7 @@ td
 {
     padding: 4px 10px 4px 0;
 }
+
 tfoot
 {
     font-style: italic;
@@ -117,14 +133,16 @@ caption
     margin-bottom:2em;
     text-align:left;
 }
+
 thead
 {
     display: table-header-group;
 }
-tr {
+
+tr 
+{
     page-break-inside: avoid;
 }
-
 /*
  Custom Print for Nasty Mondays Theme 2010
 Copyright v 0.1 2010 Delfi Ramirez <delfin@segonquart.net> for Nasty Mondays Inc.
@@ -135,27 +153,25 @@ Copyright v 0.1 2010 Delfi Ramirez <delfin@segonquart.net> for Nasty Mondays Inc
 th.spec,
 th.nobg
 {
-
     border-bottom: 1px solid #333;
     font-weight: bold;
-
 }
+
 th.specalt
 {
     border-left: 1px solid #333;
     border-top: 0;
 }
 
-
 td.alt
 {
     padding: 4px 10px 4px 0;
 
 }
+
 #login-box,
 #login-form,
 #footer_links li a
 {
-
     display:none;
 }
