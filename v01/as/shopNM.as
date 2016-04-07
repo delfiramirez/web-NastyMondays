@@ -29,19 +29,15 @@ function trackMouse (evt:Event):void
 	}
 }
 
-
 function startParallax ():void
 {
 	stage.addEventListener (MouseEvent.MOUSE_MOVE, trackMouse);
 }
 
-
 function stopParallax ():void
 {
 	stage.removeEventListener (MouseEvent.MOUSE_MOVE, trackMouse);
 }
-
-
 
 //BOCADILLO FUNCTIONS
 
@@ -71,7 +67,6 @@ function picClick (evt:Event):void
 
 	Tweener.addTween (currBocadillo,{rotationX:0, z:-50, x:0, time:0.5, transition:"easeInOutSine", onComplete:cierraPantalla});
 }
-
 
 function bocadilloFunction():void { 
 
@@ -104,9 +99,9 @@ function bocadilloFunction():void {
 // FUNCIONES MOVER
 
 function moveItem(mc:MovieClip, xpos:Number):void
-		{
-			Tweener.addTween(mc,{x:xpos, time:1, transition:"easeOutBack"});
-		}
+{
+	Tweener.addTween(mc,{x:xpos, time:1, transition:"easeOutBack"});
+}
 
 
 function twistItem (mc:MovieClip, rX:Number, rY:Number):void
@@ -119,7 +114,6 @@ function twistBocadillo (evt:Event):void
 {
 	twistItem (currBocadillo, 0, currBocadillo.mouseX / 50);
 }
-
 
 function blurItems (amount:Number):void
 {
@@ -135,6 +129,7 @@ function blurItems (amount:Number):void
 		}
 	}
 }
+
 function blurItem (mc:MovieClip, amount:Number):void
 {
 	var blur:BlurFilter = new BlurFilter();
@@ -142,9 +137,7 @@ function blurItem (mc:MovieClip, amount:Number):void
 	blur.blurY = amount;
 	blur.quality = BitmapFilterQuality.HIGH;
 	mc.filters = [blur];
-	
 }
-
 
 function removeDetection (me:MouseEvent):void
 {
@@ -152,19 +145,15 @@ function removeDetection (me:MouseEvent):void
 
 }
 
-
 function initClose ():void
 {
-
 	var closebtn2:closeBtn = new closeBtn();
 	closebtn2.x = 160;
 	closebtn2.y = 775;
 	addChild (closebtn2);
 	initBtn (closebtn2);
 	closebtn2.addEventListener (MouseEvent.CLICK, removeDetection);
-
 }
-
 
 bocadilloFunction();
 
