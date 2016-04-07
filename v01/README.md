@@ -1,8 +1,8 @@
-# Nasty Mondays - Backstage . 
-
-##A Rich Internet Application
+# Nasty Mondays - Backstage. 
 
 Copyright (c) 2010, Segonquart Studio, Delfi Ramirez
+
+##A Rich Internet Application
 
 Contains: Interfaces, UI, Classes, XHTML container, CSS.
 
