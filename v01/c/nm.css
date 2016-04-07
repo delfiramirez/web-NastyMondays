@@ -8,7 +8,8 @@ html {
 	overflow: hidden;
 }
 
-*:first-child+html#content, *html#content {
+*:first-child+html#content, 
+*html#content {
 	position: relative;
 	margin: auto;
 	text-align: left;
@@ -47,7 +48,10 @@ a {
 	background-color: transparent;
 }
 
-h1,h2, p,a {
+h1,
+h2, 
+p,
+a {
 	color: #f2f2f2;
 	margin: 0;
 	padding: 1em;
