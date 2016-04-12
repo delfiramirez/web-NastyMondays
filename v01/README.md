@@ -8,7 +8,6 @@
 
 Contains: Interfaces, UI, Classes, XHTML container, CSS.
 
-![](https://github.com/delfiramirez/web-NastyMondays/blob/master/v01/splash-2.jpg)
 
 #Use
 
