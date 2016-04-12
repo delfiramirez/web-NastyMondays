@@ -1,11 +1,19 @@
 # Nasty Mondays - Backstage. 
 
-Copyright (c) 2010, Segonquart Studio, Delfi Ramirez
+![](https://github.com/delfiramirez/web-NastyMondays/blob/master/v01/splash.png)
+
+![](https://github.com/delfiramirez/web-NastyMondays/blob/master/v01/splash-1.jpg)
 
 ##A Rich Internet Application
 
 Contains: Interfaces, UI, Classes, XHTML container, CSS.
 
+#Use
+
+For self educational, personal entertaintment or instructional purposes.
+
 Need to be compiled with AVM2
 
-For educational purposes or for your pleasure only.
+--------------------------------------------------------
+
+Copyright (c) 2009-12, Segonquart Studio HQ , Delfi Ramirez
