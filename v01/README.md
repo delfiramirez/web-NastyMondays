@@ -1,10 +1,10 @@
-# Nasty Mondays - Backstage. 
+#Rich Internet Application _NastyMondays
 
 ![](https://github.com/delfiramirez/web-NastyMondays/blob/master/v01/splash.png)
 
 ![](https://github.com/delfiramirez/web-NastyMondays/blob/master/v01/splash-1.jpg)
 
-##A Rich Internet Application
+##Backstage.  A Rich Internet Application
 
 Contains: Interfaces, UI, Classes, XHTML container, CSS.
 
