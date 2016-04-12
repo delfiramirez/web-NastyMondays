@@ -4,7 +4,7 @@
 
 ![](https://github.com/delfiramirez/web-NastyMondays/blob/master/v01/splash-1.jpg)
 
-##Backstage.  A Rich Internet Application
+##_Backstage.  A Rich Internet Application
 
 Contains: Interfaces, UI, Classes, XHTML container, CSS.
 
